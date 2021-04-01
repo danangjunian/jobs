@@ -38,7 +38,7 @@ a.button.dark:hover,
 .chosen-container-multi .chosen-choices li.search-choice,
 .list-search button,
 .checkboxes input[type=checkbox]:checked + label:before 
-{ background-color: #0084ff; }
+{ background-color: rgb(51, 92, 255); }
 
 
 
@@ -87,4 +87,4 @@ table.manage-table tr:hover td,
 table.manage-table tr:hover td,
 .resumes-list li:hover,
 .job-list li:hover,
-#popular-categories li a:hover { background-color: rgba(234, 45, 48, 0.05); }
+#popular-categories li a:hover { background-color: rgba(25, 0, 255, 0.323); }
