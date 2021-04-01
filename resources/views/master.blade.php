@@ -20,7 +20,7 @@
 	<!-- CSS
 ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors/red.css" id="colors">
+	<link rel="stylesheet" href="css/colors/blue.css" id="colors">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -293,29 +293,27 @@
 								<li>
 									<div class="job-spotlight">
 										<a href="#">
-											<h4>Prestashop / WooCommerce Product Listing <span
+											<h4>freelancer untuk wordpress <span
 													class="freelance">Freelance</span></h4>
 										</a>
-										<span><i class="fa fa-briefcase"></i> King</span>
-										<span><i class="fa fa-map-marker"></i> London</span>
-										<span><i class="fa fa-money"></i> $25 / hour</span>
-										<p>Etiam suscipit tellus ante, sit amet hendrerit magna varius in. Pellentesque
-											lorem quis enim venenatis pellentesque.</p>
-										<a href="job-page.html" class="button">Apply For This Job</a>
+										<span><i class="fa fa-briefcase"></i> PT ReadyTech </span>
+										<span><i class="fa fa-map-marker"></i> Jakarta Timur</span>
+										<span><i class="fa fa-money"></i> 5000.000 / bulan / </span>
+										<p>Melakukan tugas untuk menghandle wordpress seperti teamplate atau Maintenance</p>
+										<a href="job-page.html" class="button">Apply Pekerjaan</a>
 									</div>
 								</li>
 
 								<li>
 									<div class="job-spotlight">
 										<a href="#">
-											<h4>Logo Design <span class="freelance">Freelance</span></h4>
+											<h4>Designer <span class="freelance">Freelance</span></h4>
 										</a>
-										<span><i class="fa fa-briefcase"></i> Hexagon</span>
-										<span><i class="fa fa-map-marker"></i> Sydney</span>
-										<span><i class="fa fa-money"></i> $10 / hour</span>
-										<p>Proin ligula neque, pretium et ipsum eget, mattis commodo dolor. Etiam
-											tincidunt libero quis commodo.</p>
-										<a href="job-page.html" class="button">Apply For This Job</a>
+										<span><i class="fa fa-briefcase"></i> PT BungasunyiTech</span>
+										<span><i class="fa fa-map-marker"></i> Malang</span>
+										<span><i class="fa fa-money"></i> 3500.000 / bulan</span>
+										<p>Melakukan tugas designer untuk baju dll.</p>
+										<a href="job-page.html" class="button">Apply Pekerjaan</a>
 									</div>
 								</li>
 
@@ -366,7 +364,7 @@
 <!-- Infobox -->
 <div class="infobox">
 	<div class="container">
-		<div class="sixteen columns">Start Building Your Own Job Board Now <a href="my-account.html">Get Started</a></div>
+		<div class="sixteen columns">Bangun karirmu bersama lawang  <a href="my-account.html"> Sekarang</a></div>
 	</div>
 </div>
 
@@ -382,14 +380,14 @@
 
 		<!-- Post #1 -->
 		<div class="recent-post">
-			<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-01.jpg" alt=""></a><div class="hover-icon"></div></div>
-			<a href="blog-single-post.html"><h4>Hey Job Seeker, It’s Time To Get Up And Get Hired</h4></a>
+			<div class="recent-post-img"><a href="blog-single-post.html"><img src="../images/recent-post-01.jpg" alt=""></a><div class="hover-icon"></div></div>
+			<a href="blog-single-post.html"><h4>Hey Pencari kerja, saatnya mimpimu di wujudkan.</h4></a>
 			<div class="meta-tags">
-				<span>October 10, 2015</span>
+				<span>Mei 10, 2021</span>
 				<span><a href="#">0 Comments</a></span>
 			</div>
-			<p>The world of job seeking can be all consuming. From secretly stalking the open reqs page of your dream company to sending endless applications.</p>
-			<a href="blog-single-post.html" class="button">Read More</a>
+			<p>Indonesia dengan program presiden, membangun lapangan kerja sampai 15000, siap untuk jadi wadah kerja warga kita, jangan lupa untuk selalu lihat postingan lainnya. </p>
+			<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
 		</div>
 
 	</div>
@@ -400,13 +398,15 @@
 		<!-- Post #2 -->
 		<div class="recent-post">
 			<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-02.jpg" alt=""></a><div class="hover-icon"></div></div>
-			<a href="blog-single-post.html"><h4>How to "Woo" a Recruiter and Land Your Dream Job</h4></a>
+			<a href="blog-single-post.html"><h4>Bagaimana mencari pekerjaan di website Lawang</h4></a>
 			<div class="meta-tags">
-				<span>September 12, 2015</span>
+				<span>Maret 12, 2021</span>
 				<span><a href="#">0 Comments</a></span>
 			</div>
-			<p>Struggling to find your significant other the perfect Valentine’s Day gift? If I may make a suggestion: woo a recruiter. </p>
-			<a href="blog-single-post.html" class="button">Read More</a>
+			<p>Web lawang hadir untuk menjadi tangan dari pemerintah dan perusahaan yang membuka lowongan kerja, lawang bekerja sama dengan perusahaan yang mempunyai 
+				kapabilitas dan tidak ada unsur lowongan bodong.
+			</p>
+			<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
 		</div>
 
 	</div>
@@ -416,13 +416,13 @@
 		<!-- Post #3 -->
 		<div class="recent-post">
 			<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-03.jpg" alt=""></a><div class="hover-icon"></div></div>
-			<a href="blog-single-post.html"><h4>11 Tips to Help You Get New Clients Through Cold Calling</h4></a>
+			<a href="blog-single-post.html"><h4>7 Tips untuk membuat kamu dipanggil interview oleh perusahaan.</h4></a>
 			<div class="meta-tags">
-				<span>August 27, 2015</span>
+				<span>Maret 27, 2021</span>
 				<span><a href="#">0 Comments</a></span>
 			</div>
-			<p>If your dream employer appears on this list, you’re certainly in good company. But it also means you’re up for some intense competition.</p>
-			<a href="blog-single-post.html" class="button">Read More</a>
+			<p>Keika kamu sudah merasa maksimal untuk mendapatkan pekerjaan kamu harus juga mengingat tuhanmu agar proses berikutnya lancar.</p>
+			<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
 		</div>
 	</div>
 
@@ -440,8 +440,9 @@
 
 		<div class="seven columns">
 			<h4>About</h4>
-			<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
-			<a href="#" class="button">Get Started</a>
+			<p>website Lawang menjadi salah satu solusi bagi perusahaan yang mencari tenaga kerja yang sesuai kemampuan, dan pencari kerja bisa memilih
+				sesuai dengan fashionnya, jadi mulailah dengan langkah kecil, daftar sekarang dengan tombol di bawah.</p>
+			<a href="#" class="button">Daftar Sekarang</a>
 		</div>
 
 		<div class="three columns">
@@ -493,7 +494,7 @@
 					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
 					<li><a class="linkedin" href="#"><i class="icon-linkedin"></i></a></li>
 				</ul>
-				<div class="copyrights">©  Copyright 2015 by <a href="#">Work Scout</a>. All Rights Reserved.</div>
+				<div class="copyrights">©  Copyright 2021 by <a href="#">Lawang</a>. All Rights Reserved.</div>
 			</div>
 		</div>
 	</div>
@@ -526,4 +527,4 @@
 
 
 </body>
-</html> --}}
+</html>

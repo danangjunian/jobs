@@ -38,7 +38,7 @@ a.button.dark:hover,
 .chosen-container-multi .chosen-choices li.search-choice,
 .list-search button,
 .checkboxes input[type=checkbox]:checked + label:before 
-{ background-color: #2db2ea; }
+{ background-color: #0084ff; }
 
 
 
@@ -69,22 +69,22 @@ table.manage-table td.action a:hover,
 .resumes-list li a:before,
 .job-list li a:before,
 table.manage-table tr:before {
-	-webkit-box-shadow: 0px 1px 0px 0px rgba(45,178,234,0.7);
-	-moz-box-shadow: 0px 1px 0px 0px rgba(45,178,234,0.7);
-	box-shadow: 0px 1px 0px 0px rgba(45,178,234,0.7);
+	-webkit-box-shadow: 0px 1px 0px 0px  rgb(51, 92, 255);
+	-moz-box-shadow: 0px 1px 0px 0px  rgb(51, 92, 255);
+	box-shadow: 0px 1px 0px 0px  rgb(51, 92, 255);
 }
 
 #popular-categories li a:before {
-	-webkit-box-shadow: 0px 0px 0px 1px rgba(45,178,234,0.7);
-	-moz-box-shadow: 0px 0px 0px 1px rgba(45,178,234,0.7);
-	box-shadow: 0px 0px 0px 1px rgba(45,178,234,0.7);
+	-webkit-box-shadow: 0px 0px 0px 1px  rgb(51, 92, 255);
+	-moz-box-shadow: 0px 0px 0px 1px  rgb(51, 92, 255);
+	box-shadow: 0px 0px 0px 1px rgb(51, 92, 255);
 }
 
 table.manage-table tr:hover td,
 .resumes-list li:hover,
-.job-list li:hover { border-color: rgba(45,178,234,0.7); }
+.job-list li:hover { border-color: rgb(51, 92, 255); }
 
 table.manage-table tr:hover td,
 .resumes-list li:hover,
 .job-list li:hover,
-#popular-categories li a:hover { background-color: rgba(45,178,234,0.05); }
+#popular-categories li a:hover { background-color: rgba(234, 45, 48, 0.05); }
