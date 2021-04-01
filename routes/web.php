@@ -24,3 +24,7 @@ Route::get('/signin', function () {
 Route::get('/signup', function () {
     return view('create_account.signup');
 });
+
+Route::get('/kategori', function () {
+    return view('homepage.kategori');
+});
