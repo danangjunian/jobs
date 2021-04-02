@@ -22,7 +22,7 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="/home"><img src="images/logo.png" alt="Work Scout" /></a></h1>
+						<h1><a href="/home"><img src="images/awang.png" alt="Work Scout" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
