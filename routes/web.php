@@ -28,3 +28,7 @@ Route::get('/signup', function () {
 Route::get('/kategori', function () {
     return view('homepage.kategori');
 });
+
+Route::get('/mas', function () {
+    return view('master2');
+});

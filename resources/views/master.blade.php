@@ -20,7 +20,7 @@
 	<!-- CSS
 ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors/orange.css" id="colors">
+	<link rel="stylesheet" href="css/colors/blue.css" id="colors">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -48,7 +48,12 @@
 						<ul id="responsive">
 
 							<li><a href="index.html" id="current">Home</a>
-								
+								<ul>
+									{{-- <li><a href="index.html">Home #1</a></li>
+						<li><a href="index-2.html">Home #2</a></li>
+						<li><a href="index-3.html">Home #3</a></li>
+						<li><a href="index-4.html">Home #4</a></li> --}}
+								</ul>
 							</li>
 
 							<li><a href="#">Pages</a>

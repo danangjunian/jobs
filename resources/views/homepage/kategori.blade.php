@@ -8,7 +8,7 @@
 
 
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors/green.css" id="colors">
+<link rel="stylesheet" href="css/colors/orange.css" id="colors">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
@@ -29,33 +29,52 @@
 					<li><a href="#"><i class="fa fa-laptop"></i> Telekomukiasi / Ilmu Teknologi</a></li>
                     <li><a href="#"><i class="fa fa-laptop"></i> Programmer</a></li>
                     <li><a href="#"><i class="fas fa-pencil-alt"></i> Freelance </a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
-                    
-                    
-
-                    
+                    <li><a href="#"><i class="fa fa-laptop"></i> Seni / Desain / Fashion</a></li>
+                    <li><a href="#"><i class="fa fa-laptop"></i> Startup & Fintech</a></li>
 				</ul>
 
 				<div class="clearfix"></div>
-				<div class="margin-top-30"></div>
-
-				<a href="browse-categories.html" class="button centered">Cari semua kategori</a>
+				
 				<div class="margin-bottom-50"></div>
 			</div>
 		</div>
+         <!-- End -- Categories -->
+
+
+        {{-- form searce pencari pekerajaan --}}
+
+        <div id="banner" style="background: url(images/banner-home-01.jpg)">
+			<div class="container">
+				<div class="sixteen columns">
+
+					<div class="search-container">
+
+						<!-- Form -->
+						<h2>Cari pekerjaan </h2>
+						<input type="text" class="ico-01" placeholder="Judul pekerjaan, posisi pekerjaan, perusahaan "
+							value="" />
+						<input type="text" class="ico-02" placeholder="Kota, provinsi" value="" />
+						<button><i class="fa fa-search"></i></button>
+
+						<!-- Browse Jobs -->
+						<div class="browse-jobs">
+							Cari pekerjaan sesuai dengan <a href="browse-categories.html"> Kategori</a> atau <a
+								href="#">Lokasi</a>
+						</div>
+
+						<!-- Announce -->
+						<div class="announce">
+							Membuka lowongan pekerjaan <strong>15.000</strong> menuju Indonesia Generasi Emas 2045!
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+          {{-- end -- form searce pencari pekerajaan --}}
+
 
 
 
