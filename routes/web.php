@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AccountController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,27 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('master');
-// });
-
-Route::get('/signin', function () {
-    return view('create_account.signin');
-});
-
-Route::get('/signup', function () {
-    return view('create_account.signup');
-});
-
-Route::get('/kategori', function () {
-    return view('homepage.kategori');
-});
-
-Route::get('/mas', function () {
-    return view('layout.master2');
-});
-
-Route::get('/', function () {
-    return view('homepage.index');
-});
-
+Route::get('/sign-in', [AccountController::class, 'masuk']);
+Route::get('/sign-up', [AccountController::class, 'daftar']);
+Route::get('/kategori', [AccountController::class, 'category']);
+Route::get('/', [AccountController::class, 'homepage']);
+Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
+Route::get('/jobs', [AccountController::class, 'kerja']);
