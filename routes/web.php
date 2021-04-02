@@ -36,3 +36,4 @@ Route::get('/mas', function () {
 Route::get('/home', function () {
     return view('homepage.index');
 });
+
