@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="" rel="shortcut icon">
+    <link rel="icon" href="../public/images/logo.png" type="image/gif">
     <title>Masuk - Lawang | Lowongan Kerja</title>
 
     <!--====== Google Font ======-->
@@ -15,7 +16,7 @@
     <!--====== ANIMASI ======-->
     <link rel="stylesheet" href="css/vendor.css">
 
-     <!--====== AWS ======-->
+    <!--====== AWS ======-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!--====== MARGIN ======-->
@@ -39,7 +40,7 @@
             <div class="u-s-p-b-60">
 
                 <!--====== Section Intro ======-->
-               
+
                 <!--====== End - Section Intro ======-->
 
 
@@ -55,7 +56,7 @@
                                         
                                         <div class="u-s-m-b-15">
 
-                                            <a class="l-f-o__create-link btn--e-transparent-brand-b-2" href="/signup"><u> BUAT AKUN DISINI</u></a></div>
+                                            <a class="l-f-o__create-link btn--e-transparent-brand-b-2" href="/create_account/signup"><u> BUAT AKUN DISINI</u></a></div>
                                         <h1 class="gl-h1">MASUK</h1>
 
                                         <span class="gl-text u-s-m-b-30">If you have an account with us, please log in.</span>
@@ -112,7 +113,6 @@
                 <!--====== End - form loging ======-->
             </div>
             
-       
 
 
                                                 <!--====== Script JS ======-->

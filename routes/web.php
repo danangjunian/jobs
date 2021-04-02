@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('master');
-});
+// Route::get('/', function () {
+//     return view('master');
+// });
 
 Route::get('/signin', function () {
     return view('create_account.signin');
@@ -33,6 +33,6 @@ Route::get('/mas', function () {
     return view('layout.master2');
 });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('homepage.index');
 });
