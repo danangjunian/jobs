@@ -7,7 +7,6 @@
 	<title>@yield('title')  |  lawang - Lowongan Pekerjaan</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/colors/orange.css" id="colors">
-	<link rel="stylesheet" href="css/signin.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
@@ -201,7 +200,6 @@
 <script src="scripts/jquery.counterup.min.js"></script>
 <script src="scripts/jquery.jpanelmenu.js"></script>
 <script src="scripts/stacktable.js"></script>
-<script src="scripts/signin.js"></script>
 
 
 
