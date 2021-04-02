@@ -30,5 +30,9 @@ Route::get('/kategori', function () {
 });
 
 Route::get('/mas', function () {
-    return view('master2');
+    return view('layout.master2');
+});
+
+Route::get('/home', function () {
+    return view('homepage.index');
 });
