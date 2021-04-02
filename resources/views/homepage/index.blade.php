@@ -236,11 +236,11 @@
 
 				<ul>
 					<!-- Item -->
-					<li><img src="images/logo-01.png" alt="" /></li>
-					<li><img src="images/logo-02.png" alt="" /></li>
-					<li><img src="images/logo-03.png" alt="" /></li>
-					<li><img src="images/logo-04.png" alt="" /></li>
-					<li><img src="images/logo-05.png" alt="" /></li>
+					<li><img src="images/TRANSJAKARTA.jpg" style="height: 100px" alt="" /></li>
+					<li><img src="images/Logo-MRT-Jakarta-Secondary.jpg" style="height: 100px" alt="" /></li>
+					<li><img src="images/pertamina.jpg" style="height: 100px"   alt="" /></li>
+					<li><img src="images/gojek-logo.jpeg" style="height: 100px" alt="" /></li>
+					<li><img src="images/shoppe.png" style="height: 100px" alt="" /></li>
 					<li><img src="images/logo-06.png" alt="" /></li>
 					<li><img src="images/logo-07.png" alt="" /></li>
 				</ul>
@@ -268,21 +268,21 @@
 		<div class="four columns">
 			<div class="counter-box">
 				<span class="counter">15</span><i>k</i>
-				<p>Job Offers</p>
+				<p>Lowongan Kerja</p>
 			</div>
 		</div>
 
 		<div class="four columns">
 			<div class="counter-box">
 				<span class="counter">4982</span>
-				<p>Members</p>
+				<p>Anggota</p>
 			</div>
 		</div>
 
 		<div class="four columns">
 			<div class="counter-box">
 				<span class="counter">768</span>
-				<p>Resumes Posted</p>
+				<p>Resume yang di posting </p>
 			</div>
 		</div>
 
@@ -300,7 +300,7 @@
 <!-- =============== Infobox -->
 <div class="infobox">
 	<div class="container">
-		<div class="sixteen columns">Start Building Your Own Job Board Now <a href="my-account.html">Get Started</a></div>
+		<div class="sixteen columns">Bangun karirmu bersama lawang  <a href="/signup"> Sekarang</a></div>
 	</div>
 </div>
 

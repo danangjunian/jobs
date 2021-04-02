@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 
 	<title>Lawang</title>
-	{{-- <link rel=”icon” href=”../images/logo.png”> --}}
+	<link rel="icon" href="" type="image/gif">
 
 	<!-- Mobile Specific Metas
 ================================================== -->
@@ -91,8 +91,8 @@
 
 
 						<ul class="float-right">
-							<li><a href="my-account.html#tab2"><i class="fa fa-user"></i> Sign Up</a></li>
-							<li><a href="my-account.html"><i class="fa fa-lock"></i> Log In</a></li>
+							<li><a href="/signin"><i class="fa fa-user"></i> Sign Up</a></li>
+							<li><a href="/signup"><i class="fa fa-lock"></i> Log In</a></li>
 						</ul>
 
 					</nav>

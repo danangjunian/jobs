@@ -19,12 +19,12 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="index.html"><img src="images/logo.png" alt="Work Scout" /></a></h1>
+						<h1><a href="/home"><img src="images/logo.png" alt="Work Scout" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
-							<li><a href="index.html" id="current">Home</a></li>
+							<li><a href="/home" id="current">Home</a></li>
 							<li><a href="#">Pages</a>
 								<ul>
 									<li><a href="job-page.html">Halaman Pekerjaan</a></li>
@@ -56,8 +56,8 @@
 							<li><a href="blog.html">Blog</a></li>
 						</ul>
 						<ul class="float-right">
-							<li><a href="my-account.html#tab2"><i class="fa fa-user"></i> Sign Up</a></li>
-							<li><a href="my-account.html"><i class="fa fa-lock"></i> Log In</a></li>
+							<li><a href="/signup"><i class="fa fa-user"></i> Sign Up</a></li>
+							<li><a href="/signin"><i class="fa fa-lock"></i> Log In</a></li>
 						</ul>
 
 					</nav>
