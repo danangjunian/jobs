@@ -26,7 +26,7 @@
 
 				<!-- ==Browse Jobs -->
 				<div class="browse-jobs">
-					Cari pekerjaan sesuai dengan <a href="browse-categories.html"> Kategori</a> atau <a
+					Cari pekerjaan sesuai dengan <a href="/kategori"> Kategori</a> atau <a
 						href="#">Lokasi</a>
 				</div>
 
@@ -60,7 +60,7 @@
 		<div class="clearfix"></div>
 		<div class="margin-top-30"></div>
 
-		<a href="browse-categories.html" class="button centered">Browse All Categories</a>
+		<a href="/kategori" class="button centered">Browse All Categories</a>
 		<div class="margin-bottom-50"></div>
 	</div>
 </div>
@@ -151,7 +151,7 @@
 			</ul>
 
 
-			<a href="browse-jobs.html" class="button centered"><i class="fa fa-plus-circle"></i> Show More Jobs</a>
+			<a href="/" class="button centered"><i class="fa fa-plus-circle"></i> Show More Jobs</a>
 			<div class="margin-bottom-55"></div>
 		</div>
 	</div>
@@ -253,13 +253,13 @@
 
 					<ul>
 						<!-- Item -->
-						<li><img src="images/TRANSJAKARTA.jpg" style="height: 100px" alt="" /></li>
-						<li><img src="images/Logo-MRT-Jakarta-Secondary.jpg" style="height: 100px" alt="" /></li>
-						<li><img src="images/pertamina.jpg" style="height: 100px" alt="" /></li>
-						<li><img src="images/gojek-logo.jpeg" style="height: 100px" alt="" /></li>
-						<li><img src="images/shoppe.png" style="height: 100px" alt="" /></li>
-						<li><img src="images/logo-06.png" alt="" /></li>
-						<li><img src="images/logo-07.png" alt="" /></li>
+						<li><img src="images/logo-transjakarta.png" alt="" /></li>
+						<li><img src="images/logo-mrt.png" alt="" /></li>
+						<li><img src="images/logo-pertamina.png" alt="" /></li>
+						<li><img src="images/gojek-logo.jpeg" alt="" /></li>
+						<li><img src="images/shoppe.png" alt="" /></li>
+						<li><img src="images/uniliver-logo.png" alt="" /></li>
+						<li><img src="images/logo-nasa.png" alt="" /></li>
 					</ul>
 					<div class="clearfix"></div>
 
@@ -319,7 +319,7 @@
 <!-- =============== Infobox -->
 <div class="infobox">
 	<div class="container">
-		<div class="sixteen columns">Bangun karirmu bersama lawang <a href="/signup"> Sekarang</a></div>
+		<div class="sixteen columns">Bangun karirmu bersama lawang <a href="/daftar"> Sekarang</a></div>
 	</div>
 </div>
 

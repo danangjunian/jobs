@@ -31,8 +31,8 @@
 	<div class="my-account">
 
 		<ul class="tabs-nav">
-			<li class=""><a href="#tab1">Cari <u>lowongan</u></a></li>
-			<li><a href="#tab2">Cari <u>talenta</u></a></li>
+			<li class=""><a href="#tab1">untuk<u> pelamar </u></a></li>
+			<li><a href="#tab2">untuk<u> perusahaan</u></a></li>
 		</ul>
 
 		<div class="tabs-container">
@@ -73,7 +73,7 @@
 
 				
 					<p style="text-align:center;" class="lost_password">
-						<span>Sudah Mempunyai Akun? <a href="#"> Masuk</a></span> 
+						<span>Sudah Mempunyai Akun? <a href="/masuk"> Masuk</a></span> 
 					</p>
 
 					
@@ -115,7 +115,7 @@
     
                     
                         <p style="text-align:center;" class="lost_password">
-                            <span>Sudah Mempunyai Akun? <a href="#"> Masuk</a></span> 
+                            <span>Sudah Mempunyai Akun? <a href="/"> Masuk</a></span> 
                         </p>
     
                         
