@@ -25,10 +25,7 @@
 </div>
 
 
-<!-- Content
-================================================== -->
 
-<!-- Container -->
 <div class="container">
 
 	<div class="my-account">
@@ -42,91 +39,89 @@
 			<!-- Login -->
 			<div class="tab-content" id="tab1" style="display: none;">
 
-				<h3 class="margin-bottom-10 margin-top-10">Login</h3>
+				<h3 class="margin-bottom-10 margin-top-10">Daftarkan Diri Anda Untuk Mendapatkan Pekerjaan :</h3>
 
-				<form method="post" class="login">
+                <hr>
+
+				<form method="post" class="singup">
 
 					
 					<p class="form-row form-row-wide">
-						<label for="username">Username or Email Address:</label>
-						<input type="text" class="input-text" name="username" id="username" value="" />
+						<input type="text" class="input-text" name="username" id="username" value="" placeholder="Nama Depan"/>
 					</p>
 
 					<p class="form-row form-row-wide">
-						<label for="password">Password:</label>
-						<input class="input-text" type="password" name="password" id="password" />
+						<input class="input-text" type="text" name="NamaBelakang" id="NamaBelakang" placeholder="Nama Belakang" />
 					</p>
 
 					<p class="form-row form-row-wide">
-						<label for="password">Password:</label>
-						<input class="input-text" type="password" name="password" id="password" />
+						<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
 					</p>
-					
 					<p class="form-row form-row-wide">
-						<label for="password">Password:</label>
-						<input class="input-text" type="password" name="password" id="password" />
+						<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
 					</p>
-
 					<p class="form-row form-row-wide">
-						<label for="password">Password:</label>
-						<input class="input-text" type="password" name="password" id="password" />
+						<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
 					</p>
 
 					<p class="form-row">
-						<input type="submit" class="button" name="login" value="Login" />
+						<input type="submit" class="button" name="signup" value="Daftar" />
 
-						<label for="rememberme" class="rememberme">
-						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
+						<label for="SyaratKetentuan" class="SyaratKetentuan">
+						<input style="margin: 14px 0 0 0" name="SyaratKetentuan" type="checkbox" id="SyaratKetentuan" value="forever" /> Baca <a href="#">Syarat dan Ketentuan</a></label>
 					</p>
 
+				
 					<p style="text-align:center;" class="lost_password">
-						<a href="#" >Lupa Password?</a>
-					</p>
-					<p style="text-align:center;" class="lost_password">
-						<a href="#" >Daftar Sekarang</a>
+						<span>Sudah Mempunyai Akun? <a href="#"> Masuk</a></span> 
 					</p>
 
 					
 				</form>
+                <hr>
 			</div>
 
 				<!-- Register -->
-				<div class="tab-content" id="tab2" style="display: none;">
+                <div class="tab-content" id="tab2" style="display: none;">
 
-					<h3 class="margin-bottom-10 margin-top-10">Login</h3>
-	
-					<form method="post" class="login">
-	
-						
-						<p class="form-row form-row-wide">
-							<label for="username">Username or Email Address:</label>
-							<input type="text" class="input-text" name="username" id="username" value="" />
-						</p>
-	
-						<p class="form-row form-row-wide">
-							<label for="password">Password:</label>
-							<input class="input-text" type="password" name="password" id="password" />
-						</p>
-	
-						<p class="form-row">
-							<input type="submit" class="button" name="login" value="Login" />
-	
-							<label for="rememberme" class="rememberme">
-							<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
-						</p>
-
-	
-						<p style="text-align:center;" class="lost_password">
-							<a href="#" >Lupa Password?</a>
-						</p>
-						<p style="text-align:center;" class="lost_password">
-							<a href="#" >Daftar Sekarang</a>
-						</p>
-	
-	
-						
-					</form>
-				</div>
+                    <h3 class="margin-bottom-10 margin-top-10">Daftarkan Perusahaan Anda :</h3>
+    
+                    <hr>
+    
+                    <form method="post" class="login">
+    
+                        
+                        <p class="form-row form-row-wide">
+                            <input type="text" class="input-text" name="NamaPerusahaan" id="NamaPerusahaan" placeholder="Nama Perusahaan"/>
+                        </p>
+    
+                        <p class="form-row form-row-wide">
+                            <input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
+                        </p>
+                        <p class="form-row form-row-wide">
+                            <input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
+                        </p>
+                        <p class="form-row form-row-wide">
+                            <input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
+                            
+                        </p>
+    
+                        <p class="form-row">
+                            <input type="submit" class="button" name="signup" value="Daftar" />
+    
+                            <label for="SyaratKetentuan" class="SyaratKetentuan">
+                            <input style="margin: 14px 0 0 0" name="SyaratKetentuan" type="checkbox" id="SyaratKetentuan" value="forever" /> Baca <a href="#">Syarat dan Ketentuan</a></label>
+                        </p>
+    
+                    
+                        <p style="text-align:center;" class="lost_password">
+                            <span>Sudah Mempunyai Akun? <a href="#"> Masuk</a></span> 
+                        </p>
+    
+                        
+                    </form>
+                    <hr>
+                </div>
 		</div>
 	</div>
 </div>
