@@ -16,9 +16,9 @@ use App\Http\Controllers\AccountController;
 */
 
 
-Route::get('/daftar', [AccountController::class, 'akun']);
+Route::get('/masuk', [AccountController::class, 'akun']);
 Route::get('/kategori', [AccountController::class, 'category']);
 Route::get('/', [AccountController::class, 'homepage']);
 Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
-Route::get('/jobs', [AccountController::class, 'kerja']);
+Route::get('/daftar', [AccountController::class, 'akun2']);
 
