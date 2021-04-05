@@ -15,9 +15,10 @@ use App\Http\Controllers\AccountController;
 |
 */
 
-Route::get('/sign-in', [AccountController::class, 'masuk']);
-Route::get('/sign-up', [AccountController::class, 'daftar']);
+
+Route::get('/daftar', [AccountController::class, 'akun']);
 Route::get('/kategori', [AccountController::class, 'category']);
 Route::get('/', [AccountController::class, 'homepage']);
 Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
 Route::get('/jobs', [AccountController::class, 'kerja']);
+

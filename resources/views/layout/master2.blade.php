@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/colors/orange.css" id="colors">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	
     
 </head>
 
@@ -75,38 +76,12 @@
 		<div class="clearfix"></div>
 
 
-		<!-- Banner
-================================================== -->
-	
-
-
-
 		<!-- Content
 ================================================== -->
 
 @yield('content')
 
-		<!-- Testimonials -->
 	
-
-<!-- Infobox -->
-
-
-<!-- Recent Posts -->
-
-
-
-		<!-- Post #1 -->
-		
-
-		<!-- Post #2 -->
-		
-
-		<!-- Post #3 -->
-	
-
-
-
 <!-- Footer
 ================================================== -->
 <div class="margin-top-15"></div>
@@ -200,6 +175,8 @@
 <script src="scripts/jquery.counterup.min.js"></script>
 <script src="scripts/jquery.jpanelmenu.js"></script>
 <script src="scripts/stacktable.js"></script>
+
+
 
 
 
