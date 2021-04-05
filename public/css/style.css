@@ -4699,6 +4699,15 @@ html[xmlns] .flexslider .slides {
     float: left !important;
     position: relative;
 }
+.showbiz .overflowholder ul li img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100px;
+    margin:0 100px 0 100px;
+}
 
 .products .product {
     margin-top: 20px;

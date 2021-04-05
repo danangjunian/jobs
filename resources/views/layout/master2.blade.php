@@ -23,7 +23,7 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="/home"><img src="images/awang.png" alt="Work Scout" /></a></h1>
+						<h1><a href="/"><img src="images/awang.png" alt="Work Scout" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
@@ -60,8 +60,8 @@
 							<li><a href="blog.html">Blog</a></li>
 						</ul>
 						<ul class="float-right">
-							<li><a href="/signup"><i class="fa fa-user"></i> Sign Up</a></li>
-							<li><a href="/signin"><i class="fa fa-lock"></i> Log In</a></li>
+							<li><a href="/daftar"><i class="fa fa-user"></i> Sign Up</a></li>
+							<li><a href="/masuk"><i class="fa fa-lock"></i> Log In</a></li>
 						</ul>
 
 					</nav>

@@ -253,13 +253,13 @@
 
 					<ul>
 						<!-- Item -->
-						<li><img src="images/TRANSJAKARTA.jpg" style="height: 100px" alt="" /></li>
-						<li><img src="images/Logo-MRT-Jakarta-Secondary.jpg" style="height: 100px" alt="" /></li>
-						<li><img src="images/pertamina.jpg" style="height: 100px" alt="" /></li>
-						<li><img src="images/gojek-logo.jpeg" style="height: 100px" alt="" /></li>
-						<li><img src="images/shoppe.png" style="height: 100px" alt="" /></li>
-						<li><img src="images/logo-06.png" alt="" /></li>
-						<li><img src="images/logo-07.png" alt="" /></li>
+						<li><img src="images/logo-transjakarta.png" alt="" /></li>
+						<li><img src="images/logo-mrt.png" alt="" /></li>
+						<li><img src="images/logo-pertamina.png" alt="" /></li>
+						<li><img src="images/gojek-logo.jpeg" alt="" /></li>
+						<li><img src="images/shoppe.png" alt="" /></li>
+						<li><img src="images/uniliver-logo.png" alt="" /></li>
+						<li><img src="images/logo-nasa.png" alt="" /></li>
 					</ul>
 					<div class="clearfix"></div>
 
