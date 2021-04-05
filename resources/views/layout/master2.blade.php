@@ -29,7 +29,7 @@
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
 							<li><a href="/home" id="current">Home</a></li>
-							<li><a href="#">Pages</a>
+							<li><a href="#">Lowongan Kerja</a>
 								<ul>
 									<li><a href="job-page.html">Halaman Pekerjaan</a></li>
 									{{-- <li><a href="job-page-alt.html">Job Page Alternative</a></li>

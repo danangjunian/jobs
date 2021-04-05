@@ -155,7 +155,7 @@
 					<li><a href="#"><i class="fa fa-graduation-cap"></i> Pendidikan </a></li>
 					<li><a href="#"><i class="fa fa-medkit"></i> Kesehatan</a></li>
 					<li><a href="#"><i class="fa fa-cutlery"></i> Restoran / Pelayan Restoran</a></li>
-					<li><a href="#"><i class="fa fa-globe"></i> Transportasi / Logistik</a></li>
+					<li><a href="#"><i class="fas fa-bus"></i> Transportasi / Logistik</a></li>
 					<li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
 				</ul>
 
@@ -171,7 +171,7 @@
 
 		<div class="container">
 
-			<!-- Recent Jobs -->
+<!-- Recent Jobs -->
 			<div class="eleven columns">
 				<div class="padding-right">
 					<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
@@ -192,7 +192,8 @@
 							<div class="clearfix"></div>
 						</li>
 
-						<li><a href="job-page.html">
+						<li>
+							<a href="job-page.html">
 								<img src="images/job-list-logo-02.png" alt="">
 								<div class="job-list-content">
 									<h4>PHP Developer for Site Maintenance <span class="part-time">Part-Time</span></h4>
@@ -206,7 +207,8 @@
 							<div class="clearfix"></div>
 						</li>
 
-						<li><a href="job-page.html">
+						<li>
+							<a href="job-page.html">
 								<img src="images/job-list-logo-03.png" alt="">
 								<div class="job-list-content">
 									<h4>Restaurant Team Member <span class="full-time">Full-Time</span></h4>
@@ -220,7 +222,8 @@
 							<div class="clearfix"></div>
 						</li>
 
-						<li><a href="job-page.html">
+						<li>
+							<a href="job-page.html">
 								<img src="images/job-list-logo-04.png" alt="">
 								<div class="job-list-content">
 									<h4>Designer <span class="internship">Internship</span></h4>
@@ -234,22 +237,10 @@
 							<div class="clearfix"></div>
 						</li>
 
-						<li><a href="job-page.html">
-								<img src="images/job-list-logo-05.png" alt="">
-								<div class="job-list-content">
-									<h4>Android Music App Development <span class="temporary">Temporary</span></h4>
-									<div class="job-icons">
-										<span><i class="fa fa-briefcase"></i> PT Rans Entertaiment</span>
-										<span><i class="fa fa-map-marker"></i> Jakarta</span>
-										<span><i class="fa fa-money"></i> 6500.000 / bulan</span>
-									</div>
-								</div>
-							</a>
-							<div class="clearfix"></div>
-						</li>
-					</ul>
-
-					<a href="browse-jobs.html" class="button centered"><i class="fa fa-plus-circle"></i> Tampilkan pekerjaan lainnya</a>
+						
+						
+					<a href="browse-jobs.html" class="button centered"><i class="fa fa-plus-circle"></i> Tampilkan
+						pekerjaan lainnya</a>
 					<div class="margin-bottom-55"></div>
 				</div>
 			</div>
@@ -259,7 +250,6 @@
 			<!-- Job Spotlight -->
 			<div class="five columns">
 				<h3 class="margin-bottom-5">Pekerjaan di butuhkan</h3>
-
 
 				<!-- Navigation -->
 				<div class="showbiz-navigation">
@@ -279,13 +269,13 @@
 								<li>
 									<div class="job-spotlight">
 										<a href="#">
-											<h4>Social Media <span
-													class="part-time">Part-Time</span></h4>
+											<h4>Social Media <span class="part-time">Part-Time</span></h4>
 										</a>
 										<span><i class="fa fa-briefcase"></i> PT epans onlineshop </span>
 										<span><i class="fa fa-map-marker"></i> Surabaya</span>
 										<span><i class="fa fa-money"></i> 4500.000 / bulan</span>
-										<p>As advertising & content,betugas untuk memposting, mengelola akun web dan melakukan penjualan</p>
+										<p>As advertising & content,betugas untuk memposting, mengelola akun web dan
+											melakukan penjualan</p>
 										<a href="job-page.html" class="button">Apply Pekerjaan</a>
 									</div>
 								</li>
@@ -293,13 +283,13 @@
 								<li>
 									<div class="job-spotlight">
 										<a href="#">
-											<h4>freelancer untuk wordpress <span
-													class="freelance">Freelance</span></h4>
+											<h4>freelancer untuk wordpress <span class="freelance">Freelance</span></h4>
 										</a>
 										<span><i class="fa fa-briefcase"></i> PT ReadyTech </span>
 										<span><i class="fa fa-map-marker"></i> Jakarta Timur</span>
 										<span><i class="fa fa-money"></i> 5000.000 / bulan / </span>
-										<p>Melakukan tugas untuk menghandle wordpress seperti teamplate atau Maintenance</p>
+										<p>Melakukan tugas untuk menghandle wordpress seperti teamplate atau Maintenance
+										</p>
 										<a href="job-page.html" class="button">Apply Pekerjaan</a>
 									</div>
 								</li>
@@ -338,20 +328,24 @@
 					<div class="testimonials-slider">
 						<ul class="slides">
 							<li>
-								<p>Saya sudah mendengar kembali tentang magang yang saya lamar melalui pencarian kerja, itu
-									jawaban pekerjaan tercepat yang pernah saya dapatkan dan itu jauh lebih baik daripada menunggu berminggu-minggu
+								<p>Saya sudah mendengar kembali tentang magang yang saya lamar melalui pencarian kerja,
+									itu
+									jawaban pekerjaan tercepat yang pernah saya dapatkan dan itu jauh lebih baik
+									daripada menunggu berminggu-minggu
 									mendengar kembali.
 									<span>Muhammad, Jakarta</span></p>
 							</li>
 
 							<li>
-								<p>Saya pernah mengalami beberapa penolakan dari perusahaan namun dengan semangat tinggi, lewat lawang ini saya
+								<p>Saya pernah mengalami beberapa penolakan dari perusahaan namun dengan semangat
+									tinggi, lewat lawang ini saya
 									dapat pekerjaan yang sesuai dengan fashion saya.
 									<span>Anonymous</span></p>
 							</li>
 
 							<li>
-								<p>Banyak sekali info lowongan kerja di situs lain, namun di Lawang ini lebih banyak lagi
+								<p>Banyak sekali info lowongan kerja di situs lain, namun di Lawang ini lebih banyak
+									lagi
 									<span>Tom Jerry</span></p>
 							</li>
 
@@ -361,170 +355,191 @@
 			</div>
 		</div>
 
-<!-- Infobox -->
-<div class="infobox">
-	<div class="container">
-		<div class="sixteen columns">Bangun karirmu bersama lawang  <a href="my-account.html"> Sekarang</a></div>
-	</div>
-</div>
-
-
-<!-- Recent Posts -->
-<div class="container">
-	<div class="sixteen columns">
-		<h3 class="margin-bottom-25">Recent Posts</h3>
-	</div>
-
-
-	<div class="one-third column">
-
-		<!-- Post #1 -->
-		<div class="recent-post">
-			<div class="recent-post-img"><a href="blog-single-post.html"><img src="../images/recent-post-01.jpg" alt=""></a><div class="hover-icon"></div></div>
-			<a href="blog-single-post.html"><h4>Hey Pencari kerja, saatnya mimpimu di wujudkan.</h4></a>
-			<div class="meta-tags">
-				<span>Mei 10, 2021</span>
-				<span><a href="#">0 Comments</a></span>
+		<!-- Infobox -->
+		<div class="infobox">
+			<div class="container">
+				<div class="sixteen columns">Bangun karirmu bersama lawang <a href="my-account.html"> Sekarang</a></div>
 			</div>
-			<p>Indonesia dengan program presiden, membangun lapangan kerja sampai 15000, siap untuk jadi wadah kerja warga kita, jangan lupa untuk selalu lihat postingan lainnya. </p>
-			<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
 		</div>
 
-	</div>
 
-
-	<div class="one-third column">
-
-		<!-- Post #2 -->
-		<div class="recent-post">
-			<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-02.jpg" alt=""></a><div class="hover-icon"></div></div>
-			<a href="blog-single-post.html"><h4>Bagaimana mencari pekerjaan di website Lawang</h4></a>
-			<div class="meta-tags">
-				<span>Maret 12, 2021</span>
-				<span><a href="#">0 Comments</a></span>
-			</div>
-			<p>Web lawang hadir untuk menjadi tangan dari pemerintah dan perusahaan yang membuka lowongan kerja, lawang bekerja sama dengan perusahaan yang mempunyai 
-				kapabilitas dan tidak ada unsur lowongan bodong.
-			</p>
-			<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
-		</div>
-
-	</div>
-
-	<div class="one-third column">
-
-		<!-- Post #3 -->
-		<div class="recent-post">
-			<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-03.jpg" alt=""></a><div class="hover-icon"></div></div>
-			<a href="blog-single-post.html"><h4>7 Tips untuk membuat kamu dipanggil interview oleh perusahaan.</h4></a>
-			<div class="meta-tags">
-				<span>Maret 27, 2021</span>
-				<span><a href="#">0 Comments</a></span>
-			</div>
-			<p>Keika kamu sudah merasa maksimal untuk mendapatkan pekerjaan kamu harus juga mengingat tuhanmu agar proses berikutnya lancar.</p>
-			<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
-		</div>
-	</div>
-
-</div>
-
-
-
-<!-- Footer
-================================================== -->
-<div class="margin-top-15"></div>
-
-<div id="footer">
-	<!-- Main -->
-	<div class="container">
-
-		<div class="seven columns">
-			<h4>About</h4>
-			<p>website Lawang menjadi salah satu solusi bagi perusahaan yang mencari tenaga kerja yang sesuai kemampuan, dan pencari kerja bisa memilih
-				sesuai dengan fashionnya, jadi mulailah dengan langkah kecil, daftar sekarang dengan tombol di bawah.</p>
-			<a href="#" class="button">Daftar Sekarang</a>
-		</div>
-
-		<div class="three columns">
-			<h4>Company</h4>
-			<ul class="footer-links">
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Our Blog</a></li>
-				<li><a href="#">Terms of Service</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Hiring Hub</a></li>
-			</ul>
-		</div>
-		
-		<div class="three columns">
-			<h4>Press</h4>
-			<ul class="footer-links">
-				<li><a href="#">In the News</a></li>
-				<li><a href="#">Press Releases</a></li>
-				<li><a href="#">Awards</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">Timeline</a></li>
-			</ul>
-		</div>		
-
-		<div class="three columns">
-			<h4>Browse</h4>
-			<ul class="footer-links">
-				<li><a href="#">Freelancers by Category</a></li>
-				<li><a href="#">Freelancers in USA</a></li>
-				<li><a href="#">Freelancers in UK</a></li>
-				<li><a href="#">Freelancers in Canada</a></li>
-				<li><a href="#">Freelancers in Australia</a></li>
-				<li><a href="#">Find Jobs</a></li>
-
-			</ul>
-		</div>
-
-	</div>
-
-	<!-- Bottom -->
-	<div class="container">
-		<div class="footer-bottom">
+		<!-- Recent Posts -->
+		<div class="container">
 			<div class="sixteen columns">
-				<h4>Follow Us</h4>
-				<ul class="social-icons">
-					<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
-					<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
-					<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
-					<li><a class="linkedin" href="#"><i class="icon-linkedin"></i></a></li>
-				</ul>
-				<div class="copyrights">©  Copyright 2021 by <a href="#">Lawang</a>. All Rights Reserved.</div>
+				<h3 class="margin-bottom-25">Recent Posts</h3>
 			</div>
+
+
+			<div class="one-third column">
+
+				<!-- Post #1 -->
+				<div class="recent-post">
+					<div class="recent-post-img"><a href="blog-single-post.html"><img src="../images/recent-post-01.jpg"
+								alt=""></a>
+						<div class="hover-icon"></div>
+					</div>
+					<a href="blog-single-post.html">
+						<h4>Hey Pencari kerja, saatnya mimpimu di wujudkan.</h4>
+					</a>
+					<div class="meta-tags">
+						<span>Mei 10, 2021</span>
+						<span><a href="#">0 Comments</a></span>
+					</div>
+					<p>Indonesia dengan program presiden, membangun lapangan kerja sampai 15000, siap untuk jadi wadah
+						kerja warga kita, jangan lupa untuk selalu lihat postingan lainnya. </p>
+					<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
+				</div>
+
+			</div>
+
+
+			<div class="one-third column">
+
+				<!-- Post #2 -->
+				<div class="recent-post">
+					<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-02.jpg"
+								alt=""></a>
+						<div class="hover-icon"></div>
+					</div>
+					<a href="blog-single-post.html">
+						<h4>Bagaimana mencari pekerjaan di website Lawang</h4>
+					</a>
+					<div class="meta-tags">
+						<span>Maret 12, 2021</span>
+						<span><a href="#">0 Comments</a></span>
+					</div>
+					<p>Web lawang hadir untuk menjadi tangan dari pemerintah dan perusahaan yang membuka lowongan kerja,
+						lawang bekerja sama dengan perusahaan yang mempunyai
+						kapabilitas dan tidak ada unsur lowongan bodong.
+					</p>
+					<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
+				</div>
+
+			</div>
+
+			<div class="one-third column">
+
+				<!-- Post #3 -->
+				<div class="recent-post">
+					<div class="recent-post-img"><a href="blog-single-post.html"><img src="images/recent-post-03.jpg"
+								alt=""></a>
+						<div class="hover-icon"></div>
+					</div>
+					<a href="blog-single-post.html">
+						<h4>7 Tips untuk membuat kamu dipanggil interview oleh perusahaan.</h4>
+					</a>
+					<div class="meta-tags">
+						<span>Maret 27, 2021</span>
+						<span><a href="#">0 Comments</a></span>
+					</div>
+					<p>Keika kamu sudah merasa maksimal untuk mendapatkan pekerjaan kamu harus juga mengingat tuhanmu
+						agar proses berikutnya lancar.</p>
+					<a href="blog-single-post.html" class="button">Baca selengkapnya</a>
+				</div>
+			</div>
+
 		</div>
-	</div>
-
-</div>
-
-<!-- Back To Top Button -->
-<div id="backtotop"><a href="#"></a></div>
-
-</div>
-<!-- Wrapper / End -->
 
 
-<!-- Scripts
+
+		<!-- Footer
 ================================================== -->
-<script src="scripts/jquery-2.1.3.min.js"></script>
-<script src="scripts/custom.js"></script>
-<script src="scripts/jquery.superfish.js"></script>
-<script src="scripts/jquery.themepunch.tools.min.js"></script>
-<script src="scripts/jquery.themepunch.revolution.min.js"></script>
-<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
-<script src="scripts/jquery.flexslider-min.js"></script>
-<script src="scripts/chosen.jquery.min.js"></script>
-<script src="scripts/jquery.magnific-popup.min.js"></script>
-<script src="scripts/waypoints.min.js"></script>
-<script src="scripts/jquery.counterup.min.js"></script>
-<script src="scripts/jquery.jpanelmenu.js"></script>
-<script src="scripts/stacktable.js"></script>
+		<div class="margin-top-15"></div>
+
+		<div id="footer">
+			<!-- Main -->
+			<div class="container">
+
+				<div class="seven columns">
+					<h4>About</h4>
+					<p>website Lawang menjadi salah satu solusi bagi perusahaan yang mencari tenaga kerja yang sesuai
+						kemampuan, dan pencari kerja bisa memilih
+						sesuai dengan fashionnya, jadi mulailah dengan langkah kecil, daftar sekarang dengan tombol di
+						bawah.</p>
+					<a href="#" class="button">Daftar Sekarang</a>
+				</div>
+
+				<div class="three columns">
+					<h4>Company</h4>
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Our Blog</a></li>
+						<li><a href="#">Terms of Service</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Hiring Hub</a></li>
+					</ul>
+				</div>
+
+				<div class="three columns">
+					<h4>Press</h4>
+					<ul class="footer-links">
+						<li><a href="#">In the News</a></li>
+						<li><a href="#">Press Releases</a></li>
+						<li><a href="#">Awards</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Timeline</a></li>
+					</ul>
+				</div>
+
+				<div class="three columns">
+					<h4>Browse</h4>
+					<ul class="footer-links">
+						<li><a href="#">Freelancers by Category</a></li>
+						<li><a href="#">Freelancers in USA</a></li>
+						<li><a href="#">Freelancers in UK</a></li>
+						<li><a href="#">Freelancers in Canada</a></li>
+						<li><a href="#">Freelancers in Australia</a></li>
+						<li><a href="#">Find Jobs</a></li>
+
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- Bottom -->
+			<div class="container">
+				<div class="footer-bottom">
+					<div class="sixteen columns">
+						<h4>Follow Us</h4>
+						<ul class="social-icons">
+							<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+							<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+							<li><a class="gplus" href="#"><i class="icon-gplus"></i></a></li>
+							<li><a class="linkedin" href="#"><i class="icon-linkedin"></i></a></li>
+						</ul>
+						<div class="copyrights">© Copyright 2021 by <a href="#">Lawang</a>. All Rights Reserved.</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Back To Top Button -->
+		<div id="backtotop"><a href="#"></a></div>
+
+	</div>
+	<!-- Wrapper / End -->
+
+
+	<!-- Scripts
+================================================== -->
+	<script src="scripts/jquery-2.1.3.min.js"></script>
+	<script src="scripts/custom.js"></script>
+	<script src="scripts/jquery.superfish.js"></script>
+	<script src="scripts/jquery.themepunch.tools.min.js"></script>
+	<script src="scripts/jquery.themepunch.revolution.min.js"></script>
+	<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
+	<script src="scripts/jquery.flexslider-min.js"></script>
+	<script src="scripts/chosen.jquery.min.js"></script>
+	<script src="scripts/jquery.magnific-popup.min.js"></script>
+	<script src="scripts/waypoints.min.js"></script>
+	<script src="scripts/jquery.counterup.min.js"></script>
+	<script src="scripts/jquery.jpanelmenu.js"></script>
+	<script src="scripts/stacktable.js"></script>
 
 
 
 </body>
+
 </html>
