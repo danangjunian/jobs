@@ -42,19 +42,21 @@
 			<!-- Login -->
 			<div class="tab-content" id="tab1" style="display: none;">
 
-				<h3 class="margin-bottom-10 margin-top-10">Login</h3>
-					
+				<h3 class="margin-bottom-10 margin-top-10">Masuk</h3>
+
+                <hr>
+
 				<form method="post" class="login">
 
-					
-					<p class="form-row form-row-wide">
-						<label for="username">Username or Email Address:</label>
-						<input type="text" class="input-text" name="username" id="username" value="" />
-					</p>
 
 					<p class="form-row form-row-wide">
-						<label for="password">Password:</label>
-						<input class="input-text" type="password" name="password" id="password" />
+						<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
+					</p>
+					<p class="form-row form-row-wide">
+						<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
+					</p>
+					<p class="form-row form-row-wide">
+						<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
 					</p>
 
 					<p class="form-row">
@@ -64,37 +66,35 @@
 						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
 					</p>
 
-				
-					
-					
-		
 					<p style="text-align:center;" class="lost_password">
 						<a href="#" >Lupa Password?</a>
 					</p>
 					<p style="text-align:center;" class="lost_password">
-						<a href="#" >Daftar Sekarang</a>
+						<span>Belum mempunyai akun? <a href="#"> Daftar Sekarang</a></span>
 					</p>
 
 					
 				</form>
+                <hr>
 			</div>
+
 
 				<!-- Register -->
 				<div class="tab-content" id="tab2" style="display: none;">
 
-					<h3 class="margin-bottom-10 margin-top-10">Login</h3>
+					<h3 class="margin-bottom-10 margin-top-10">Masuk</h3>
+	
+					<hr>
 	
 					<form method="post" class="login">
 	
-						
-						<p class="form-row form-row-wide">
-							<label for="username">Username or Email Address:</label>
-							<input type="text" class="input-text" name="username" id="username" value="" />
-						</p>
 	
 						<p class="form-row form-row-wide">
-							<label for="password">Password:</label>
-							<input class="input-text" type="password" name="password" id="password" />
+							<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
+						</p>
+
+						<p class="form-row form-row-wide">
+							<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
 						</p>
 	
 						<p class="form-row">
@@ -103,18 +103,17 @@
 							<label for="rememberme" class="rememberme">
 							<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
 						</p>
-
 	
 						<p style="text-align:center;" class="lost_password">
 							<a href="#" >Lupa Password?</a>
 						</p>
 						<p style="text-align:center;" class="lost_password">
-							<a href="#" >Daftar Sekarang</a>
+							<span>Belum mempunyai akun? <a href="#"> Daftar Sekarang</a></span>
 						</p>
-	
 	
 						
 					</form>
+					<hr>
 				</div>
 		</div>
 	</div>
