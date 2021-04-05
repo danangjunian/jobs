@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\AdminController;
 
 
 /*
@@ -21,4 +22,8 @@ Route::get('/kategori', [AccountController::class, 'category']);
 Route::get('/', [AccountController::class, 'homepage']);
 Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
 Route::get('/daftar', [AccountController::class, 'akun2']);
+
+
+Route::get('/log', [AdminController::class, 'admin']);
+Route::get('/dashboard', [AdminController::class, 'dashboard']);
 
