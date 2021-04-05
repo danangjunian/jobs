@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@yield('title')  |  lawang - Lowongan Pekerjaan</title>
+	<link rel="icon" type="image/png" href="images/logo.png"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/colors/orange.css" id="colors">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -23,12 +24,12 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="/"><img src="images/awang.png" alt="Work Scout" /></a></h1>
+						<h1><a href="/"><img src="images/awang.png" alt="lawang" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
-							<li><a href="/home" id="current">Home</a></li>
+							<li><a href="/" id="current">Home</a></li>
 							<li><a href="#">Lowongan Kerja</a>
 								<ul>
 									<li><a href="job-page.html">Halaman Pekerjaan</a></li>
@@ -94,7 +95,7 @@
 			<h4>About</h4>
 			<p>website Lawang menjadi salah satu solusi bagi perusahaan yang mencari tenaga kerja yang sesuai kemampuan, dan pencari kerja bisa memilih
 				sesuai dengan fashionnya, jadi mulailah dengan langkah kecil, daftar sekarang dengan tombol di bawah.</p>
-			<a href="#" class="button">Daftar Sekarang</a>
+			<a href="/daftar" class="button">Daftar Sekarang</a>
 		</div>
 
 		<div class="three columns">

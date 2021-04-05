@@ -11,18 +11,18 @@
 			<div class="sixteen columns">
 				<h3 class="margin-bottom-25"><strong>Semua Category</strong></h3>
 				<ul id="popular-categories">
-					<li><a href="#"><i class="fa fa-line-chart"></i> Akuntansi / Keuangan</a></li>
+					<li><a href="#"><i class="far fa-money-bill-alt"></i> Akuntansi / Keuangan</a></li>
 					<li><a href="#"><i class="fa fa-wrench"></i> Mekanik / Otomotive</a></li>
-					<li><a href="#"><i class="fa fa-building-o"></i> K3 / HSE </a></li>
+					<li><a href="#"><i class="fa fa-building"></i> K3 & HSE / kontruksi  </a></li>
 					<li><a href="#"><i class="fa fa-graduation-cap"></i> Pendidikan </a></li>
 					<li><a href="#"><i class="fa fa-medkit"></i> Kesehatan</a></li>
-					<li><a href="#"><i class="fa fa-cutlery"></i> Restoran / Pelayan Restoran</a></li>
-					<li><a href="#"><i class="fa fa-globe"></i> Transportasi / Logistik</a></li>
+					<li><a href="#"><i class="fas fa-utensils"></i> Restoran / Pelayan Restoran</a></li>
+					<li><a href="#"><i class="fas fa-bus"></i> Transportasi / Logistik</a></li>
 					<li><a href="#"><i class="fa fa-laptop"></i> Telekomukiasi / Ilmu Teknologi</a></li>
                     <li><a href="#"><i class="fa fa-laptop"></i> Programmer</a></li>
-                    <li><a href="#"><i class="fa fa-pencil"></i> Freelance </a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> Seni / Desain / Fashion</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> Startup & Fintech</a></li>
+                    <li><a href="#"><i class="fas fa-handshake"></i> Freelance </a></li>
+                    <li><a href="#"><i class="fas fa-palette"></i> Seni / Desain / Fashion</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Startup & Fintech</a></li>
 				</ul>
 
 				<div class="clearfix"></div>
@@ -35,7 +35,7 @@
 <!-- Infobox -->
 <div class="infobox">
 	<div class="container">
-		<div class="sixteen columns">Start Building Your Own Job Board Now <a href="my-account.html">Get Started</a></div>
+		<div class="sixteen columns">Bangun karirmu bersama lawang <a href="/daftar"> Sekarang</a></div>
 	</div>
 </div>
 

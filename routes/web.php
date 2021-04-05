@@ -22,3 +22,6 @@ Route::get('/', [AccountController::class, 'homepage']);
 Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
 Route::get('/daftar', [AccountController::class, 'akun2']);
 
+
+
+

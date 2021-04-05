@@ -15,7 +15,7 @@
 			<nav id="breadcrumbs">
 				<ul>
 					<li>You are here:</li>
-					<li><a href="#">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li>My Account</li>
 				</ul>
 			</nav>
@@ -70,7 +70,7 @@
 						<a href="#" >Lupa Password?</a>
 					</p>
 					<p style="text-align:center;" class="lost_password">
-						<span>Belum mempunyai akun? <a href="#"> Daftar Sekarang</a></span>
+						<span>Belum mempunyai akun? <a href="/daftar"> Daftar Sekarang</a></span>
 					</p>
 
 					
@@ -108,7 +108,7 @@
 							<a href="#" >Lupa Password?</a>
 						</p>
 						<p style="text-align:center;" class="lost_password">
-							<span>Belum mempunyai akun? <a href="#"> Daftar Sekarang</a></span>
+							<span>Belum mempunyai akun? <a href="/daftar"> Daftar Sekarang</a></span>
 						</p>
 	
 						
