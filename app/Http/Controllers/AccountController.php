@@ -9,9 +9,6 @@ class AccountController extends Controller
 {
 
 
-   public function akun () {
-       return view('/Page.myaccount');
-   }
 
    public function category () {
        return view('/Page.kategori');
@@ -25,8 +22,12 @@ class AccountController extends Controller
        return view('/Page.pekerjaan');
    }
 
-   public function newjobs () {
-    return view('/Page.pekerjaan2');
+   public function akun2 () {
+    return view('/Page.myaccount_signup'); 
+   }
+
+   public function akun () {
+    return view('/Page.myaccount_signin');
 }
    
 }
