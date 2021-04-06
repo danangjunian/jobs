@@ -1,4 +1,4 @@
-@extends('layout.master2')
+@extends('layout.master.master_page')
 @section('title', 'Masuk')
 @section('content')
 

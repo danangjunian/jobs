@@ -1,4 +1,4 @@
-@extends('Page.user_admin.master')
+@extends('layout.user_admin.profile_account')
 @section('content')
 <div class="container">
     <div class="main-body">
@@ -12,13 +12,18 @@
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                    
+                    <div class="profile-img">
+                      <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                      <div class="file btn btn-lg btn-primary">
+                          Change Photo
+                          <input type="file" name="file"/>
+                      </div>
+                  </div>
                     <div class="mt-3">
                       <h4>John Doe</h4>
                       <p class="text-secondary mb-1">Full Stack Developer</p>
                       <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
-                      <button class="btn btn-primary">Follow</button>
-                      <button class="btn btn-outline-primary">Message</button>
                     </div>
                   </div>
                 </div>

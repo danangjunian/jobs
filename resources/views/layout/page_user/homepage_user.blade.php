@@ -1,36 +1,28 @@
-@extends('layout.master2')
+@extends('layout.master.master_user')
+@section('title','Home')
+    @section('content')
 
-@section('title', 'home')
 
-
-
-<!-- Header === -->
-
-<!-- Content=== -->
-
-@section('content')
-
-<!-- ===============Banner-->
 <div id="banner" style="background: url(images/banner-home-01.jpg)">
 	<div class="container">
 		<div class="sixteen columns">
 
 			<div class="search-container">
 
-				<!-- ==Form -->
+	
 				<h2>Cari pekerjaan anda sekarang </h2>
 				<input type="text" class="ico-01" placeholder="Judul pekerjaan, posisi pekerjaan, perusahaan "
 					value="" />
 				<input type="text" class="ico-02" placeholder="Kota, provinsi" value="" />
 				<button><i class="fa fa-search"></i></button>
 
-				<!-- ==Browse Jobs -->
+		
 				<div class="browse-jobs">
-					Cari pekerjaan sesuai dengan <a href="/kategori"> Kategori</a> atau <a
+					Cari pekerjaan sesuai dengan <a href="/category"> Kategori</a> atau <a
 						href="#">Lokasi</a>
 				</div>
 
-				<!-- ==Announce -->
+	
 				<div class="announce">
 					Membuka lowongan pekerjaan <strong>15.000</strong> menuju Indonesia Generasi Emas 2045!
 				</div>
@@ -42,7 +34,6 @@
 </div>
 
 
-<!-- ============================================Categories -->
 <div class="container">
 	<div class="sixteen columns">
 		<h3 class="margin-bottom-25">Kategori Populer</h3>
@@ -65,10 +56,8 @@
 	</div>
 </div>
 
-<!-- =========================================Pekerjaan -->
 <div class="container">
 
-	<!-- Recent Jobs -->
 	<div class="eleven columns">
 		<div class="padding-right">
 			<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
@@ -156,18 +145,17 @@
 		</div>
 	</div>
 
-	<!-- Job Spotlight -->
 	<div class="five columns">
 		<h3 class="margin-bottom-5">Pekerjaan di butuhkan</h3>
 
-		<!-- Navigation -->
+	
 		<div class="showbiz-navigation">
 			<div id="showbiz_left_1" class="sb-navigation-left"><i class="fa fa-angle-left"></i></div>
 			<div id="showbiz_right_1" class="sb-navigation-right"><i class="fa fa-angle-right"></i></div>
 		</div>
 		<div class="clearfix"></div>
 
-		<!-- Showbiz Container -->
+
 		<div id="job-spotlight" class="showbiz-container">
 			<div class="showbiz" data-left="#showbiz_left_1" data-right="#showbiz_right_1" data-play="#showbiz_play_1">
 				<div class="overflowholder">
@@ -226,33 +214,29 @@
 
 	</div>
 </div>
-<!--  ===============-===============================end -- Pekerjaan -->
 
 
 
-<!--  ===============================================Clients Carousel -->
 <h3 class="centered-headline"> Perusahaan yang telah mempercayai kami <span> Daftar perusahaan yang telah mempercayai kami
-		:</span></h3>
+    :</span></h3>
 <div class="clearfix"></div>
 
 <div class="container">
 
 	<div class="sixteen columns">
 
-		<!-- Navigation / Left -->
+
 		<div class="one carousel column">
 			<div id="showbiz_left_2" class="sb-navigation-left-2"><i class="fa fa-angle-left"></i></div>
 		</div>
 
-		<!-- ShowBiz Carousel -->
+
 		<div id="our-clients" class="showbiz-container fourteen carousel columns">
 
-			<!-- Portfolio Entries -->
 			<div class="showbiz our-clients" data-left="#showbiz_left_2" data-right="#showbiz_right_2">
 				<div class="overflowholder">
 
 					<ul>
-						<!-- Item -->
 						<li><img src="images/logo-transjakarta.png" alt="" /></li>
 						<li><img src="images/logo-mrt.png" alt="" /></li>
 						<li><img src="images/logo-pertamina.png" alt="" /></li>
@@ -269,66 +253,10 @@
 			</div>
 		</div>
 
-		<!-- Navigation / Right -->
 		<div class="one carousel column">
 			<div id="showbiz_right_2" class="sb-navigation-right-2"><i class="fa fa-angle-right"></i></div>
 		</div>
-
-	</div>
-
-</div>
-
-
-
-{{-- =============counter - banyak pengguna --}}
-<div id="counters">
-	<div class="container">
-
-		<div class="four columns">
-			<div class="counter-box">
-				<span class="counter">15</span><i>k</i>
-				<p>Lowongan Kerja</p>
-			</div>
-		</div>
-
-		<div class="four columns">
-			<div class="counter-box">
-				<span class="counter">4982</span>
-				<p>Anggota</p>
-			</div>
-		</div>
-
-		<div class="four columns">
-			<div class="counter-box">
-				<span class="counter">768</span>
-				<p>Resume yang di posting </p>
-			</div>
-		</div>
-
-		<div class="four columns">
-			<div class="counter-box">
-				<span class="counter">90</span><i>%</i>
-				<p>Clients Who Rehire</p>
-			</div>
-		</div>
-
 	</div>
 </div>
-
-
-<!-- =============== Infobox -->
-<div class="infobox">
-	<div class="container">
-		<div class="sixteen columns">Bangun karirmu bersama lawang <a href="/daftar"> Sekarang</a></div>
-	</div>
-</div>
-
-
-{{-- =============== end -- counter - banyak pengguna --}}
-
-
-
-
-
 
 @endsection

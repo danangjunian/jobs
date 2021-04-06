@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/dashboard">
+                <a class="nav-link" href="/admin-lawang">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -66,8 +66,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data User & Perusahaan:</h6>
-                        <a class="collapse-item" href="/data-user">Data User</a>
-                        <a class="collapse-item" href="/data-perusahaan">Data Perusahaan </a>
+                        <a class="collapse-item" href="/admin-data-user">Data User</a>
+                        <a class="collapse-item" href="/admin-data-perusahaan">Data Perusahaan </a>
                     </div>
                 </div>
             </li>
@@ -83,8 +83,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Resume :</h6>
-                        <a class="collapse-item" href="/resume-pelamar">Resume Pelamar</a>
-                        <a class="collapse-item" href="/resume-perusahaan">Resume Perusahaan</a>
+                        <a class="collapse-item" href="/admin-resume-pelamar">Resume Pelamar</a>
+                        <a class="collapse-item" href="/admin-resume-perusahaan">Resume Perusahaan</a>
                     </div>
                 </div>
             </li>
@@ -107,10 +107,10 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pengguna :</h6>
-                        <a class="collapse-item" href="/blacklist-pengguna">User & Perusahaan</a>
+                        <a class="collapse-item" href="/admin-blacklist-pengguna">User & Perusahaan</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">RESUME:</h6>
-                        <a class="collapse-item" href="/blacklist-resume">User & Perusahaan</a>
+                        <a class="collapse-item" href="/admin-blacklist-resume">User & Perusahaan</a>
                         
                     </div>
                 </div>
@@ -118,7 +118,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/admin-internal">
+                <a class="nav-link" href="/profile-admin">
                     <i class="fas fa-user-tie fa-chart-area"></i>
                     <span>Admin</span></a>
             </li>

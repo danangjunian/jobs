@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <a href="/admin-internal" class="btn btn-success btn-icon-split btn-sm">
+                    <a href="/profile-admin" class="btn btn-success btn-icon-split btn-sm">
                         <span class="icon text-white-50">
                             <i class="fas fa-check"></i>
                         </span>
