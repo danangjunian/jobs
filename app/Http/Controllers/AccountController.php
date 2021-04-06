@@ -28,6 +28,17 @@ class AccountController extends Controller
 
    public function akun () {
     return view('/Page.myaccount_signin');
-}
+}   
+
+    public function useradmin () {
+    return view('/Page.user_admin.master');
+}   
+public function userdashboard () {
+    return view('/Page.user_admin.profile_dashboard');
+}   
+
+//     public function akun () {
+//     return view('/Page.myaccount_signin');
+// }
    
 }

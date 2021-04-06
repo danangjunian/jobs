@@ -22,6 +22,7 @@ Route::get('/kategori', [AccountController::class, 'category']);
 Route::get('/', [AccountController::class, 'homepage']);
 Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
 Route::get('/daftar', [AccountController::class, 'akun2']);
+<<<<<<< HEAD
 // view tambah pekerjaan
 Route::get('/tambah-pekerjaan', function () {
     return view('Page.tambah-pekerjaan');
@@ -30,6 +31,12 @@ Route::get('/tambah-pekerjaan', function () {
 Route::get('/tambah-resume', function () {
     return view('Page.tambah-resume');
 });
+=======
+Route::get('/profile-user', [AccountController::class, 'useradmin']);
+Route::get('/profile', [AccountController::class, 'userdashboard']);
+
+
+>>>>>>> 0d262490ff2a04e42c8b8269d9cb61239d410384
 
 
 
@@ -41,5 +48,17 @@ Route::get('/tambah-resume', function () {
 
 
 
-Route::get('/log', [AdminController::class, 'admin']);
 Route::get('/dashboard', [AdminController::class, 'dashboard']);
+<<<<<<< HEAD
+=======
+Route::get('/data-user', [AdminController::class, 'datauser']);
+Route::get('/data-perusahaan', [AdminController::class, 'dataperusahaan']);
+Route::get('/resume-perusahaan', [AdminController::class, 'resumeperusahaan']);
+Route::get('/resume-pelamar', [AdminController::class, 'resumepelamar']);
+Route::get('/blacklist-pengguna', [AdminController::class, 'blacklistpengguna']);
+Route::get('/blacklist-resume', [AdminController::class, 'blacklistresume']);
+Route::get('/admin-internal', [AdminController::class, 'admininternal']);
+Route::get('/a', [AdminController::class, 'admin']);
+Route::get('/admin-edit', [AdminController::class, 'adminedit']);
+
+>>>>>>> 0d262490ff2a04e42c8b8269d9cb61239d410384
