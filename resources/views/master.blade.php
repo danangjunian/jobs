@@ -70,10 +70,10 @@
 							<li><a href="#">Pelamar</a>
 								<ul>
 									<li><a href="browse-jobs.html">Pencarian kerja</a></li>
-									{{-- <li><a href="browse-categories.html">Pencarian menurut kategori</a></li>
-						<li><a href="add-resume.html">Tambah Resume</a></li>
-						<li><a href="manage-resumes.html">Ubah Resume</a></li>
-						<li><a href="job-alerts.html">Job Alerts</a></li> --}}
+									<li><a href="browse-categories.html">Pencarian menurut kategori</a></li>
+									<li><a href="add-resume.html">Tambah Resume</a></li>
+									<li><a href="manage-resumes.html">Ubah Resume</a></li>
+									<li><a href="job-alerts.html">Job Alerts</a></li>
 								</ul>
 							</li>
 
@@ -171,7 +171,7 @@
 
 		<div class="container">
 
-<!-- Recent Jobs -->
+			<!-- Recent Jobs -->
 			<div class="eleven columns">
 				<div class="padding-right">
 					<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
@@ -237,11 +237,11 @@
 							<div class="clearfix"></div>
 						</li>
 
-						
-						
-					<a href="browse-jobs.html" class="button centered"><i class="fa fa-plus-circle"></i> Tampilkan
-						pekerjaan lainnya</a>
-					<div class="margin-bottom-55"></div>
+
+
+						<a href="browse-jobs.html" class="button centered"><i class="fa fa-plus-circle"></i> Tampilkan
+							pekerjaan lainnya</a>
+						<div class="margin-bottom-55"></div>
 				</div>
 			</div>
 

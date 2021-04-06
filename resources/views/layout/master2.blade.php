@@ -42,19 +42,19 @@
 							</li>
 							<li><a href="#">Pelamar</a>
 								<ul>
-									<li><a href="browse-jobs.html">Pencarian kerja</a></li>
-									{{-- <li><a href="browse-categories.html">Pencarian menurut kategori</a></li>
-						<li><a href="add-resume.html">Tambah Resume</a></li>
-						<li><a href="manage-resumes.html">Ubah Resume</a></li>
-						<li><a href="job-alerts.html">Job Alerts</a></li> --}}
+									{{--  <li><a href="browse-jobs.html">Pencarian kerja</a></li>  
+									<li><a href="browse-categories.html">Pencarian menurut kategori</a></li>--}}
+						<li><a href="/tambah-resume">Tambah Resume</a></li>
+						{{--  <li><a href="manage-resumes.html">Ubah Resume</a></li>
+						<li><a href="job-alerts.html">Job Alerts</a></li>  --}}
 								</ul>
 							</li>
 							<li><a href="#">Perusahaan</a>
 								<ul>
-									<li><a href="add-job.html">Tambah pekerjaan</a></li>
-									<li><a href="manage-jobs.html">Kelola pekerjaan</a></li>
+									<li><a href="/tambah-pekerjaan">Tambah pekerjaan</a></li>
+									{{--  <li><a href="manage-jobs.html">Kelola pekerjaan</a></li>
 									<li><a href="manage-applications.html">Kelola Applikasi</a></li>
-									<li><a href="browse-resumes.html">Cari Resume</a></li>
+									<li><a href="browse-resumes.html">Cari Resume</a></li>  --}}
 								</ul>
 							</li>
 
