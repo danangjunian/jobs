@@ -22,6 +22,8 @@ Route::get('/kategori', [AccountController::class, 'category']);
 Route::get('/', [AccountController::class, 'homepage']);
 Route::get('/kerjaan', [AccountController::class, 'caripekerjaan']);
 Route::get('/daftar', [AccountController::class, 'akun2']);
+Route::get('/profile-user', [AccountController::class, 'useradmin']);
+Route::get('/profile', [AccountController::class, 'userdashboard']);
 
 
 
@@ -33,6 +35,16 @@ Route::get('/daftar', [AccountController::class, 'akun2']);
 
 
 
-Route::get('/log', [AdminController::class, 'admin']);
+
+
 Route::get('/dashboard', [AdminController::class, 'dashboard']);
+Route::get('/data-user', [AdminController::class, 'datauser']);
+Route::get('/data-perusahaan', [AdminController::class, 'dataperusahaan']);
+Route::get('/resume-perusahaan', [AdminController::class, 'resumeperusahaan']);
+Route::get('/resume-pelamar', [AdminController::class, 'resumepelamar']);
+Route::get('/blacklist-pengguna', [AdminController::class, 'blacklistpengguna']);
+Route::get('/blacklist-resume', [AdminController::class, 'blacklistresume']);
+Route::get('/admin-internal', [AdminController::class, 'admininternal']);
+Route::get('/a', [AdminController::class, 'admin']);
+Route::get('/admin-edit', [AdminController::class, 'adminedit']);
 
