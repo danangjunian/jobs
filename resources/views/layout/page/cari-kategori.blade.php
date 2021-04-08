@@ -1,10 +1,18 @@
 @extends('layout.master.master_page')
-	
-@section('title', 'Category')
-	
+
+@section('title', 'Cari kategori')
 
 
-@section ('content')
+
+<!-- Header === -->
+
+<!-- Content=== -->
+
+@section('content')
+
+
+<!-- Titlebar
+================================================== -->
 <div id="titlebar" class="photo-bg" style="background-image: url(images/all-categories-photo.jpg);">
 	<div class="container">
 		<div class="ten columns">
@@ -17,7 +25,6 @@
 
 	</div>
 </div>
-
 
 <!-- Categories -->
 		<div class="container">
@@ -46,8 +53,8 @@
 <!-- End -- Categories -->
 
 
-<!-- all Categories -->
-
+<!-- Content
+================================================== -->
 <div id="categories">
 	<!-- Categories Group -->
 	<div class="categories-group">
@@ -157,12 +164,5 @@
 
 </div>
 
-<!-- Infobox -->
-<div class="infobox">
-	<div class="container">
-		<div class="sixteen columns">Bangun karirmu bersama lawang <a href="/daftar"> Sekarang</a></div>
-	</div>
-</div>
-
-
 @endsection
+

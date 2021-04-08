@@ -31,6 +31,25 @@ Route::get('/lawang', [AccountController::class, 'homepage_user']);
 Route::get('/profile-user', [AccountController::class, 'profile_user']);
 Route::get('/add-jobs', [AccountController::class, 'add_jobs_user']);
 Route::get('/add-resume', [AccountController::class, 'add_resume_user']);
+//belum ada controller
+Route::get('/browse-jobs', function () {
+    return view('layout.page.browse-jobs');
+});
+Route::get('/cari-kategori', function () {
+    return view('layout.page.cari-kategori');
+});
+
+
+
+//lowongan kerja
+Route::get('/halaman-pekerjaan', function () {
+    return view('layout.page.halaman-pekerjaan');
+});
+Route::get('/resume-page', function () {
+    return view('layout.page.resume-page');
+});
+
+
 
 
 
@@ -52,3 +71,8 @@ Route::get('/admin-edit', [AdminController::class, 'admin_edit']);
 Route::get('/profile-admin', [AdminController::class, 'profile_admin']);
 
 
+
+//blog
+Route::get('/blog', function () {
+    return view('layout.blog.blogs');
+});

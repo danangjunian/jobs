@@ -22,7 +22,7 @@
 				<input type="text" class="ico-01" placeholder="Judul pekerjaan, posisi pekerjaan, perusahaan "
 					value="" />
 				<input type="text" class="ico-02" placeholder="Kota, provinsi" value="" />
-				<button><i class="fa fa-search"></i></button>
+				<a href="/browse-jobs"><button><i class="fa fa-search"></i></button></a>
 
 				<!-- ==Browse Jobs -->
 				<div class="browse-jobs">
@@ -47,20 +47,20 @@
 	<div class="sixteen columns">
 		<h3 class="margin-bottom-25">Kategori Populer</h3>
 		<ul id="popular-categories">
-			<li><a href="#"><i class="far fa-money-bill-alt"></i></i> Akuntansi / Keuangan</a></li>
-			<li><a href="#"><i class="fa fa-wrench"></i> Mekanik / Otomotive</a></li>
-			<li><a href="#"><i class="fa fa-building"></i> K3 & HSE / Contruksi  </a></li>
-			<li><a href="#"><i class="fa fa-graduation-cap"></i> Pendidikan </a></li>
-			<li><a href="#"><i class="fa fa-medkit"></i> Kesehatan</a></li>
-			<li><a href="#"><i class="fas fa-utensils"></i> Restoran / Pelayan Restoran</a></li>
-			<li><a href="#"><i class="fas fa-bus"></i> Transportasi / Logistik</a></li>
-			<li><a href="#"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
+			<li><a href="/browse-jobs"><i class="far fa-money-bill-alt"></i></i> Akuntansi / Keuangan</a></li>
+			<li><a href="/browse-jobs"><i class="fa fa-wrench"></i> Mekanik / Otomotive</a></li>
+			<li><a href="/browse-jobs"><i class="fa fa-building"></i> K3 & HSE / Contruksi  </a></li>
+			<li><a href="/browse-jobs"><i class="fa fa-graduation-cap"></i> Pendidikan </a></li>
+			<li><a href="/browse-jobs"><i class="fa fa-medkit"></i> Kesehatan</a></li>
+			<li><a href="/browse-jobs"><i class="fas fa-utensils"></i> Restoran / Pelayan Restoran</a></li>
+			<li><a href="/browse-jobs"><i class="fas fa-bus"></i> Transportasi / Logistik</a></li>
+			<li><a href="/browse-jobs"><i class="fa fa-laptop"></i> telekomukiasi / Ilmu Teknologi</a></li>
 		</ul>
 
 		<div class="clearfix"></div>
 		<div class="margin-top-30"></div>
 
-		<a href="/kategori" class="button centered">Browse All Categories</a>
+		<a href="/category" class="button centered">Cari semua categori</a>
 		<div class="margin-bottom-50"></div>
 	</div>
 </div>
@@ -74,7 +74,7 @@
 			<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
 			<ul class="job-list">
 
-				<li class="highlighted"><a href="job-page.html">
+				{{--  <li class="highlighted"><a href="job-page.html">
 						<img src="images/job-list-logo-01.png" alt="">
 						<div class="job-list-content">
 							<h4>Marketing Coordinator - SEO / SEM Experience <span class="full-time">Full-Time</span>
@@ -87,9 +87,9 @@
 						</div>
 					</a>
 					<div class="clearfix"></div>
-				</li>
+				</li>  --}}
 
-				<li>
+				{{--  <li>
 					<a href="job-page.html">
 						<img src="images/job-list-logo-02.png" alt="">
 						<div class="job-list-content">
@@ -102,25 +102,26 @@
 						</div>
 					</a>
 					<div class="clearfix"></div>
-				</li>
+				</li>  --}}
 
 				<li>
-					<a href="job-page.html">
+					<a href="/halaman-pekerjaan">
 						<img src="images/job-list-logo-03.png" alt="">
 						<div class="job-list-content">
 							<h4>Restaurant Team Member <span class="full-time">Full-Time</span></h4>
 							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> Mcd sidoarjo</span>
-								<span><i class="fa fa-map-marker"></i> Sidoarjo</span>
+								<span><i class="fa fa-briefcase"></i> Mcd Surabaya</span>
+								<span><i class="fa fa-map-marker"></i> Surabaya</span>
 								<span><i class="fa fa-money"></i> 4200.000 / bulan</span>
+
 							</div>
 						</div>
 					</a>
 					<div class="clearfix"></div>
 				</li>
 
-				<li>
-					<a href="job-page.html">
+				{{--  <li>
+					<a href="/halaman-pekerjaan">
 						<img src="images/job-list-logo-04.png" alt="">
 						<div class="job-list-content">
 							<h4>Designer <span class="internship">Internship</span></h4>
@@ -132,10 +133,10 @@
 						</div>
 					</a>
 					<div class="clearfix"></div>
-				</li>
+				</li>  --}}
 
-				<li>
-					<a href="job-page.html">
+				{{--  <li>
+					<a href="/halaman-pekerjaan">
 						<img src="images/job-list-logo-05.png" alt="">
 						<div class="job-list-content">
 							<h4>Android Music App Development <span class="temporary">Temporary</span></h4>
@@ -147,11 +148,11 @@
 						</div>
 					</a>
 					<div class="clearfix"></div>
-				</li>
+				</li>  --}}
 			</ul>
 
 
-			<a href="/" class="button centered"><i class="fa fa-plus-circle"></i> Show More Jobs</a>
+			<a href="/browse-jobs" class="button centered"><i class="fa fa-plus-circle"></i> lihat pekerjaan lainnya</a>
 			<div class="margin-bottom-55"></div>
 		</div>
 	</div>
@@ -184,7 +185,7 @@
 								<span><i class="fa fa-money"></i> 4500.000 / bulan</span>
 								<p>As advertising & content,betugas untuk memposting, mengelola akun web dan melakukan
 									penjualan</p>
-								<a href="job-page.html" class="button">Apply Pekerjaan</a>
+								<a href="/halaman-pekerjaan" class="button">Apply Pekerjaan</a>
 							</div>
 						</li>
 
@@ -198,7 +199,7 @@
 								<span><i class="fa fa-money"></i> 5000.000 / bulan / </span>
 								<p>Melakukan tugas untuk menghandle wordpress seperti teamplate atau Maintenance
 								</p>
-								<a href="job-page.html" class="button">Apply Pekerjaan</a>
+								<a href="/halaman-pekerjaan" class="button">Apply Pekerjaan</a>
 							</div>
 						</li>
 
@@ -211,7 +212,7 @@
 								<span><i class="fa fa-map-marker"></i> Malang</span>
 								<span><i class="fa fa-money"></i> 3500.000 / bulan</span>
 								<p>Melakukan tugas designer untuk baju dll.</p>
-								<a href="job-page.html" class="button">Apply Pekerjaan</a>
+								<a href="/halaman-pekerjaan" class="button">Apply Pekerjaan</a>
 							</div>
 						</li>
 
@@ -227,59 +228,6 @@
 	</div>
 </div>
 <!--  ===============-===============================end -- Pekerjaan -->
-
-
-
-<!--  ===============================================Clients Carousel -->
-<h3 class="centered-headline"> Perusahaan yang telah mempercayai kami <span> Daftar perusahaan yang telah mempercayai kami
-		:</span></h3>
-<div class="clearfix"></div>
-
-<div class="container">
-
-	<div class="sixteen columns">
-
-		<!-- Navigation / Left -->
-		<div class="one carousel column">
-			<div id="showbiz_left_2" class="sb-navigation-left-2"><i class="fa fa-angle-left"></i></div>
-		</div>
-
-		<!-- ShowBiz Carousel -->
-		<div id="our-clients" class="showbiz-container fourteen carousel columns">
-
-			<!-- Portfolio Entries -->
-			<div class="showbiz our-clients" data-left="#showbiz_left_2" data-right="#showbiz_right_2">
-				<div class="overflowholder">
-
-					<ul>
-						<!-- Item -->
-						<li><img src="images/logo-transjakarta.png" alt="" /></li>
-						<li><img src="images/logo-mrt.png" alt="" /></li>
-						<li><img src="images/logo-pertamina.png" alt="" /></li>
-						<li><img src="images/gojek-logo.jpeg" alt="" /></li>
-						<li><img src="images/shoppe.png" alt="" /></li>
-						<li><img src="images/uniliver-logo.png" alt="" /></li>
-						<li><img src="images/logo-nasa.png" alt="" /></li>
-					</ul>
-					<div class="clearfix"></div>
-
-				</div>
-				<div class="clearfix"></div>
-
-			</div>
-		</div>
-
-		<!-- Navigation / Right -->
-		<div class="one carousel column">
-			<div id="showbiz_right_2" class="sb-navigation-right-2"><i class="fa fa-angle-right"></i></div>
-		</div>
-
-	</div>
-
-</div>
-
-
-
 {{-- =============counter - banyak pengguna --}}
 <div id="counters">
 	<div class="container">
@@ -315,6 +263,7 @@
 	</div>
 </div>
 
+<!-- =============== endbanyaknya pengguna -->
 
 <!-- =============== Infobox -->
 <div class="infobox">
@@ -322,6 +271,64 @@
 		<div class="sixteen columns">Bangun karirmu bersama lawang <a href="/daftar"> Sekarang</a></div>
 	</div>
 </div>
+
+
+<!--  ===============================================Clients Carousel -->
+<h3 class="centered-headline"> Perusahaan yang telah mempercayai kami <span> Daftar perusahaan yang telah mempercayai kami
+		:</span></h3>
+<div class="clearfix"></div>
+
+<div class="container">
+
+	<div class="sixteen columns">
+
+		<!-- Navigation / Left -->
+		<div class="one carousel column">
+			<div id="showbiz_left_2" class="sb-navigation-left-2"><i class="fa fa-angle-left"></i></div>
+		</div>
+
+		<!-- ShowBiz Carousel -->
+		<div id="our-clients" class="showbiz-container fourteen carousel columns">
+
+			<!-- Portfolio Entries -->
+			<div class="showbiz our-clients" data-left="#showbiz_left_2" data-right="#showbiz_right_2">
+				<div class="overflowholder">
+
+					<ul>
+						<!-- Item -->
+						<li><img src="{{asset('images/logo-transjakarta.png')}}" alt="" /></li>
+						<li><img src="{{asset('images/logo-mrt.png')}}" alt="" /></li>
+						<li><img src="{{asset('images/logo-pertamina.png')}}" alt="" /></li>
+						<li><img src="{{asset('images/gojek-logo.jpeg')}}" alt="" /></li>
+						<li><img src="{{asset('images/shoppe.png')}}" alt="" /></li>
+						<li><img src="{{asset('images/uniliver-logo.png')}}" alt="" /></li>
+						<li><img src="{{asset('images/logo-nasa.png')}}" alt="" /></li>
+					</ul>
+					<div class="clearfix"></div>
+
+					{{Debugbar::info(asset('images/logo-transjakarta.png'))}}
+					
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+		</div>
+
+		<!-- Navigation / Right -->
+		<div class="one carousel column">
+			<div id="showbiz_right_2" class="sb-navigation-right-2"><i class="fa fa-angle-right"></i></div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
 
 
 {{-- =============== end -- counter - banyak pengguna --}}

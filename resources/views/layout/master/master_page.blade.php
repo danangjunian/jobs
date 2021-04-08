@@ -6,12 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@yield('title')  |  lawang - Lowongan Pekerjaan</title>
 	<link rel="icon" type="image/png" href="images/logo.png"/>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors/orange.css" id="colors">
+	<link rel="stylesheet" href="{{asset('css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('css/colors/orange.css')}}" id="colors">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	
-    
+
 </head>
 
 <body>
@@ -32,18 +31,17 @@
 							<li><a href="/" id="current">Home</a></li>
 							<li><a href="#">Lowongan Kerja</a>
 								<ul>
-									<li><a href="job-page.html">Halaman Pekerjaan</a></li>
-									{{-- <li><a href="job-page-alt.html">Job Page Alternative</a></li>
-						<li><a href="resume-page.html">Resume Page</a></li>
-						<li><a href="shortcodes.html">Shortcodes</a></li>
+									<li><a href="/halaman-pekerjaan">Halaman Pekerjaan</a></li>
+									<li><a href="/resume-page">Resume Page</a></li>
+						{{--<li><a href="shortcodes.html">Shortcodes</a></li>
 						<li><a href="pricing-tables.html">Pricing Tables</a></li>
 						<li><a href="contact.html">Contact</a></li> --}}
 								</ul>
 							</li>
 							<li><a href="#">Pelamar</a>
 								<ul>
-									{{--  <li><a href="browse-jobs.html">Pencarian kerja</a></li>  
-									<li><a href="browse-categories.html">Pencarian menurut kategori</a></li>--}}
+									<li><a href="/browse-jobs">Pencarian kerja</a></li>  
+									<li><a href="/cari-kategori">Pencarian menurut kategori</a></li>
 						<li><a href="/add-resume">Tambah Resume</a></li>
 						{{--  <li><a href="manage-resumes.html">Ubah Resume</a></li>
 						<li><a href="job-alerts.html">Job Alerts</a></li>  --}}
@@ -58,7 +56,7 @@
 								</ul>
 							</li>
 
-							<li><a href="blog.html">Blog</a></li>
+							<li><a href="/blog">Blog</a></li>
 						</ul>
 						<ul class="float-right">
 							<li><a href="/daftar"><i class="fa fa-user"></i> Sign Up</a></li>
@@ -125,9 +123,9 @@
 			<h4>Browse</h4>
 			<ul class="footer-links">
 				<li><a href="#">Freelancers by Category</a></li>
-				<li><a href="#">Freelancers in USA</a></li>
-				<li><a href="#">Freelancers in UK</a></li>
-				<li><a href="#">Freelancers in Canada</a></li>
+				<li><a href="#">Freelancers in Indonesia</a></li>
+				<li><a href="#">Freelancers in Thailand</a></li>
+				<li><a href="#">Freelancers in Malaysia</a></li>
 				<li><a href="#">Freelancers in Australia</a></li>
 				<li><a href="#">Find Jobs</a></li>
 
@@ -163,19 +161,23 @@
 
 <!-- Scripts
 ================================================== -->
-<script src="scripts/jquery-2.1.3.min.js"></script>
-<script src="scripts/custom.js"></script>
-<script src="scripts/jquery.superfish.js"></script>
-<script src="scripts/jquery.themepunch.tools.min.js"></script>
-<script src="scripts/jquery.themepunch.revolution.min.js"></script>
-<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
-<script src="scripts/jquery.flexslider-min.js"></script>
-<script src="scripts/chosen.jquery.min.js"></script>
-<script src="scripts/jquery.magnific-popup.min.js"></script>
-<script src="scripts/waypoints.min.js"></script>
-<script src="scripts/jquery.counterup.min.js"></script>
-<script src="scripts/jquery.jpanelmenu.js"></script>
-<script src="scripts/stacktable.js"></script>
+<script src="{{asset('scripts/jquery-2.1.3.min.js')}}"></script>
+<script src="{{asset('scripts/custom.js')}}"></script>
+<script src="{{asset('scripts/jquery.superfish.js')}}"></script>
+<script src="{{asset('scripts/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.themepunch.showbizpro.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.flexslider-min.js')}}"></script>
+<script src="{{asset('scripts/chosen.jquery.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('scripts/waypoints.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.jpanelmenu.js')}}"></script>
+<script src="{{asset('scripts/stacktable.js')}}"></script>
+
+{{Debugbar::info(asset('scripts/stacktable.js'))}}
+
+{{asset('scripts/stacktable.js')}}
 
 
 
