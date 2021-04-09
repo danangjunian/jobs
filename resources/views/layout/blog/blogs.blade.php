@@ -89,7 +89,7 @@
 		<div class="widget">
 			<h4>Search</h4>
 			<div class="widget-box search">
-				<div class="input"><input class="search-field" type="text" placeholder="Klik kata kunci"
+				<div class="input"><input class="search-field" type="text" name="search" placeholder="Klik kata kunci"
 						value="" /></div>
 			</div>
 		</div>
@@ -98,7 +98,7 @@
 			<h4>Ada Pertanyaan?</h4>
 			<div class="widget-box">
 				<p>Jika kamu mempunyai pertanyaan, saran & kritik, silahkan email kami.</p>
-				<a href="contact.html" class="button widget-btn"><i class="fa fa-envelope"></i> Drop pertanyaan</a>
+				<a href="contact.html" class="button widget-btn" name"kritik" ><i class="fa fa-envelope"></i> Drop pertanyaan</a>
 			</div>
 		</div>
 

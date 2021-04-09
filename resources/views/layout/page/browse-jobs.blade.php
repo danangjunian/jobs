@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="six columns">
-			<a href="add-job.html" class="button">Posting pekerjaan, Gratis !</a>
+			<a href="/add-jobs" class="button">Posting pekerjaan, Gratis !</a>
 		</div>
 
 	</div>
@@ -36,7 +36,7 @@
 		
 		<form action="#" method="get" class="list-search">
 			<button><i class="fa fa-search"></i></button>
-			<input type="text" placeholder="job title, keywords or company name" value=""/>
+			<input type="text" name="search" placeholder="job title, keywords or company name" value=""/>
 			<div class="clearfix"></div>
 		</form>
 
@@ -112,12 +112,12 @@
 		<div class="widget">
 			<h4>Location</h4>
 			<form action="#" method="get">
-				<input type="text" placeholder="State / Province" value=""/>
-				<input type="text" placeholder="City" value=""/>
+				<input type="text" name="provinsi" placeholder="Lokasi / Provinsi" value=""/>
+				<input type="text" name="kota" placeholder="City" value=""/>
 
-				<input type="text" class="miles" placeholder="Miles" value=""/>
+				<input type="text" name="miles" class="miles" placeholder="Miles" value=""/>
 				<label for="zip-code" class="from">from</label>
-				<input type="text" id="zip-code" class="zip-code" placeholder="Zip-Code" value=""/><br>
+				<input type="text" name="kodepos" id="zip-code" class="zip-code" placeholder="Zip-Code" value=""/><br>
 
 				<button class="button">Filter</button>
 			</form>

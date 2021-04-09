@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="six columns">
-			<a href="add-job.html" class="button">Post a Job, It’s Free!</a>
+			<a href="/add-jobs" class="button">Post a Job, It’s Free!</a>
 		</div>
 
 	</div>

@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="ten columns">
 			<div class="resume-titlebar">
-				<img src="images/resumes-list-avatar-01.png" alt="">
+				<img src="/images/resumes-list-avatar-01.png" alt="">
 				<div class="resumes-list-content">
 					<h4>John Doe <span>UX/UI Graphic Designer</span></h4>
 					<span class="icons"><i class="fa fa-map-marker"></i> Mountain View, CA</span>
@@ -30,7 +30,7 @@
 		<div class="six columns">
 			<div class="two-buttons">
 
-				<a href="#small-dialog" class="popup-with-zoom-anim button"><i class="fa fa-envelope"></i> Send Message</a>
+				<a href="#small-dialog" class="popup-with-zoom-anim button"><i class="fa fa-envelope"></i> Kirim Pesan</a>
 
 				<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
 					<div class="small-dialog-headline">
@@ -39,18 +39,15 @@
 
 					<div class="small-dialog-content">
 						<form action="#" method="get" >
-							<input type="text" placeholder="Full Name" value=""/>
-							<input type="text" placeholder="Email Address" value=""/>
-							<textarea placeholder="Message"></textarea>
+							<input type="text" name="nama-lengkap" placeholder="Nama lengkap" value=""/>
+							<input type="text" name="email" placeholder="Email" value=""/>
+							<textarea name="pesan" placeholder="Pesan"></textarea>
 
-							<button class="send">Send Application</button>
+							<button class="send" name="send" >Send</button>
 						</form>
 					</div>
 					
 				</div>
-				<a href="#" class="button dark"><i class="fa fa-star"></i> Bookmark This Resume</a>
-
-
 			</div>
 		</div>
 

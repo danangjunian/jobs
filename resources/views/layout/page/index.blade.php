@@ -19,9 +19,9 @@
 
 				<!-- ==Form -->
 				<h2>Cari pekerjaan anda sekarang </h2>
-				<input type="text" class="ico-01" placeholder="Judul pekerjaan, posisi pekerjaan, perusahaan "
+				<input type="text" name="judul-pekerjaan" class="ico-01" placeholder="Judul pekerjaan, posisi pekerjaan, perusahaan "
 					value="" />
-				<input type="text" class="ico-02" placeholder="Kota, provinsi" value="" />
+				<input type="text" name="lokasi" class="ico-02" placeholder="Kota, provinsi" value="" />
 				<a href="/browse-jobs"><button><i class="fa fa-search"></i></button></a>
 
 				<!-- ==Browse Jobs -->

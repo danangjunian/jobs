@@ -33,18 +33,16 @@
 								<ul>
 									<li><a href="/halaman-pekerjaan">Halaman Pekerjaan</a></li>
 									<li><a href="/resume-page">Resume Page</a></li>
-						{{--<li><a href="shortcodes.html">Shortcodes</a></li>
-						<li><a href="pricing-tables.html">Pricing Tables</a></li>
-						<li><a href="contact.html">Contact</a></li> --}}
+									{{--  <li><a href="/contact">Contact</a></li>  --}}
 								</ul>
 							</li>
 							<li><a href="#">Pelamar</a>
 								<ul>
 									<li><a href="/browse-jobs">Pencarian kerja</a></li>  
 									<li><a href="/cari-kategori">Pencarian menurut kategori</a></li>
-						<li><a href="/add-resume">Tambah Resume</a></li>
-						{{--  <li><a href="manage-resumes.html">Ubah Resume</a></li>
-						<li><a href="job-alerts.html">Job Alerts</a></li>  --}}
+									<li><a href="/add-resume">Tambah Resume</a></li>
+									<li><a href="/atur-resume">Atur Resume</a></li>
+									<li><a href="/job-alerts">Job Alerts</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Perusahaan</a>
@@ -176,8 +174,6 @@
 <script src="{{asset('scripts/stacktable.js')}}"></script>
 
 {{Debugbar::info(asset('scripts/stacktable.js'))}}
-
-{{asset('scripts/stacktable.js')}}
 
 
 

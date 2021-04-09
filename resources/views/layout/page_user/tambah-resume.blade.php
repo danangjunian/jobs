@@ -47,32 +47,32 @@
             <!-- Email -->
             <div class="form">
                 <h5>Nama Lengkap</h5>
-                <input class="search-field" type="text" placeholder="nama lengkap" value="" />
+                <input class="search-field" type="text" name="nama-lengkap" placeholder="nama lengkap" value="" />
             </div>
 
             <!-- Email -->
             <div class="form">
                 <h5>Email</h5>
-                <input class="search-field" type="text" placeholder="abcd@example.com" value="" />
+                <input class="search-field" type="text" name="email" placeholder="abcd@example.com" value="" />
             </div>
 
             <!-- Title -->
             <div class="form">
                 <h5>Professional Title</h5>
-                <input class="search-field" type="text" placeholder="e.g. Web Developer" value="" />
+                <input class="search-field" type="text" name="title" placeholder="e.g. Web Developer" value="" />
             </div>
 
             <!-- Location -->
             <div class="form">
                 <h5>Lokasi</h5>
-                <input class="search-field" type="text" placeholder="co. surabaya, jawatimur" value="" />
+                <input class="search-field" type="text" name="lokasi" placeholder="co. surabaya, jawatimur" value="" />
             </div>
 
             <!-- Logo -->
             <div class="form">
                 <h5>Photo <span>(optional)</span></h5>
                 <label class="upload-btn">
-                    <input type="file" multiple />
+                    <input type="file" name="foto" multiple />
                     <i class="fa fa-upload"></i> Browse
                 </label>
                 <span class="fake-input">No file selected</span>
@@ -81,7 +81,7 @@
             <!-- Email -->
             <div class="form">
                 <h5>Video <span>(optional)</span></h5>
-                <input class="search-field" type="text" placeholder=" Link video tentang kamu " value="" />
+                <input class="search-field" type="text" name="video" placeholder=" Link video tentang kamu " value="" />
             </div>
 
             <!-- Description -->
@@ -99,8 +99,8 @@
                     <!-- Adding URL(s) -->
                     <div class="form boxed box-to-clone url-box">
                         <a href="#" class="close-form remove-box button"><i class="fa fa-close"></i></a>
-                        <input class="search-field" type="text" placeholder="Name" value="" />
-                        <input class="search-field" type="text" placeholder="http://" value="" />
+                        <input class="search-field" type="text" name="nama" placeholder="Name" value="" />
+                        <input class="search-field" type="text" name="url" placeholder="http://" value="" />
                     </div>
 
                     <a href="#" class="button gray add-url add-box"><i class="fa fa-plus-circle"></i> Add URL</a>
@@ -117,10 +117,10 @@
                     <!-- Add Education -->
                     <div class="form boxed box-to-clone education-box">
                         <a href="#" class="close-form remove-box button"><i class="fa fa-close"></i></a>
-                        <input class="search-field" type="text" placeholder="Nama Sekolah" value="" />
-                        <input class="search-field" type="text" placeholder="Qualification(s)" value="" />
-                        <input class="search-field" type="text" placeholder="tahun mulai & lulus" value="" />
-                        <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Keterangan (optional)"></textarea>
+                        <input class="search-field" type="text" name="sekolah" placeholder="Nama Sekolah" value="" />
+                        <input class="search-field" type="text" name="qualifikasi" placeholder="Qualification(s)" value="" />
+                        <input class="search-field" type="text" name="tahun-mulai&lulus" placeholder="tahun mulai & lulus" value="" />
+                        <textarea name="deskripsi" id="desc" cols="30"  rows="10" placeholder="Keterangan (optional)"></textarea>
                     </div>
 
                     <a href="#" class="button gray add-education add-box"><i class="fa fa-plus-circle"></i> Tambah Pendidikan</a>
@@ -136,9 +136,9 @@
                     <!-- Add Experience -->
                     <div class="form boxed box-to-clone experience-box">
                         <a href="#" class="close-form remove-box button"><i class="fa fa-close"></i></a>
-                        <input class="search-field" type="text" placeholder="Nama Perusahaan" value="" />
-                        <input class="search-field" type="text" placeholder="Judul pekerjaan" value="" />
-                        <input class="search-field" type="text" placeholder="tanggal Mulai dan Selesai" value="" />
+                        <input class="search-field" type="text" name="nama-perusahaan" placeholder="Nama Perusahaan" value="" />
+                        <input class="search-field" type="text" name="pekerjaan" placeholder="Judul pekerjaan" value="" />
+                        <input class="search-field" type="text" name="mulai-selesai" placeholder="tanggal Mulai dan Selesai" value="" />
                         <textarea name="desc1" id="desc1" cols="30" rows="10" placeholder="Deskripsi pekerjaan (optional)"></textarea>
                     </div>
 
@@ -148,7 +148,7 @@
 
 
             <div class="divider margin-top-0 padding-reset"></div>
-            <a href="#" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/resume-page" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
 
         </div>
     </div>

@@ -38,6 +38,13 @@ Route::get('/browse-jobs', function () {
 Route::get('/cari-kategori', function () {
     return view('layout.page.cari-kategori');
 });
+Route::get('/atur-resume', function () {
+    return view('layout.page.atur-resume');
+});
+Route::get('/job-alerts', function () {
+    return view('layout.page.job-alerts');
+});
+
 
 
 
@@ -48,6 +55,10 @@ Route::get('/halaman-pekerjaan', function () {
 Route::get('/resume-page', function () {
     return view('layout.page.resume-page');
 });
+Route::get('/contact', function () {
+    return view('layout.page.contact');
+});
+
 
 
 

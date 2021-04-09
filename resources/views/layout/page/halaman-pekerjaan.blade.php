@@ -146,7 +146,7 @@ Persyaratan
 							<div class="clearfix"></div>
 
 							<label class="upload-btn">
-								<input type="file" multiple />
+								<input type="file" name="file" multiple />
 								<i class="fa fa-upload"></i> Browse
 							</label>
 							<span class="fake-input">No file selected</span>
