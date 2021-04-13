@@ -19,10 +19,6 @@
 			<h2>All Categories</h2>
 		</div>
 
-		<div class="six columns">
-			<a href="/add-jobs" class="button">Post a Job, It’s Free!</a>
-		</div>
-
 	</div>
 </div>
 
@@ -31,18 +27,18 @@
 			<div class="sixteen columns">
 				<h3 class="margin-bottom-25"><strong>Semua Category</strong></h3>
 				<ul id="popular-categories">
-					<li><a href="#"><i class="far fa-money-bill-alt"></i> Akuntansi / Keuangan</a></li>
-					<li><a href="#"><i class="fa fa-wrench"></i> Mekanik / Otomotive</a></li>
-					<li><a href="#"><i class="fa fa-building"></i> K3 & HSE / kontruksi  </a></li>
-					<li><a href="#"><i class="fa fa-graduation-cap"></i> Pendidikan </a></li>
-					<li><a href="#"><i class="fa fa-medkit"></i> Kesehatan</a></li>
-					<li><a href="#"><i class="fas fa-utensils"></i> Restoran / Pelayan Restoran</a></li>
-					<li><a href="#"><i class="fas fa-bus"></i> Transportasi / Logistik</a></li>
-					<li><a href="#"><i class="fa fa-laptop"></i> Telekomukiasi / Ilmu Teknologi</a></li>
-                    <li><a href="#"><i class="fa fa-laptop"></i> Programmer</a></li>
-                    <li><a href="#"><i class="fas fa-handshake"></i> Freelance </a></li>
-                    <li><a href="#"><i class="fas fa-palette"></i> Seni / Desain / Fashion</a></li>
-                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Startup & Fintech</a></li>
+					<li><a href="/browse-jobs"><i class="far fa-money-bill-alt"></i> Akuntansi / Keuangan</a></li>
+					<li><a href="/browse-jobs"><i class="fa fa-wrench"></i> Mekanik / Otomotive</a></li>
+					<li><a href="/browse-jobs"><i class="fa fa-building"></i> K3 & HSE / kontruksi  </a></li>
+					<li><a href="/browse-jobs"><i class="fa fa-graduation-cap"></i> Pendidikan </a></li>
+					<li><a href="/browse-jobs"><i class="fa fa-medkit"></i> Kesehatan</a></li>
+					<li><a href="/browse-jobs"><i class="fas fa-utensils"></i> Restoran / Pelayan Restoran</a></li>
+					<li><a href="/browse-jobs"><i class="fas fa-bus"></i> Transportasi / Logistik</a></li>
+					<li><a href="/browse-jobs"><i class="fa fa-laptop"></i> Telekomukiasi / Ilmu Teknologi</a></li>
+                    <li><a href="/browse-jobs"><i class="fa fa-laptop"></i> Programmer</a></li>
+                    <li><a href="/browse-jobs"><i class="fas fa-handshake"></i> Freelance </a></li>
+                    <li><a href="/browse-jobs"><i class="fas fa-palette"></i> Seni / Desain / Fashion</a></li>
+                    <li><a href="/browse-jobs"><i class="fas fa-chalkboard-teacher"></i> Startup & Fintech</a></li>
 				</ul>
 
 				<div class="clearfix"></div>
@@ -62,33 +58,33 @@
 			<div class="four columns"><h4>Web, Software & IT</h4></div>
 			<div class="four columns">
 				<ul>
-					<li><a href="#">PHP</a></li>
-					<li><a href="#">Android</a></li>
-					<li><a href="#">WordPress</a></li>
-					<li><a href="#">Design</a></li>
-					<li><a href="#">Developer</a></li>
-					<li><a href="#">iOS</a></li>
-					<li><a href="#">Mobile</a></li>
+					<li><a href="/browse-jobs">PHP</a></li>
+					<li><a href="/browse-jobs">Android</a></li>
+					<li><a href="/browse-jobs">WordPress</a></li>
+					<li><a href="/browse-jobs">Design</a></li>
+					<li><a href="/browse-jobs">Developer</a></li>
+					<li><a href="/browse-jobs">iOS</a></li>
+					<li><a href="/browse-jobs">Mobile</a></li>
 				</ul>
 			</div>
 			<div class="four columns">
 				<ul>
-					<li><a href="#">MySQL</a></li>
-					<li><a href="#">JavaScript</a></li>
-					<li><a href="#">Software</a></li>
-					<li><a href="#">Website Design</a></li>
-					<li><a href="#">Programming</a></li>
-					<li><a href="#">SEO</a></li>
-					<li><a href="#">Java</a></li>
+					<li><a href="/browse-jobs">MySQL</a></li>
+					<li><a href="/browse-jobs">JavaScript</a></li>
+					<li><a href="/browse-jobs">Software</a></li>
+					<li><a href="/browse-jobs">Website Design</a></li>
+					<li><a href="/browse-jobs">Programming</a></li>
+					<li><a href="/browse-jobs">SEO</a></li>
+					<li><a href="/browse-jobs">Java</a></li>
 				</ul>
 			</div>
 			<div class="four columns">
 				<ul>
-					<li><a href="#">CSS</a></li>
-					<li><a href="#">HTML5</a></li>
-					<li><a href="#">Web Development</a></li>
-					<li><a href="#">Web Design</a></li>
-					<li><a href="#">eCommerce</a></li>
+					<li><a href="/browse-jobs">CSS</a></li>
+					<li><a href="/browse-jobs">HTML5</a></li>
+					<li><a href="/browse-jobs">Web Development</a></li>
+					<li><a href="/browse-jobs">Web Design</a></li>
+					<li><a href="/browse-jobs">eCommerce</a></li>
 				</ul>
 			</div>
 		</div>

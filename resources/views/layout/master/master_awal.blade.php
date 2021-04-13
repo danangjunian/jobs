@@ -23,49 +23,22 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="/index"><img src="images/awang.png" alt="lawang" /></a></h1>
+						<h1><a href="/"><img src="images/awang.png" alt="lawang" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
-							<li><a href="/index" id="current">Home</a></li>
-							<li><a href="#">Lowongan Kerja</a>
+							<li><a href="/">Lowongan Kerja</a>
 								<ul>
-									<li><a href="/halaman-pekerjaan">Halaman Pekerjaan</a></li>
-									{{--  <li><a href="/resume-page">Resume Page</a></li>  --}}
-									{{--  <li><a href="/contact">Contact</a></li>  --}}
+									<li><a href="/halaman-pekerjaan-awal">Halaman pekerjaan</a></li>
+									<li><a href="/browse-jobs-awal">Pencarian kerja</a></li>  
 								</ul>
 							</li>
-							<li><a href="#">Pelamar</a>
-								<ul>
-									<li><a href="/browse-jobs">Pencarian kerja</a></li>  
-									<li><a href="/cari-kategori">Pencarian menurut kategori</a></li>
-									<li><a href="/add-resume">Tambah Resume</a></li>
-									<li><a href="/atur-resume">Atur Resume</a></li>
-									<li><a href="/job-alerts">Pemberitahuan Pekerjaan</a></li>
-								</ul>
-							</li>
-							{{--  <li><a href="#">Perusahaan</a>
-								<ul>
-									<li><a href="/add-jobs">Tambah pekerjaan</a></li>
-									<li><a href="/kelola-jobs">Kelola pekerjaan</a></li>
-									{{--  <li><a href="manage-applications.html">Kelola Applikasi</a></li>
-									<li><a href="browse-resumes.html">Cari Resume</a></li>
-								</ul>
-							</li>  --}}
-
-							<li><a href="/blog">Blog</a></li>
+							<li><a href="/blog-awal">Blog</a></li>
 						</ul>
 						<ul class="float-right">
-							<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> Stiawan jodi</a>
-							<ul>
-								<li>
-									<li><a href="/"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
-								</li>
-							</ul>
-							
-							</li>
-							
+							<li><a href="/daftar-awal"><i class="fa fa-user"></i> Sign Up</a></li>
+							<li><a href="/login-awal"><i class="fa fa-lock"></i> Log In</a></li>
 						</ul>
 
 					</nav>
@@ -105,8 +78,8 @@
 			<h4>Company</h4>
 			<ul class="footer-links">
 				<li><a href="#">Tentang</a></li>
-				<li><a href="/login-awal">karir</a></li>
-				<li><a href="/blog">Blog</a></li>
+				<li><a href="/daftar-awal">karir</a></li>
+				<li><a href="/blog-awal">Blog</a></li>
 			</ul>
 		</div>
 		

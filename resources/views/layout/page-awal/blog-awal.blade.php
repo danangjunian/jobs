@@ -1,4 +1,4 @@
-@extends('layout.master.master_page')
+@extends('layout.master.master_awal')
 
 @section('title', 'blog')
 
@@ -34,7 +34,7 @@
 
 			<!-- Post -->
 			<div class="post-container">
-				<div class="post-img"><a href="/blog-post"><img
+				<div class="post-img"><a href="/blog-post-awal"><img
 							src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png"
 							alt=""></a>
 					<div class="hover-icon"></div>
@@ -52,7 +52,7 @@
 						agar kamu tidak tertipu dengan lowongan kerja serupa,
 						simak ciri-ciri lowongan kerja palsu berikut ini.
 					</p>
-					<a class="button" href="/blog-post">Baca Selengkapnya</a>
+					<a class="button" href="/blog-post-awal">Baca Selengkapnya</a>
 				</div>
 			</div>
 
@@ -124,11 +124,11 @@
 						<!-- Post #2 -->
 						<li>
 							<div class="widget-thumb">
-								<a href="/blog-post"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
+								<a href="/blog-post-awal"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
 							</div>
 
 							<div class="widget-text">
-								<h5><a href="/blog-post">7 tanda lowongan hoax, Pelamar wajib mengetahui.</a></h5>
+								<h5><a href="/blog-post-awal">7 tanda lowongan hoax, Pelamar wajib mengetahui.</a></h5>
 								<span>October 10, 2019</span>
 							</div>
 							<div class="clearfix"></div>
@@ -146,11 +146,11 @@
 						<!-- Post #1 -->
 						<li>
 							<div class="widget-thumb">
-								<a href="/blog-post"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
+								<a href="/blog-post-awal"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
 							</div>
 
 							<div class="widget-text">
-								<h5><a href="/blog-post">7 tanda lowongan hoax, Pelamar wajib mengetahui.</a></h5>
+								<h5><a href="/blog-post-awal">7 tanda lowongan hoax, Pelamar wajib mengetahui.</a></h5>
 								<span>October 10, 2015</span>
 							</div>
 							<div class="clearfix"></div>
@@ -169,11 +169,11 @@
 						<!-- Post #3 -->
 						<li>
 							<div class="widget-thumb">
-								<a href="/blog-post"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
+								<a href="/blog-post-awal"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
 							</div>
 
 							<div class="widget-text">
-								<h5><a href="/blog-post"> 7 tanda lowongan hoax, Pelamar wajib mengetahui. </a>
+								<h5><a href="/blog-post-awal"> 7 tanda lowongan hoax, Pelamar wajib mengetahui. </a>
 								</h5>
 								<span>October 10, 2019</span>
 							</div>

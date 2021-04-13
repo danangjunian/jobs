@@ -10,53 +10,57 @@ class AccountController extends Controller
 
 
 
-   public function homepage_non_user () {
-       return view('/layout.page.index');
-   }
+    public function homepage_non_user()
+    {
+        return view('/layout.page.index');
+    }
 
-   public function categori_non_user () {
-       return view('/layout.page.kategori');
-   }
+    public function categori_non_user()
+    {
+        return view('/layout.page.kategori');
+    }
 
-   public function signin_non_user () {
-       return view('/layout.page.myaccount_signin');
-   }
+    public function signin_non_user()
+    {
+        return view('/layout.page.myaccount_signin');
+    }
 
-   public function signup_non_user () {
-       return view('/layout.page.myaccount_signup');
-   }
-   
-   public function jobs_non_user () {
-       return view('/layout.page.pekerjaan');
-   }
+    public function signup_non_user()
+    {
+        return view('/layout.page.myaccount_signup');
+    }
 
-   //=============user
+    public function jobs_non_user()
+    {
+        return view('/layout.page.pekerjaan');
+    }
 
-   public function profile_user () {
-       return view('/layout.page_user.profile');
-   }
-   public function add_jobs_user () {
-       return view('/layout.page_user.tambah-pekerjaan');
-   }
+    //=============user
 
-   public function add_resume_user () {
-       return view('/layout.page_user.tambah-resume');
-   }
+    public function profile_user()
+    {
+        return view('/layout.page_user.profile');
+    }
+    public function add_jobs_user()
+    {
+        return view('/layout.page_user.tambah-pekerjaan');
+    }
 
-    public function homepage_user () {
-       return view('/layout.page_user.homepage_user');
-   }
+    public function add_resume_user()
+    {
+        return view('/layout.page_user.tambah-resume');
+    }
+
+    public function homepage_user()
+    {
+        return view('/layout.page_user.homepage_user');
+    }
 
 
-   //=============profile account
+    //=============profile account
 
-   public function user_account () {
-       return view('/layout.user_admin.profile_dashboard');
-   }
-
-
-   
-
-   
-   
+    public function user_account()
+    {
+        return view('/layout.user_admin.profile_dashboard');
+    }
 }

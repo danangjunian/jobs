@@ -148,7 +148,7 @@
 
 
             <div class="divider margin-top-0 padding-reset"></div>
-            <a href="/resume-page" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/preview-resume" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
 
         </div>
     </div>

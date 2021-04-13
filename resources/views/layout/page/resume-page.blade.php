@@ -11,11 +11,11 @@
 			<div class="resume-titlebar">
 				<img src="/images/resumes-list-avatar-01.png" alt="">
 				<div class="resumes-list-content">
-					<h4>John Doe <span>UX/UI Graphic Designer</span></h4>
-					<span class="icons"><i class="fa fa-map-marker"></i> Mountain View, CA</span>
+					<h4>Stiawan Jodi <span>Web Designer</span></h4>
+					<span class="icons"><i class="fa fa-map-marker"></i> surabaya city</span>
 					<span class="icons"><i class="fa fa-money"></i> $100 / hour</span>
-					<span class="icons"><a href="#"><i class="fa fa-link"></i> Website</a></span>
-					<span class="icons"><a href="mailto:john.doe@example.com"><i class="fa fa-envelope"></i> john.doe@example.com</a></span>
+					<span class="icons"><a href="http://founderbaca.rgijatim.com/"><i class="fa fa-link"></i> Website</a></span>
+					<span class="icons"><a href="stiawan.jodi270695@gmail.com"><i class="fa fa-envelope"></i> stiawan.jodi270695@gmail.com</a></span>
 					<div class="skills">
 						<span>JavaScript</span>
 						<span>PHP</span>
@@ -34,7 +34,7 @@
 
 				<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
 					<div class="small-dialog-headline">
-						<h2>Send Message to John Doe</h2>
+						<h2>Send Message to John antoni</h2>
 					</div>
 
 					<div class="small-dialog-content">
@@ -92,7 +92,7 @@
 		<dl class="resume-table">
 			<dt>
 				<small class="date">2012 - 2015</small>
-				<strong>Bsc Computing at College of West Anglia</strong>
+				<strong>Bsc Computing at College of West jakarta</strong>
 			</dt>
 			<dd>
 				<p>Captain, why are we out here chasing comets? Maybe we better talk out here; the observation lounge has turned into a swamp. Ensign Babyface!</p>
