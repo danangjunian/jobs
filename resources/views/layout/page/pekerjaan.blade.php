@@ -1,4 +1,4 @@
-@extends('layout.master.master_page')
+{{-- @extends('layout.master.master_page')
 
 @section('title', 'pekerjaan')
 
@@ -243,4 +243,4 @@
 
 </div>
 
-@endsection
+@endsection --}}

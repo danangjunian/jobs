@@ -1,4 +1,4 @@
-@extends('layout.master.master_page')
+@extends('layout.master.master_awal')
 
 @section('title', 'Hal-Pekerjaan')
 
@@ -14,13 +14,13 @@
 	<div id="titlebar" class="photo-bg" style="background: url(images/job-page-photo.jpg)">
 		<div class="container">
 			<div class="ten columns">
-				<span><a href="browse-jobs.html">Restaurant / Food Service</a></span>
+				<span style="color: white">Restaurant / Food Service</span>
 				<h2>Restaurant Team Member - Crew <span class="full-time">Full-Time</span></h2>
 			</div>
 	
-			{{-- <div class="six columns">
+			{{--  <div class="six columns">
 				<a href="#" class="button white"><i class="fa fa-star"></i> Bookmark This Job</a>
-			</div> --}}
+			</div>  --}}
 	
 		</div>
 	</div>
@@ -112,10 +112,17 @@ Persyaratan
 						</div>
 					</li>
 					<li>
-						<i class="fa fa-money"></i>
+						<i class="fa fa-clock-o"></i>
 						<div>
 							<strong>Bulan:</strong>
-							<span>Rp.4200.000</span>
+							<span>Rp : 4.200.000</span>
+						</div>
+					</li>
+					<li>
+						<i class="fa fa-money"></i>
+						<div>
+							<strong>Rate:</strong>
+							<span>Rp : 150.000 - 200.000 / hour</span>
 						</div>
 					</li>
 				</ul>
@@ -125,29 +132,61 @@ Persyaratan
 
 				<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
 					<div class="small-dialog-headline">
-						<h2>Apply pekerjaan</h2>
-					</div>
 
-					<div class="small-dialog-content">
-						<form action="#" method="get" >
-							<input type="text" name="nama-lengkap" placeholder="Nama Lengkap" value=""/>
-							<input type="text" name="email" placeholder="Email" value=""/>
-							<textarea name="pesan-promosi" placeholder="pesan untuk mempromosikan diri kamu kepada perusahaan"></textarea>
+						
 
-							<!-- Upload CV -->
-							<div class="upload-info"><strong>Upload CV kamu</strong> <span>Max. file size: 5MB</span></div>
-							<div class="clearfix"></div>
+							<div class="my-account">
+						
+								<div class="tabs-container">
+									<!-- Login -->
+									<div class="tab-content" id="tab1" style="display: none;">
+						
+										<h3 class="margin-bottom-10 margin-top-10" style="background-color: salmon; color: white; border: 1px solid; text-align: center;">Daftarkan Diri Anda Untuk Mendapatkan Pekerjaan :</h3>
+						
+										<hr>
+						
+										<form method="get" action="/index" class="signup">
+						
+											
+											<p class="form-row form-row-wide">
+												<input type="text" class="input-text" name="username" id="username" value="" placeholder="Nama Depan"/>
+											</p>
+						
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="text" name="NamaBelakang" id="NamaBelakang" placeholder="Nama Belakang" />
+											</p>
+						
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
+											</p>
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
+											</p>
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
+											</p>
+						
+											<p class="form-row">
+												<input type="submit" class="button" name="signup" value="Daftar" />
+												<label for="SyaratKetentuan" class="SyaratKetentuan">
+												<input style="margin: 14px 0 0 0" name="SyaratKetentuan" type="checkbox" id="SyaratKetentuan" value="forever" /> Baca <a href="#">Syarat dan Ketentuan</a></label>
+											</p>
+						
+										
+											<p style="text-align:center;" class="lost_password">
+												<span>Sudah Mempunyai Akun? <a href="/daftar-awal"> Masuk</a></span> 
+											</p>
+						
+											
+										</form>
+										<hr>
+									</div>
+								</div>
+							</div>
+						</div>
 
-							<label class="upload-btn">
-								<input type="file" name="file" multiple />
-								<i class="fa fa-upload"></i> Browse
-							</label>
-							<span class="fake-input">No file selected</span>
 
-							<div class="divider"></div>
 
-							<button class="send">Send Applikasi</button>
-						</form>
 					</div>
 					
 				</div>

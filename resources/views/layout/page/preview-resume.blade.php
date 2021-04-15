@@ -1,6 +1,6 @@
-@extends('layout.master.master_user')
+@extends('layout.master.master_page')
 
-@section('title', 'Lihat Resume')
+@section('title', 'Preview Resume')
 
 @section('content')
 <!-- Titlebar
@@ -31,7 +31,7 @@
 		<div class="six columns">
 			<div class="two-buttons">
 
-				<a href="#small-dialog" class="popup-with-zoom-anim button"><i class="fa fa-envelope"></i> Kirim Pesan</a>
+				{{-- <a href="#small-dialog" class="popup-with-zoom-anim button"><i class="fa fa-envelope"></i> Kirim Pesan</a>
 
 				<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
 					<div class="small-dialog-headline">
@@ -48,7 +48,7 @@
 						</form>
 					</div>
 					
-				</div>
+				</div> --}}
 			</div>
 		</div>
 
@@ -189,7 +189,7 @@
 
 </div>
 
-<a href="/atur-aplikasi"><button style="margin-left: 15%" name="kembali" class="margin-bottom-20">kembali</button></a>
+<a href="/index"><button style="margin-left: 15%" name="kembali" class="margin-bottom-20">kembali</button></a>
 <div>
 
 </div>

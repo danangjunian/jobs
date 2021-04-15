@@ -33,28 +33,28 @@
 							<li><a href="#">Lowongan Kerja</a>
 								<ul>
 									<li><a href="job-page.html">Halaman Pekerjaan</a></li>
-									{{-- <li><a href="job-page-alt.html">Job Page Alternative</a></li>
-						<li><a href="resume-page.html">Resume Page</a></li>
-						<li><a href="shortcodes.html">Shortcodes</a></li>
-						<li><a href="pricing-tables.html">Pricing Tables</a></li>
-						<li><a href="contact.html">Contact</a></li> --}}
+									<li><a href="job-page-alt.html">Job Page Alternative</a></li>
+									<li><a href="resume-page.html">Resume Page</a></li>
+									<li><a href="shortcodes.html">Shortcodes</a></li>
+									<li><a href="pricing-tables.html">Pricing Tables</a></li>
+									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Pelamar</a>
 								<ul>
-									{{--  <li><a href="browse-jobs.html">Pencarian kerja</a></li>  
-									<li><a href="browse-categories.html">Pencarian menurut kategori</a></li>--}}
-						<li><a href="/tambah-resume">Tambah Resume</a></li>
-						{{--  <li><a href="manage-resumes.html">Ubah Resume</a></li>
-						<li><a href="job-alerts.html">Job Alerts</a></li>  --}}
+									<li><a href="browse-jobs.html">Pencarian kerja</a></li>  
+									<li><a href="browse-categories.html">Pencarian menurut kategori</a></li>
+									<li><a href="/tambah-resume">Tambah Resume</a></li>
+									<li><a href="manage-resumes.html">Ubah Resume</a></li>
+									<li><a href="job-alerts.html">Job Alerts</a></li>
 								</ul>
 							</li>
 							<li><a href="#">Perusahaan</a>
 								<ul>
 									<li><a href="/tambah-pekerjaan">Tambah pekerjaan</a></li>
-									{{--  <li><a href="manage-jobs.html">Kelola pekerjaan</a></li>
+									<li><a href="manage-jobs.html">Kelola pekerjaan</a></li>
 									<li><a href="manage-applications.html">Kelola Applikasi</a></li>
-									<li><a href="browse-resumes.html">Cari Resume</a></li>  --}}
+									<li><a href="browse-resumes.html">Cari Resume</a></li>
 								</ul>
 							</li>
 
@@ -163,19 +163,20 @@
 
 <!-- Scripts
 ================================================== -->
-<script src="scripts/jquery-2.1.3.min.js"></script>
-<script src="scripts/custom.js"></script>
-<script src="scripts/jquery.superfish.js"></script>
-<script src="scripts/jquery.themepunch.tools.min.js"></script>
-<script src="scripts/jquery.themepunch.revolution.min.js"></script>
-<script src="scripts/jquery.themepunch.showbizpro.min.js"></script>
-<script src="scripts/jquery.flexslider-min.js"></script>
-<script src="scripts/chosen.jquery.min.js"></script>
-<script src="scripts/jquery.magnific-popup.min.js"></script>
-<script src="scripts/waypoints.min.js"></script>
-<script src="scripts/jquery.counterup.min.js"></script>
-<script src="scripts/jquery.jpanelmenu.js"></script>
-<script src="scripts/stacktable.js"></script>
+<script src="{{asset('scripts/jquery-2.1.3.min.js')}}"></script>
+<script src="{{asset('scripts/custom.js')}}"></script>
+<script src="{{asset('scripts/jquery.superfish.js')}}"></script>
+<script src="{{asset('scripts/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.themepunch.showbizpro.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.flexslider-min.js')}}"></script>
+<script src="{{asset('scripts/chosen.jquery.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('scripts/waypoints.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('scripts/jquery.jpanelmenu.js')}}"></script>
+<script src="{{asset('scripts/stacktable.js')}}"></script>
+
 
 
 
