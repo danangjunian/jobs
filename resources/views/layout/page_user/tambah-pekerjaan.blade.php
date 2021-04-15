@@ -1,4 +1,4 @@
-@extends('layout.master.master_page')
+@extends('layout.master.master_user')
 
 @section('title', 'Tambah-pekerjaan')
 
@@ -9,6 +9,25 @@
 <!-- Content=== -->
 
 @section('content')
+<!-- Titlebar
+    ================================================== -->
+    <div id="titlebar" class="single">
+        <div class="container">
+    
+            <div class="sixteen columns">
+                <h2>Tambah Pekerjaan</h2>
+                <nav id="breadcrumbs">
+                    <ul>
+                        <li>You are here:</li>
+                        <li>Tambah Pekerjaan</li>
+                    </ul>
+                </nav>
+            </div>
+    
+        </div>
+    </div>
+
+<!--===================================================-->
 
 <div class="container">
 
@@ -17,11 +36,6 @@
         <div class="submit-page">
 
     <!-- Notice -->
-            <div class="notification notice closeable margin-bottom-40">
-                <p><span>Belum punya akun?</span> Jika Anda tidak memiliki akun, Anda dapat membuatnya di bawah dengan memasukkan alamat email Anda.
-                    Sebuah kata sandi akan secara otomatis dikirimkan ke email Anda.</p>
-            </div>
-
 
     <!-- Email -->
             <div class="form">
@@ -59,14 +73,18 @@
                 <div class="select">
                     <h5>Kategori</h5>
                     <select data-placeholder="kategori pekerjaan" class="chosen-select" name="kategori" multiple>
-                        <option value="1">Web Developers</option>
-                        <option value="2">Mobile Developers</option>
-                        <option value="3">Designers & Creatives</option>
-                        <option value="4">Writers</option>
-                        <option value="5">Virtual Assistants</option>
-                        <option value="6">Customer Service Agents</option>
-                        <option value="7">Sales & Marketing Experts</option>
-                        <option value="8">Accountants & Consultants</option>
+                        <option value="1">Akuntansi</option>
+                        <option value="2">Mekanik / Otomotive</option>
+                        <option value="3">HSE / Kontruksi </option>
+                        <option value="4">Pendidikan</option>
+                        <option value="5">Kesehatan</option>
+                        <option value="6">Pelayanan </option>
+                        <option value="7">Transportasi & Logistik</option>
+                        <option value="8">Telekomunikasi & Ilmu Teknologi</option>
+                        <option value="9">Programmer</option>
+                        <option value="10">Freelance</option>
+                        <option value="11">Seni / Desain / Fashion</option>
+                        <option value="12">Start up & Fintech </option>
                     </select>
                 </div>
             </div>
@@ -146,7 +164,7 @@
 
 
             <div class="divider margin-top-0"></div>
-            <a href="#" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/kelola-jobs" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
 
 
         </div>

@@ -41,6 +41,7 @@
 									<li><a href="/browse-jobs">Pencarian kerja</a></li>  
 									<li><a href="/cari-kategori">Pencarian menurut kategori</a></li>
 									<li><a href="/add-resume">Tambah Resume</a></li>
+									<li><a href="/preview-resume">Preview Resume</a></li>
 									<li><a href="/atur-resume">Atur Resume</a></li>
 									<li><a href="/job-alerts">Pemberitahuan Pekerjaan</a></li>
 								</ul>
@@ -151,8 +152,8 @@
 <script src="{{asset('scripts/jquery.counterup.min.js')}}"></script>
 <script src="{{asset('scripts/jquery.jpanelmenu.js')}}"></script>
 <script src="{{asset('scripts/stacktable.js')}}"></script>
-
-{{Debugbar::info(asset('scripts/stacktable.js'))}}
+{{-- 
+{{Debugbar::info(asset('scripts/stacktable.js'))}} --}}
 
 
 

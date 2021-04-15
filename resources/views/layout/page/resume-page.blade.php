@@ -1,6 +1,6 @@
-@extends('layout.master.master_page')
+@extends('layout.master.master_user')
 
-@section('title', 'Resume')
+@section('title', 'Lihat Resume')
 
 @section('content')
 <!-- Titlebar
@@ -9,17 +9,18 @@
 	<div class="container">
 		<div class="ten columns">
 			<div class="resume-titlebar">
-				<img src="/images/resumes-list-avatar-01.png" alt="">
+				<img src="https://media.suara.com/pictures/653x366/2020/12/25/36001-skin-black-panther-fortnite.jpg" alt="">
 				<div class="resumes-list-content">
-					<h4>Stiawan Jodi <span>Web Designer</span></h4>
-					<span class="icons"><i class="fa fa-map-marker"></i> surabaya city</span>
-					<span class="icons"><i class="fa fa-money"></i> $100 / hour</span>
-					<span class="icons"><a href="http://founderbaca.rgijatim.com/"><i class="fa fa-link"></i> Website</a></span>
+					<h4>Stiawan Jodi <span>Crew Store</span></h4>
+					<span class="icons"><i class="fas fa-map-marker-alt"></i> surabaya city</span>
+					<span class="icons"><i class="fa fa-money"></i>Rp. 4.200.000 / hour</span>
+					<span class="icons"><a href="http://founderbaca.rgijatim.com/"><i class="fa fa-link"></i> founderbaca.rgijati.com</a></span>
 					<span class="icons"><a href="stiawan.jodi270695@gmail.com"><i class="fa fa-envelope"></i> stiawan.jodi270695@gmail.com</a></span>
 					<div class="skills">
 						<span>JavaScript</span>
 						<span>PHP</span>
 						<span>WordPress</span>
+						<span>komunikasi</span>
 					</div>
 					<div class="clearfix"></div>
 
@@ -62,22 +63,45 @@
 	<div class="eight columns">
 	<div class="padding-right">
 
-		<h3 class="margin-bottom-15">About Me</h3>
+		<h3 class="margin-bottom-15">Tentang saya</h3>
 
 		<p class="margin-reset">
-			The Food Service Specialist ensures outstanding customer service is provided to food customers and that all food offerings meet the required stock levels and presentation standards. Beginning your career as a Food Steward will give you a strong foundation in Speedway’s food segment that can make you a vital member of the front line team!
+			Spesialis Layanan pelanggan memastikan layanan pelanggan yang luar biasa diberikan kepada pelanggan makanan, minuman dan bahwa semua penawaran makanan memenuhi tingkat stok dan standar presentasi yang disyaratkan. Memulai karir Anda sebagai Food Stewar akan memberi Anda dasar yang kuat di segmen makanan Speedway yang dapat menjadikan Anda anggota penting di tim lini depan!
 		</p>
 
 		<br>
 
-		<p>The <strong>Food Service Specialist</strong> will have responsibilities that include:</p>
+		<p><strong>Spesialis Layanan </strong> memiliki tanggung jawab yang meliputi:</p>
 
 		<ul class="list-1">
-			<li>Excellent customer service skills, communication skills, and a happy, smiling attitude are essential.</li>
-			<li>Must be available to work required shifts including weekends, evenings and holidays.</li>
-			<li>Must be able to perform repeated bending, standing and reaching.</li>
-			<li>Must be able to occasionally lift up to 50 pounds</li>
+			<li>Keterampilan layanan pelanggan yang sangat baik, keterampilan komunikasi, dan sikap bahagia dan tersenyum sangat penting.</li>
+			<li>Harus tersedia untuk bekerja shift yang diperlukan termasuk akhir pekan, malam hari dan hari libur.</li>
+			<li>Harus mampu memberikan senyuman walaupun itu senyuman palsu</li>
+			<li>Harus bisa sesekali mengangkat hingga 50 juta / bulan</li>
 		</ul>
+
+	</div>
+	<div class="eight columns">
+
+		<h3 class="margin-bottom-20">Media sosial</h3>
+
+		<!-- Resume Table -->
+		<dl class="resume-table">
+			<dt>
+			<strong>	<i class="fab fa-facebook"> stiawan zoddy</i> </strong>
+			</dt>
+
+			<dt>
+				<strong> <i class="fab fa-linkedin-in"> stiawan jodi</i></strong>
+			</dt>
+
+
+			<dt>
+				
+				<strong> <i class="fab fa-instagram"></i> stiawan.jodi_ </strong>
+			</dt>
+
+		</dl>
 
 	</div>
 	</div>
@@ -86,34 +110,77 @@
 	<!-- Widgets -->
 	<div class="eight columns">
 
-		<h3 class="margin-bottom-20">Education</h3>
+		<h3 class="margin-bottom-20">Pendidikan</h3>
 
 		<!-- Resume Table -->
 		<dl class="resume-table">
 			<dt>
-				<small class="date">2012 - 2015</small>
-				<strong>Bsc Computing at College of West jakarta</strong>
+				<small class="date">2009 - 2011</small>
+				<strong>MTs Nurul Huda</strong>
 			</dt>
-			<dd>
-				<p>Captain, why are we out here chasing comets? Maybe we better talk out here; the observation lounge has turned into a swamp. Ensign Babyface!</p>
-			</dd>
 
 		
 			<dt>
-				<small class="date">2006 - 2010</small>
-				<strong>GCSE something at King Edward 7th</strong>
+				<small class="date">2011 - 2014</small>
+				<strong>MA MIFTAHUTTHOLIBIN</strong>
 			</dt>
 			<dd>
-				<p>Captain, why are we out here chasing comets? Maybe we better talk out here; the observation lounge has turned into a swamp. Ensign Babyface!</p>
+				<p>Ilmu Pengetahuan sosial</span> </p>
 			</dd>
 
 
 			<dt>
-				<small class="date">2004 - 2006</small>
-				<strong>Test 2 at Test</strong>
+				<small class="date">2014 - 2019</small>
+				<strong>Universitas Indonesia</strong>
+				<p> Manajemen Ekonomi</p>
 			</dt>
 			<dd>
-				<p>Phasellus vestibulum metus orci, ut facilisis dolor interdum eget. Pellentesque magna sem, hendrerit nec elit sit amet, ornare efficitur est.</p>
+				<p>Ipk : 3.50</p>
+			</dd>
+			<dt>
+				<small class="date">2021 (januari-mei)</small>
+				<strong>Rumah Gemilang Indonesia</strong>
+				<p> Rekayasa perangkat lunak</p>
+			</dt>
+			<dd>
+				<p>Ipk : 3.50</p>
+			</dd>
+
+		</dl>
+
+	</div>
+
+	<div class="eight columns">
+
+		<h3 class="margin-bottom-20">Pengalaman kerja</h3>
+
+		<!-- Resume Table -->
+		<dl class="resume-table">
+			<dt>
+				<small class="date">2019-2020</small>
+				<strong>PT Transportasi Jakarta</strong>
+				<large class="text">Petugas sterilasasi jalur</large>
+			</dt>
+
+		
+			<dt>
+				<small class="date">2018-2019</small>
+				<strong>PT Transportasi Jakarta</strong>
+			</dt>
+			<dd>
+
+				<large class="text">Petugas Layanan bus</large>
+
+			</dd>
+
+			<dt>
+				<small class="date">2014-2018</small>
+				<strong>PT Sumber Alfaria Trijaya</strong>
+			</dt>
+			<dd>
+
+				<large class="text">Pramuniaga</large>
+
 			</dd>
 
 		</dl>
@@ -122,4 +189,8 @@
 
 </div>
 
+<a href="/atur-aplikasi"><button style="margin-left: 15%" name="kembali" class="margin-bottom-20">kembali</button></a>
+<div>
+
+</div>
 @endsection

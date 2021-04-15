@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AwalController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PelamarController;
+use App\Http\Controllers\PerusahaanController;
+
 
 
 /*
@@ -24,98 +29,12 @@ use App\Http\Controllers\AdminController;
 // Route::get('/daftar', [AccountController::class, 'signup_non_user']);
 // Route::get('/jobs', [AccountController::class, 'jobs_non_user']);
 
-//home halaman awal
-Route::get('/', function () {
-    return view('layout.page-awal.index-awal');
-});
-Route::get('/cari-kerja', function () {
-    return view('layout.page-awal.browse-jobs');
-});
-Route::get('/halaman-pekerjaan-awal', function () {
-    return view('layout.page-awal.halaman-pekerjaan-awal');
-});
-Route::get('/browse-jobs-awal', function () {
-    return view('layout.page-awal.browse-jobs-awal');
-});
-Route::get('/blog-awal', function () {
-    return view('layout.page-awal.blog-awal');
-});
-Route::get('/blog-post-awal', function () {
-    return view('layout.page-awal.blog-post-awal');
-});
-Route::get('/daftar-awal', function () {
-    return view('layout.page-awal.daftar-awal');
-});
-Route::get('/login-awal', function () {
-    return view('layout.page-awal.login-awal');
-});
-
-
-//home page
-Route::get('/index', function () {
-    return view('layout.page.index');
-});
-
-
-
-
 //user page
 // Route::get('/lawang', [AccountController::class, 'homepage_user']);
-Route::get('/profile-user', [AccountController::class, 'profile_user']);
-Route::get('/add-resume', [AccountController::class, 'add_resume_user']);
-//belum ada controller
-Route::get('/preview-resume', function () {
-    return view('layout.page.preview-resume');
-});
-
-Route::get('/browse-jobs', function () {
-    return view('layout.page.browse-jobs');
-});
-Route::get('/cari-kategori', function () {
-    return view('layout.page.cari-kategori');
-});
-Route::get('/atur-resume', function () {
-    return view('layout.page.atur-resume');
-});
-Route::get('/job-alerts', function () {
-    return view('layout.page.job-alerts');
-});
-
-
-//perusahaan
-Route::get('/add-jobs', [AccountController::class, 'add_jobs_user']);
-Route::get('/kelola-jobs', function () {
-    return view('layout.page.kelola-jobs');
-});
-
-Route::get('/homepage_user', function () {
-    return view('layout.page_user.homepage_user');
-});
-
-
-
-
-//lowongan kerja
-Route::get('/halaman-pekerjaan', function () {
-    return view('layout.page.halaman-pekerjaan');
-});
-Route::get('/resume-page', function () {
-    return view('layout.page.resume-page');
-});
-Route::get('/contact', function () {
-    return view('layout.page.contact');
-});
-
-
-
-
-
-
+// Route::get('/profile-user', [AccountController::class, 'profile_user']);
 
 //profile account
 Route::get('/profile-account', [AccountController::class, 'user_account']);
-
-
 
 //Admin account
 Route::get('/admin-lawang', [AdminController::class, 'admin']);
@@ -130,10 +49,95 @@ Route::get('/profile-admin', [AdminController::class, 'profile_admin']);
 
 
 
-//blog
-Route::get('/blog', function () {
-    return view('layout.blog.blogs');
+//-------------------------------------------Tampilan sebelum login-------------------------------------------------//
+
+
+Route::get('/',[AwalController::class, 'index_pelamar']);
+Route::get('/halaman-pekerjaan-awal',[AwalController::class, 'halaman_pekerjaan_awal']);
+Route::get('/browse-jobs-awal',[AwalController::class, 'browse_jobs']);
+
+//----------------------------------------------blog sebelum login------------------------------------------------//
+
+Route::get('/blog-awal',[BlogController::class, 'blog_awal']);
+Route::get('/blog-post-awal',[BlogController::class, 'blog_post']);
+
+
+
+Route::get('/cari-kerja', function () {
+    return view('layout.page-awal.browse-jobs');
 });
-Route::get('/blog-post', function () {
-    return view('layout.blog.blog-post');
+Route::get('/daftar-awal', function () {
+    return view('layout.page-awal.daftar-awal');
 });
+Route::get('/login-awal', function () {
+    return view('layout.page-awal.login-awal');
+});
+//---------------------------------- FINISH ROUTE TAMPILAN sebelum login ---------------------------------------------/
+
+
+//----------------------------------  TAMPILAN Pelamar setelah login---------------------------------------------------/
+
+Route::get('/index',[PelamarController::class, 'index']);
+Route::get('/halaman-pekerjaan',[PelamarController::class, 'halaman']);
+Route::get('/browse-jobs',[PelamarController::class, 'jobs']);
+Route::get('/cari-kategori',[PelamarController::class, 'kategori_pelamar']);
+Route::get('/add-resume', [PelamarController::class, 'add_resume_user']);
+Route::get('/preview-resume', [PelamarController::class, 'lihat_resume']);
+Route::get('/atur-resume', [PelamarController::class, 'edit_resume']);
+Route::get('/job-alerts', [PelamarController::class, 'pemberitahuan']);
+
+//--------------------blog sudah login-----------//
+
+Route::get('/blog', [PelamarController::class, 'berita']);
+Route::get('/blog-post', [PelamarController::class, 'berita_single']);
+
+
+
+
+
+//-------------------------------------------------------- PERUSAHAAN --------------------------------------------------//
+
+Route::get('/homepage_user',[PerusahaanController::class, 'index_perushaan']);
+Route::get('/tambah-pekerjaan', [PerusahaanController::class, 'add_kerja']);
+Route::get('/kelola-jobs',[PerusahaanController::class, 'kelola_kerja']);
+Route::get('/atur-aplikasi',[PerusahaanController::class, 'cv']);
+Route::get('/cari-resume',[PerusahaanController::class, 'cari_cv']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

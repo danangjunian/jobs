@@ -41,15 +41,7 @@ class AccountController extends Controller
     {
         return view('/layout.page_user.profile');
     }
-    public function add_jobs_user()
-    {
-        return view('/layout.page_user.tambah-pekerjaan');
-    }
 
-    public function add_resume_user()
-    {
-        return view('/layout.page_user.tambah-resume');
-    }
 
     public function homepage_user()
     {

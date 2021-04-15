@@ -11,7 +11,7 @@
 			<div class="resume-titlebar">
 				<img src="https://media.suara.com/pictures/653x366/2020/12/25/36001-skin-black-panther-fortnite.jpg" alt="">
 				<div class="resumes-list-content">
-					<h4>Stiawan Jodi <span>Web Designer</span></h4>
+					<h4>Stiawan Jodi <span>Crew Store</span></h4>
 					<span class="icons"><i class="fas fa-map-marker-alt"></i> surabaya city</span>
 					<span class="icons"><i class="fa fa-money"></i>Rp. 4.200.000 / hour</span>
 					<span class="icons"><a href="http://founderbaca.rgijatim.com/"><i class="fa fa-link"></i> founderbaca.rgijati.com</a></span>

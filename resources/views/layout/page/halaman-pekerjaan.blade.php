@@ -148,7 +148,6 @@ Persyaratan
 
 							<button class="send">Send Applikasi</button>
 						</form>
-						{{Debugbar::info()}}
 					</div>
 					
 				</div>

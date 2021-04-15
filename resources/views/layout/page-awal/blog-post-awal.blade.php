@@ -18,7 +18,7 @@
 
 		<div class="sixteen columns">
 			<h2>Blog</h2>
-			<span>Keep up to date with the latest news</span>
+			<span> Tetap up to date dengan berita terbaru </span>
 		</div>
 
 	</div>
@@ -229,7 +229,7 @@
 							</div>
 
 							<div class="widget-text">
-								<h5><a href="/blog-post-awall">7 Tanda lowongan hoax, Pelamar wajib mengetahui</a></h5>
+								<h5><a href="/blog-post-awal">7 Tanda lowongan hoax, Pelamar wajib mengetahui</a></h5>
 								<span>October 10, 2019</span>
 							</div>
 							<div class="clearfix"></div>

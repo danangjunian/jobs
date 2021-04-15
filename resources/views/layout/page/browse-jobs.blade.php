@@ -18,11 +18,6 @@
 			<span>Kami menemukan 1 pekerjaan yang cocok:</span>
 			<h2>Web, Software & IT</h2>
 		</div>
-
-		<div class="six columns">
-			<a href="/add-jobs" class="button">Posting pekerjaan, Gratis !</a>
-		</div>
-
 	</div>
 </div>
 

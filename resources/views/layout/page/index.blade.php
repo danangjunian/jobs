@@ -11,7 +11,7 @@
 @section('content')
 
 <!-- ===============Banner-->
-<div id="banner" style="background: url(images/banner-home-01.jpg)">
+<div id="banner" style="background: url(https://b8g9x2x5.rocketcdn.me/wp-content/uploads/2018/08/building-blocks-wall-ss-1920_bchdxd.jpg)">
 	<div class="container">
 		<div class="sixteen columns">
 

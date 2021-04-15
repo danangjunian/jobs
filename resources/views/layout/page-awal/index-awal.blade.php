@@ -11,7 +11,7 @@
 @section('content')
 
 <!-- ===============Banner-->
-<div id="banner" style="background: url(images/banner-home-01.jpg)">
+<div id="banner" style="background: url(https://s3-ap-southeast-2.amazonaws.com/geg-gug-webapp/images/1557364192-work_while_you_study_banner.jpg)">
 	<div class="container">
 		<div class="sixteen columns">
 
