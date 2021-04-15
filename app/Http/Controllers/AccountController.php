@@ -71,14 +71,6 @@ class AccountController extends Controller
    }
 
 
-
-
-
-
-
-
-
-
 //PAGE DAFTAR
    public function signup_user () {
        return view('/layout.page.myaccount_signup');
@@ -187,15 +179,15 @@ class AccountController extends Controller
    }
 
 
-    public function homepage_non_user()
-    {
-        return view('/layout.page.index');
-    }
+    // public function homepage_non_user()
+    // {
+    //     return view('/layout.page.index');
+    // }
 
-    public function categori_non_user()
-    {
-        return view('/layout.page.kategori');
-    }
+    // public function categori_non_user()
+    // {
+    //     return view('/layout.page.kategori');
+    // }
 
     public function signin_non_user()
     {
@@ -208,10 +200,10 @@ class AccountController extends Controller
     }
 
 
-    public function jobs_non_user()
-    {
-        return view('/layout.page.pekerjaan');
-    }
+    // public function jobs_non_user()
+    // {
+    //     return view('/layout.page.pekerjaan');
+    // }
 
     //=============user
 
