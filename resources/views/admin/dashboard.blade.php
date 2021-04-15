@@ -30,7 +30,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            EMPLOYERS</div>
+                            JOBS Approve</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
                     </div>
                     <div class="col-auto">
@@ -43,11 +43,11 @@
 
     <!-- Earnings (Monthly) Card Example -->
     <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-danger shadow h-100 py-2">
+        <div class="card border-left-info shadow h-100 py-2">
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                             JOBS</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                     </div>
@@ -80,48 +80,7 @@
 
 <hr>
 
-    <h1 class="h3 mb-2 text-gray-800">Resume Perusahaan</h1>
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary"><a href="#">Data Resume Perusahaan</a></h6>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Nama Perusahaan</th>
-                            <th>Lokasi Perusahaan</th>
-                            <th>Judul Lowongan</th>
-                            <th>Tipe Pekerjaan</th>
-                            <th colspan="2">Options</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td><a href="#" class="btn btn-primary btn-circle btn-sm">
-                                    <i class="fas fa-pencil-alt"></i>
-                                        </a>
-                                <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                     <i class="fas fa-eye"></i>
-                                         </a>
-
-                            </td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
- <hr>
-
-    <h1 class="h3 mb-2 text-gray-800">Resume Pelamar</h1>
+    <h1 class="h3 mb-2 text-gray-800">Pelamar</h1>
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -132,28 +91,124 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Name</th>
+                            <th>ID Pelamar</th>
+                            <th>Nama Lengkap</th>
                             <th>Email</th>
-                            <th>Keahlian</th>
-                            <th>Lokasi</th>
-                            <th colspan="2">Options</th>
+                            <th>Alamat</th>
+                            <th>Nomor Hp</th>
+                            <th style="display: none">Tanggal Lahir</th>
+                            <th style="display: none">Pendidikan Terakhir</th>
+                            <th style="display: none">Background Pendidikan</th>
+                            <th style="display: none">Pengalaman Kerja</th>
+                            <th style="display: none">Skill</th>
+                            <th style="display: none">Refrensi</th>
+                            <th>Resume</th>
+                            <th colspan="3" style="text-align: center"><strong>Options</strong></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td><a href="#" class="btn btn-primary btn-circle btn-sm">
-                                    <i class="fas fa-pencil-alt"></i>
-                                        </a>
-                                <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                     <i class="fas fa-eye"></i>
-                                         </a>
-
+                            <td>34234</td>
+                            <td>Danang Junian Widodo</td>
+                            <td><a href="https://mail.google.com/mail/u/0/?tab=wm&pli=1#inbox?compose=new">Danangjunianwidodo99@gmail.com</a></td>
+                            <td>lamongan, indonesia, sendangaagung</td>
+                            <td>+6281331414048</td>
+                            <td style="display: none">1888-21-12</td>
+                            <th style="display: none">SMA</th>
+                            <td style="display: none">IPA</td>
+                            <td style="display: none">Wordpress</td>
+                            <td style="display: none">CSS, JAVA</td>
+                            <td style="display: none">081636257762</td>
+                            <td><a href="#">aaaaa</a></td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                    <span class="text">Check</span>
+                                </a>
                             </td>
+                                
+                            <td>
+                                <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                    <span class="text">Blacklist</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+ <hr>
 
+    <h1 class="h3 mb-2 text-gray-800">Perusahaan</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary"><a href="#">Request Resume Perusahaan</a></h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID Perusahaan</th>
+                            <th>Nama Perusahaan</th>
+                            <th>Email Perusahaan</th>
+                            <th>Kategori Pekerjaan</th>
+                            <th>Judul Lowongan</th>
+                            <th style="display: none">Lokasi Pekerjaan</th>
+                            <th style="display: none">Deskripsi Pekerjaan</th>
+                            <th style="display: none">Tipe Lowongan</th>
+                            <th style="display: none">Tipe Pekerjaan</th>
+                            <th style="display: none">Gaji Pekerjaan </th>
+                            <th>Tanggal Dibuka Lowongan</th>
+                            <th>Tanggal Dittutup Lowongan</th>
+                            <th colspan="3" style="text-align: center"><strong>Options</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>32313</td>
+                            <td>MediaTek Corp</td>
+                            <td>jhon@mediatek.com</td>
+                            <td>Programmer</td>
+                            <td>mencari programmer php</td>
+                            <td style="display: none">jakarta</td>
+                            <td style="display: none">yang serius</td>
+                            <td style="display: none">freelance</td>
+                            <td style="display: none">expert</td>
+                            <td style="display: none">$1000</td>
+                            <td>30-02-2012</td>
+                            <td>01-03-2012</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-eye"></i>
+                                    </span>
+                                    <span class="text">Check</span>
+                                </a>
+                            </td>
+                                <td>
+                                    <a href="#" class="btn btn-success btn-icon-split btn-sm">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="text">Approve</span>
+                                    </a>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                    <span class="text">Blacklist</span>
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -162,99 +217,5 @@
     </div>
  
     <hr>
-
-
-<h1 class="h3 mb-2 text-gray-800">User</h1>
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary"><a href="#">Data User Account</a></h6>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                            <th colspan="2">Options</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td><a href="#" class="btn btn-primary btn-circle btn-sm">
-                                    <i class="fas fa-pencil-alt"></i>
-                            </a>
-                                <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                     <i class="fas fas fa-eye"></i>
-                                         </a>
-
-                            </td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-<hr>
-
-    <h1 class="h3 mb-2 text-gray-800">Perusahaan</h1>
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary"><a href="#">Data Perusahaan Account</a></h6>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                            <th colspan="2">Options</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td><a href="#" class="btn btn-primary btn-circle btn-sm">
-                                    <i class="fas fa-pencil-alt"></i>
-                                        </a>
-                                <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                     <i class="fas fas fa-eye"></i>
-                                         </a>
-
-                            </td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-
-
-
 
 @endsection

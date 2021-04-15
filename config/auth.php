@@ -15,7 +15,8 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 'account',
+        // 'passwords' => 'admins',
     ],
 
     /*
@@ -36,10 +37,19 @@ return [
     */
 
     'guards' => [
+        // 'web' => [
+        //     'driver' => 'session',
+        //     'provider' => 'users',
+        // ],
+
+
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'account',
+            // 'provider' => 'admins',
         ],
+        
+       
 
         'api' => [
             'driver' => 'token',
@@ -66,10 +76,26 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        // 'users' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Models\User::class,
+        // ],
+
+
+        'account' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Accpelamars::class,
         ],
+        
+        
+        // 'admins' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Models\Admins::class,
+        // ],
+        
+        
+
+
 
         // 'users' => [
         //     'driver' => 'database',
@@ -93,12 +119,30 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        // 'users' => [
+        //     'provider' => 'users',
+        //     'table' => 'password_resets',
+        //     'expire' => 60,
+        //     'throttle' => 60,
+        // ],
+        
+        'account' => [
+            'provider' => 'account',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
         ],
+        
+        
+        // 'admins' => [
+        //     'provider' => 'admins',
+        //     'table' => 'password_resets',
+        //     'expire' => 60,
+        //     'throttle' => 60,
+        // ],
+        
+        
+
     ],
 
     /*

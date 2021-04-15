@@ -16,7 +16,7 @@
                         <th>E-mail</th>
                         <th>Nomor Hp</th>
                         <th>Password</th>
-                        <th colspan="2">Options</th>
+                        <th colspan="3" style="text-align: center"><strong>Options</strong></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,15 +26,22 @@
                         <td>Edinburgh</td>
                         <td>61</td>
                         <th>Password</th>
-                        <td><a href="#" class="btn btn-primary btn-circle btn-sm">
-                                <i class="fas fa-pencil-alt"></i>
-                        </a>
-                            <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                 <i class="fas fas fa-eye"></i>
-                                     </a>
-
+                        <td>
+                            <a href="#" class="btn btn-primary btn-icon-split btn-sm" >
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-eye"></i>
+                                </span>
+                                <span class="text">Lihat</span>
+                            </a>
                         </td>
-
+                        <td>
+                            <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Trash</span>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

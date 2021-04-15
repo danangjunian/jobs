@@ -12,13 +12,13 @@
     <title>@yield('title', 'admin')</title>
 
     <!-- Custom fonts for this template-->
-    <link href="admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <link href="admin/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="admin/css/admin-user.css" rel="stylesheet">
-    <link rel="stylesheet" href="admin/vendor/datatables/dataTables.bootstrap4.min.css">
+    <link href="/admin/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/admin/css/admin-user.css" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/vendor/datatables/dataTables.bootstrap4.min.css">
 
 </head>
 
@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-address-card"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Admin </div>
+                <div class="sidebar-brand-text mx-3">Danang </div>
             </a>
 
             <!-- Divider -->
@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="/admin-lawang">
+                <a class="nav-link" href="/admin/lawang">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -68,6 +68,22 @@
                         <h6 class="collapse-header">Data User & Perusahaan:</h6>
                         <a class="collapse-item" href="/admin-data-user">Data User</a>
                         <a class="collapse-item" href="/admin-data-perusahaan">Data Perusahaan </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsethree"
+                    aria-expanded="true" aria-controls="collapsethree">
+                    <i class="fas fa-fw fa-folder "></i>
+                    <span>Master Data</span>
+                </a>
+                <div id="collapsethree" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Data :</h6>
+                        <a class="collapse-item" href="/data/pelamar">Pelamar</a>
+                        <a class="collapse-item" href="/data/perusahaan">Perusahaan</a>
                     </div>
                 </div>
             </li>
@@ -118,7 +134,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/profile-admin">
+                <a class="nav-link" href="/profile/admin">
                     <i class="fas fa-user-tie fa-chart-area"></i>
                     <span>Admin</span></a>
             </li>
@@ -207,7 +223,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Danang Junian Widodo</span>
                                 <img class="img-profile rounded-circle"
-                                    src="admin/img/undraw_profile.svg">
+                                    src="/admin/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -221,7 +237,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Keluar
                                 </a>
@@ -283,32 +299,32 @@
                 <div class="modal-body">Apakah benar anda ingin <strong>"Keluar"</strong> dari halaman ini.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Keluar</a>
+                    <a class="btn btn-primary" href="{{ route('admin.logout') }}">Keluar</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="admin/vendor/jquery/jquery.min.js"></script>
-    <script src="admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="admin/js/sb-admin-2.min.js"></script>
+    <script src="/admin/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="admin/vendor/chart.js/Chart.min.js"></script>
+    <script src="/admin/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="admin/js/demo/chart-area-demo.js"></script>
-    <script src="admin/js/demo/chart-pie-demo.js"></script>
-    <script src="admin/js/demo/datatables-demo.js"></script>
-    <script src="admin/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-    <script src="admin/js/demo/chart-bar-demo.js"></script>
+    <script src="/admin/js/demo/chart-area-demo.js"></script>
+    <script src="/admin/js/demo/chart-pie-demo.js"></script>
+    <script src="/admin/js/demo/datatables-demo.js"></script>
+    <script src="/admin/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="/admin/js/demo/chart-bar-demo.js"></script>
 
 </body>
 

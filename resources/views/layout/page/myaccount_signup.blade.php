@@ -26,6 +26,7 @@
 
 
 
+			
 <div class="container">
 
 	<div class="my-account">
@@ -42,35 +43,41 @@
 				<h3 class="margin-bottom-10 margin-top-10">Daftarkan Diri Anda Untuk Mendapatkan Pekerjaan :</h3>
 
                 <hr>
+				
+				<div class="card-body">
+                    @if(session('errors'))
+                            <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                    @endif
 
-				<form method="post" class="singup">
+ 
+					<div class="margin-bottom-10 margin-top-10"></div>
 
+				<form method="post" action="{{ route('auth.register') }}" class="singup">
+					@csrf
+					<p class="form-row form-row-wide">
+						<input type="text" class="input-text" name="nama_pelamar" id="username" value="" placeholder="Nama Lengkap"/>
+					</p>
 					
 					<p class="form-row form-row-wide">
-						<input type="text" class="input-text" name="username" id="username" value="" placeholder="Nama Depan"/>
-					</p>
-
-					<p class="form-row form-row-wide">
-						<input class="input-text" type="text" name="NamaBelakang" id="NamaBelakang" placeholder="Nama Belakang" />
-					</p>
-
-					<p class="form-row form-row-wide">
-						<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
+						<input class="input-text" type="email" name="email_pelamar" id="Email" placeholder="E-mail"/>
+						
 					</p>
 					<p class="form-row form-row-wide">
-						<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
+						<input class="input-text" type="text" name="no_hp_pelamar" id="Phone" placeholder="+62"/>
+						
 					</p>
 					<p class="form-row form-row-wide">
 						<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
+					
 					</p>
 
 					<p class="form-row">
-						<input type="submit" class="button" name="signup" value="Daftar" />
-
-						<label for="SyaratKetentuan" class="SyaratKetentuan">
-						<input style="margin: 14px 0 0 0" name="SyaratKetentuan" type="checkbox" id="SyaratKetentuan" value="forever" /> Baca <a href="#">Syarat dan Ketentuan</a></label>
-					</p>
-
+						<input type="submit" class="button" name="signup" value="Daftar" /></p>
+							
 				
 					<p style="text-align:center;" class="lost_password">
 						<span>Sudah Mempunyai Akun? <a href="/masuk"> Masuk</a></span> 
@@ -78,6 +85,7 @@
 
 					
 				</form>
+				
                 <hr>
 			</div>
 

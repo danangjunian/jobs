@@ -23,8 +23,7 @@
                         <th>Skill</th>
                         <th>Refrensi</th>
                         <th>Resume</th>
-                        
-                        <th colspan="2">Options</th>
+                        <th colspan="3" style="text-align: center"><strong>Options</strong></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,15 +40,32 @@
                         <td>CSS, JAVA</td>
                         <td>081636257762</td>
                         <td><a href="#">aaaaa</a></td>
-                        <td><a href="#" class="btn btn-primary btn-circle btn-sm">
-                                <i class="fas fa-pencil-alt"></i>
-                        </a>
-                            <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                 <i class="fas fas fa-eye"></i>
-                                     </a>
-
+                        <fieldset disabled>
+                        <td>
+                            <a href="#" class="btn btn-warning btn-icon-split btn-sm" >
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span class="text">PUBLISH</span>
+                            </a>
+                        </fieldset>
                         </td>
-
+                        <td>
+                            <a href="#" class="btn btn-primary btn-icon-split btn-sm" >
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-eye"></i>
+                                </span>
+                                <span class="text">Lihat</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Trash</span>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

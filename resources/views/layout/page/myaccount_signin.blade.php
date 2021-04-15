@@ -46,14 +46,32 @@
 
                 <hr>
 
-				<form method="post" class="login">
+				<form action="{{ route('auth.signin') }}"  method="post" class="login">
 
+					@csrf
+					<div class="card-body">
+						@if(session('errors'))
+							<div class="alert alert-danger alert-dismissible fade show" role="alert">
+								Something it's wrong:
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+								<ul>
+								@foreach ($errors->all() as $error)
+								<li>{{ $error }}</li>
+								@endforeach
+								</ul>
+							</div>
+						@endif
+						@if (Session::has('success'))
+							<div class="alert alert-success">{{ Session::get('success') }}</div>
+						@endif
+						@if (Session::has('error'))
+							<div class="alert alert-danger">{{ Session::get('error') }}</div>
+						@endif
 
 					<p class="form-row form-row-wide">
-						<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
-					</p>
-					<p class="form-row form-row-wide">
-						<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
+						<input class="input-text" type="Email" name="email_pelamar" id="Email" placeholder="E-mail"/>
 					</p>
 					<p class="form-row form-row-wide">
 						<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>

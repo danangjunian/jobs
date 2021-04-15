@@ -19,9 +19,9 @@
                                 <h5>
                                     Kshiti Ghelani
                                 </h5>
-                                <h6>
-                                    Web Developer and Designer
-                                </h6>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"> 
+                                 </div>
                                 <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <a href="/profile-admin" class="btn btn-success btn-icon-split btn-sm">
+                    <a href="/profile/admin" class="btn btn-success btn-icon-split btn-sm">
                         <span class="icon text-white-50">
                             <i class="fas fa-check"></i>
                         </span>
@@ -115,56 +115,82 @@
                                     </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                   
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Experience</label>
+                                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Experience</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <p>Expert</p>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                        <option selected>Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Hourly Rate</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>10$/hr</p>
-                                        </div>
+                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Hourly Rate</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Total Projects</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>230</p>
-                                        </div>
+                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Total Projects</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>English Level</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Expert</p>
-                                        </div>
+                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">English Level</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Availability</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>6 months</p>
+                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Availability</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                            <option selected>Choose...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Your Bio</label><br/>
+                                            <p>Your detail description</p>
                                         </div>
                                     </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label>Your Bio</label><br/>
-                                    <p>Your detail description</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>           
             </div>
-        </form>           
-    </div>
-@endsection
+ @endsection

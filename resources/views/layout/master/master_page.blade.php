@@ -161,23 +161,21 @@
 
 <!-- Scripts
 ================================================== -->
-<script src="{{asset('scripts/jquery-2.1.3.min.js')}}"></script>
-<script src="{{asset('scripts/custom.js')}}"></script>
-<script src="{{asset('scripts/jquery.superfish.js')}}"></script>
-<script src="{{asset('scripts/jquery.themepunch.tools.min.js')}}"></script>
-<script src="{{asset('scripts/jquery.themepunch.revolution.min.js')}}"></script>
-<script src="{{asset('scripts/jquery.themepunch.showbizpro.min.js')}}"></script>
-<script src="{{asset('scripts/jquery.flexslider-min.js')}}"></script>
-<script src="{{asset('scripts/chosen.jquery.min.js')}}"></script>
-<script src="{{asset('scripts/jquery.magnific-popup.min.js')}}"></script>
-<script src="{{asset('scripts/waypoints.min.js')}}"></script>
-<script src="{{asset('scripts/jquery.counterup.min.js')}}"></script>
-<script src="{{asset('scripts/jquery.jpanelmenu.js')}}"></script>
-<script src="{{asset('scripts/stacktable.js')}}"></script>
+<script src="{{asset('/scripts/jquery-2.1.3.min.js')}}"></script>
+<script src="{{asset('/scripts/custom.js')}}"></script>
+<script src="{{asset('/scripts/jquery.superfish.js')}}"></script>
+<script src="{{asset('/scripts/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{asset('/scripts/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{asset('/scripts/jquery.themepunch.showbizpro.min.js')}}"></script>
+<script src="{{asset('/scripts/jquery.flexslider-min.js')}}"></script>
+<script src="{{asset('/scripts/chosen.jquery.min.js')}}"></script>
+<script src="{{asset('/scripts/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('/scripts/waypoints.min.js')}}"></script>
+<script src="{{asset('/scripts/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('/scripts/jquery.jpanelmenu.js')}}"></script>
+<script src="{{asset('/scripts/stacktable.js')}}"></script>
+{{Debugbar::info(asset('/scripts/stacktable.js'))}}
 
-{{Debugbar::info(asset('scripts/stacktable.js'))}}
-
-{{asset('scripts/stacktable.js')}}
 
 
 

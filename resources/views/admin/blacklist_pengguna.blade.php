@@ -15,8 +15,8 @@
                         <th>Nama Lengkap</th>
                         <th>E-mail</th>
                         <th>Nomor Hp</th>
-                        <th>Password</th>
-                        <th colspan="2">Options</th>
+                        <th style="display: none">Password</th>
+                        <th colspan="3" style="text-align: center"><strong>Options</strong></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,16 +25,30 @@
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>61</td>
-                        <td>Password</td>
-                        <td><a href="#" class="btn btn-primary btn-circle btn-sm"  title="Edit">
-                            <i class="fas fa-pencil-alt"></i>
+                        <td style="display: none">Password</td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </span>
+                                <span class="text">Edit</span>
+                            </a>
+                        </td>
+                            <td>
+                                <a href="#" class="btn btn-success btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-undo"></i>
+                                    </span>
+                                    <span class="text">Retrun</span>
                                 </a>
-                        <a href="#" class="btn btn-danger btn-circle btn-sm"  title="Hapus Selamanya">
-                             <i class="fas fa-trash"></i>
-                                 </a>
-                        <a href="#" class="btn btn-success btn-circle btn-sm" title="Retrun">
-                             <i class="fas fa-undo"></i>
-                                 </a>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Trash</span>
+                            </a>
                         </td>
                     </tr>
                 </tbody>
@@ -56,8 +70,8 @@
                         <th>Nama Perusahaan</th>
                         <th>E-mail</th>
                         <th>Nomor Hp</th>
-                        <th>Password</th>
-                        <th colspan="2">Options</th>
+                        <th style="display: none">Password</th>
+                        <th colspan="3" style="text-align: center"><strong>Options</strong></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,19 +80,31 @@
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>61</td>
-                        <th>Password</th>
-                        <td><a href="#" class="btn btn-primary btn-circle btn-sm"  title="Edit">
-                                <i class="fas fa-pencil-alt"></i>
-                        </a>
-                            <a href="#" class="btn btn-danger btn-circle btn-sm"  title="Hapus Selamanya">
-                                 <i class="fas fa-trash"></i>
-                                     </a>
-                            <a href="#" class="btn btn-success btn-circle btn-sm" title="Retrun">
-                                 <i class="fas fa-undo"></i>
-                                     </a>
-
+                        <th style="display: none">Password</th>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </span>
+                                <span class="text">Edit</span>
+                            </a>
                         </td>
-
+                            <td>
+                                <a href="#" class="btn btn-success btn-icon-split btn-sm">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-undo"></i>
+                                    </span>
+                                    <span class="text">Retrun</span>
+                                </a>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Trash</span>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
