@@ -11,15 +11,16 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
+                        <th> no </th>
                         <th>ID Perusahaan</th>
+                        <th>ID Jobs</th>
                         <th>Nama Perusahaan</th>
                         <th>Email Perusahaan</th>
-                        <th>Kategori Pekerjaan</th>
                         <th>Judul Lowongan</th>
                         <th>Lokasi Pekerjaan</th>
                         <th>Deskripsi Pekerjaan</th>
-                        <th>Tipe Lowongan</th>
                         <th>Tipe Pekerjaan</th>
+                        <th>Kategori Pekerjaan</th>
                         <th>Gaji Pekerjaan </th>
                         <th>Tanggal Dibuka Lowongan</th>
                         <th>Tanggal Dittutup Lowongan</th>
@@ -27,19 +28,22 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $no=1 ?>
+                    @foreach($resume as $Rp)
                     <tr>
-                        <td>32313</td>
-                        <td>MediaTek Corp</td>
-                        <td>jhon@mediatek.com</td>
-                        <td>Programmer</td>
-                        <td>mencari programmer php</td>
-                        <td>jakarta</td>
-                        <td>yang serius</td>
-                        <td>freelance</td>
-                        <td>expert</td>
-                        <td>$1000</td>
-                        <td>30-02-2012</td>
-                        <td>01-03-2012</td>
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $Rp->master_id }}</td>
+                        <td>{{ $Rp->tipekerja_id }}</td>
+                        <td>{{ $Rp->nama_perusahaan }}</td>
+                        <td>{{ $Rp->email_perusahaan }}</td>
+                        <td>{{ $Rp->judul_jobs }}</td>
+                        <td>{{ $Rp->lokasi_jobs }}</td>
+                        <td>{{ $truncated = Str::limit($Rp->deskripsi_jobs, 10) }}</td>
+                        <td>{{ $Rp->tipe_pekerjaan }}</td>
+                        <td>{{ $Rp->kategori }}</td>
+                        <td>rewrew</td>
+                        <td>{{ $Rp->jobs_dibuka }}</td>
+                        <td>{{ $Rp->jobs_ditutup }}</td>
                         <td>
                             <fieldset disabled>
                             <a href="#" class="btn btn-warning btn-icon-split btn-sm" >
@@ -67,6 +71,7 @@
                             </a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

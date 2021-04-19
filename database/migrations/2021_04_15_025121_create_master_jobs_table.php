@@ -14,16 +14,18 @@ class CreateMasterJobsTable extends Migration
     public function up()
     {
         Schema::create('master_jobs', function (Blueprint $table) {
-            $table->increments('master_jobs_id', true);
+            $table->id();
             $table->string('nama_perusahaan');
             $table->string('nama_pendafatar');
             $table->string('email_perusahaan');
             $table->string('nomor_hp_perusahaan');
             $table->string('alamat_perusahaan');
             $table->string('webste_perusahaan');
-            $table->string('nib_perusahaan');
+            $table->integer('nib_perusahaan');
             $table->string('penaggung_jawab');
             $table->timestamps();
+           
+
         });
     }
 

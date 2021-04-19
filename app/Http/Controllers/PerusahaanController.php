@@ -15,10 +15,7 @@ class PerusahaanController extends Controller
     {
         return view('layout.page_user.homepage_user');
     }
-    public function add_kerja()
-    {
-        return view('/layout.page_user.tambah-pekerjaan');
-    }
+    
     public function kelola_kerja()
     {
         return view('layout.page.kelola-jobs');

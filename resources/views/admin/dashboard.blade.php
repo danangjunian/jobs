@@ -156,6 +156,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th>No</th>
                             <th>ID Perusahaan</th>
                             <th>Nama Perusahaan</th>
                             <th>Email Perusahaan</th>
@@ -172,19 +173,22 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        @foreach ($data as $Rp)
                         <tr>
-                            <td>32313</td>
-                            <td>MediaTek Corp</td>
-                            <td>jhon@mediatek.com</td>
-                            <td>Programmer</td>
-                            <td>mencari programmer php</td>
-                            <td style="display: none">jakarta</td>
-                            <td style="display: none">yang serius</td>
-                            <td style="display: none">freelance</td>
-                            <td style="display: none">expert</td>
-                            <td style="display: none">$1000</td>
-                            <td>30-02-2012</td>
-                            <td>01-03-2012</td>
+                            <td scope="row"> {{$loop->iteration}}.</td>
+                            <td>{{ $Rp->master_id }}</td>
+                            <td>{{ $Rp->nama_perusahaan }}</td>
+                            <td>{{ $Rp->email_perusahaan }}</td>
+                            <td>{{ $Rp->kategori }}</td>
+                            <td>{{ $Rp->judul_jobs }}</td>
+                            <td style="display: none"></td>
+                            <td style="display: none"></td>
+                            <td style="display: none"></td>
+                            <td style="display: none"></td>
+                            <td style="display: none"></td>
+                            <td class="text-primary">{{ $Rp->jobs_dibuka }}</td>
+                            <td class="text-danger">{{ $Rp->jobs_ditutup }}</td>
                             <td>
                                 <a href="#" class="btn btn-primary btn-icon-split btn-sm">
                                     <span class="icon text-white-50">
@@ -210,8 +214,12 @@
                                 </a>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
+              
+                    <div class="d-flex justify-content-center">
+                            {!! $data->links() !!}</div>
             </div>
         </div>
     </div>

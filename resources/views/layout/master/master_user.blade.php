@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@yield('title')  |  Lawang - Lowongan Pekerjaan</title>
-	<link rel="icon" type="image/png" href="images/logo.png"/>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/colors/blue.css" id="colors">
+	<link rel="icon" type="image/png" href="/images/logo.png"/>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/colors/blue.css" id="colors">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	
@@ -24,12 +24,12 @@
 		<div class="sixteen columns">
 			<!-- Logo -->
 			<div id="logo">
-				<h1><a href="/homepage_user"><img src="images/awang.png" alt="lawang" /></a></h1>
+				<h1><a href="/homepage_user"><img src="/images/awang.png" alt="lawang" /></a></h1>
 			</div>
 			<!-- Menu -->
 			<nav id="navigation" class="menu">
 				<ul id="responsive">
-							<li><a href="/tambah-pekerjaan">Tambah pekerjaan</a></li>
+							<li><a href="/tambah/pekerjaan">Tambah pekerjaan</a></li>
 							<li><a href="/kelola-jobs">Kelola pekerjaan</a></li>
 							<li><a href="/atur-aplikasi">Kelola Applikasi</a></li>
 							<li><a href="/cari-resume">Cari Resume</a></li>

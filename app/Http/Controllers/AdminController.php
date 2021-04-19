@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Session;
 use App\Models\Admins;
+use App\Models\MasterJobs;
+use App\Models\AddJobs;
+use Illuminate\Support\Facades\DB; 
 use Barryvdh\Debugbar\Facade as Debugbar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -13,9 +16,57 @@ use Illuminate\Support\Facades\Redirect;
 
 class AdminController extends Controller
 {
-    public function admin () {
-    return view ('admin.dashboard');
-}
+  
+
+    // function __construct()
+    //   {
+    //       $this->AddJobs = new AddJobs();
+    //   }
+      
+
+    public function admin () 
+    {
+        $data = AddJobs::leftjoin ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
+          ->leftjoin('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
+          ->leftjoin('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
+          ->paginate(2);
+
+    // $resumeperusahaan = [
+    //     'resume'=> $this->AddJobs->joinresume(), 
+    //         ];
+            // return view ('admin.dashboard', $resumeperusahaan);
+            return view ('admin.dashboard', compact('data'));
+
+
+            }
+
+
+
+
+
+
+   
+    
+
+
+    function admin_resume_perusahaan () 
+      
+        {
+            $resume = AddJobs::leftjoin ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
+              ->leftjoin('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
+              ->leftjoin('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
+              ->paginate(2);
+
+              return view ('admin.resume_perusahaan',compact('resume'));
+      }
+
+
+
+
+
+
+
+
 
     public function admin_data_perusahaan () {
     return view ('admin.data_perusahaan');
@@ -29,9 +80,17 @@ class AdminController extends Controller
     return view ('admin.resume_pelamar');
 }
 
-    public function admin_resume_perusahaan () {
-    return view ('admin.resume_perusahaan');
-}
+
+
+   
+
+    
+    
+
+
+
+
+
 
     public function admin_blacklist_resume () {
     return view ('admin.blacklist_resume');
@@ -53,9 +112,12 @@ class AdminController extends Controller
     return view ('admin.data_master_p');
 }
 
-    public function data_master_u () {
-    return view ('admin.data_master_u');
-}
+
+public function data_master_u()
+    {
+    	$MasterJobs = MasterJobs::all();
+    	return view('admin.data_master_u', ['MasterJobs' => $MasterJobs]);
+    }
 
 
 
@@ -80,13 +142,6 @@ class AdminController extends Controller
                           return view('admin.data_master_p');
                       }
                   }
-
-
-
-
-
-
-
 
         
         // $peraturan = ([

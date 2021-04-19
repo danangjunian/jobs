@@ -2,14 +2,12 @@
 
 namespace App\Models;
 
-
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Accpelamars extends Authenticatable
+class Account extends Model
 {
     use HasFactory,  Notifiable;
      /**
@@ -17,11 +15,12 @@ class Accpelamars extends Authenticatable
      *
      * @var array
      */
-    protected $table = "account_pelamar";
+    protected $table = "account";
     protected $fillable = [
-        'nama_pelamar',
-        'email_pelamar',
-        'no_hp_pelamar',
+        'nama_account',
+        'email_account',
+        'no_account',
+        'level_account',
         'password',
     ];
 

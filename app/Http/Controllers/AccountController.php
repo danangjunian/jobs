@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
-use App\Models\Accpelamars;
+use App\Models\Account;
 use Illuminate\Http\Request;
 
 class AccountController extends Controller
@@ -25,7 +25,8 @@ class AccountController extends Controller
    }
 
 
-//PAGE MASUK
+//=========================================== PAGE MASUK
+
    public function signin_user () {
        return view('/layout.page.myaccount_signin');
    }
@@ -71,7 +72,12 @@ class AccountController extends Controller
    }
 
 
-//PAGE DAFTAR
+
+
+
+//==========================================    PAGE DAFTAR
+
+
    public function signup_user () {
        return view('/layout.page.myaccount_signup');
    }
@@ -79,91 +85,49 @@ class AccountController extends Controller
    public function register(Request $request)
    {
         $peraturan = ([
-            'nama_pelamar'               => 'required|min:3|max:40',
-            'email_pelamar'              => 'required|email|unique:account_pelamar,email_pelamar',
-            'no_hp_pelamar'              => 'required|digits:12|unique:account_pelamar,no_hp_pelamar',
+            'nama_account'               => 'required|min:3|max:40',
+            'email_account'              => 'required|email|unique:account_pelamar,email_pelamar',
+            'no_account'                 => 'required|digits:12|unique:account_pelamar,no_hp_pelamar',  
             'password'                   => 'required|min:5|max:30'
         ]);
 
         $pesan = ([
-                       'nama_pelamar.required'         => 'Nama Lengkap wajib diisi',
-                       'nama_pelamar.min'              => 'Nama lengkap minimal 3 karakter',
-                       'nama_pelamar.max'              => 'Nama lengkap maksimal 35 karakter',
-                       'email_pelamar.required'        => 'Email wajib diisi',
-                       'email_pelamar.email'           => 'Email tidak valid',
-                       'email_pelamar.unique'          => 'Email sudah terdaftar', 
-                       'no_hp_pelamar.required'        => 'nomor hp wajib diisi',
-                       'no_hp_pelamar.digits'          => 'Nomor 11 digits',
-                       'no_hp_pelamar.unique'          => 'Nomor sudah terdaftar',
-                       'password.required'             => 'Password wajib diisi',
-                       'password.confirmed'            => 'Password tidak sama dengan konfirmasi password'
-                   ]);
+            'nama_account.required'         => 'Nama Lengkap wajib diisi',
+            'nama_account.min'              => 'Nama lengkap minimal 3 karakter',
+            'nama_account.max'              => 'Nama lengkap maksimal 35 karakter',
+            'email_account.required'        => 'Email wajib diisi',
+            'email_account.email'           => 'Email tidak valid',
+            'email_account.unique'          => 'Email sudah terdaftar', 
+            'no_account.required'           => 'nomor hp wajib diisi',
+            'no_account.digits'             => 'Nomor 11 digits',
+            'no_account.unique'             => 'Nomor sudah terdaftar',
+            'password.required'             => 'Password wajib diisi',
+            'password.confirmed'            => 'Password tidak sama dengan konfirmasi password'
+        ]);
 
-                   $validator = Validator::make($request->all(), $peraturan, $pesan);
-  
-                   if($validator->fails()){
-                       return redirect()->back()->withErrors($validator)->withInput($request->all);
-                   }
-             
-                   $Admins = new Accpelamars();
-                   $Admins->nama_pelamar = ucwords(strtolower($request->nama_pelamar));
-                   $Admins->email_pelamar = strtolower($request->email_pelamar);
-                   $Admins->no_hp_pelamar = strtolower($request->no_hp_pelamar);
-                   $Admins->password = Hash::make($request->password);
-                   $Admins->email_verified_at = \Carbon\Carbon::now();
-                   $simpan = $Admins->save();
+            $validator = Validator::make($request->all(), $peraturan, $pesan);
 
-                   if($simpan){
-                    Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
-                    return redirect('/masuk');
-                } else {
-                    Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
-                    return redirect()->route('register');
-                }
-             
-   }
-//        $rules = [
-//            'nama_pelamar'               => 'required|min:3|max:35',
-//            'email_pelamar'              => 'required|email|unique:account_pelamar,email_pelamar',
-//            'no_hp_pelamar'              => 'required|'phone' => 'required|digits:10',', 
-//            'password'                   => 'required|confirmed'
-//        ];
- 
-//        $messages = [
-//            'nama_pelamar.required'         => 'Nama Lengkap wajib diisi',
-//            'nama_pelamar.min'              => 'Nama lengkap minimal 3 karakter',
-//            'nama_pelamar.max'              => 'Nama lengkap maksimal 35 karakter',
-//            'email_pelamar.required'        => 'Email wajib diisi',
-//            'email_pelamar.email'           => 'Email tidak valid',
-//            'email_pelamar.unique'          => 'Email sudah terdaftar', 
-//            'no_hp_pelamar.required'        => 'nomor hp wajib diisi',
-//            'no_hp_pelamar.unique'          => 'Nomor sudah terdaftar',
-//            'password.required'             => 'Password wajib diisi',
-//            'password.confirmed'            => 'Password tidak sama dengan konfirmasi password'
-//        ];
- 
-//        $validator = Validator::make($request->all(), $rules, $messages);
- 
-//        if($validator->fails()){
-//            return redirect()->back()->withErrors($validator)->withInput($request->all);
-//        }
- 
-//        $user = new Admins();
-//        $user->nama_pelamar = ucwords(strtolower($request->nama_pelamar));
-//        $user->email_pelamar = strtolower($request->email_pelamar);
-//        $user->nomor_hp_pelamar = strtolower($request->nomor_hp_pelamar);
-//        $user->password = Hash::make($request->password);
-//        $user->email_verified_at = \Carbon\Carbon::now();
-//        $simpan = $user->save();
- 
-//        if($simpan){
-//            Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
-//            return redirect()->route('/masuk');
-//        } else {
-//            Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
-//            return redirect()->route('register');
-//        }
-//    }
+            if($validator->fails()){
+                return redirect()->back()->withErrors($validator)->withInput($request->all);
+            }
+        
+            $Admins = new Account();
+            $Admins->nama_account = ucwords(strtolower($request->nama_pnama_accountelamar));
+            $Admins->email_account = strtolower($request->email_account);
+            $Admins->no_account = strtolower($request->no_account);
+            $Admins->password = Hash::make($request->password);
+            $Admins->email_verified_at = \Carbon\Carbon::now();
+            $simpan = $Admins->save();
+
+            if($simpan){
+            Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
+            return redirect('/masuk');
+        } else {
+            Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
+            return redirect()->route('register');
+        }
+                
+    }
  
   
 

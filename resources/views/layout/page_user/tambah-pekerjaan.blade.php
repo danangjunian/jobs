@@ -37,28 +37,25 @@
 
     <!-- Notice -->
 
-    <!-- Email -->
-            <div class="form">
-                <h5>Email</h5>
-                <input class="search-field" name="email" type="text" placeholder="abc@example.com" value="" />
-            </div>
-
+    
     <!-- Title -->
+    <form method="post" action="/add/jobs">
+        @csrf
             <div class="form">
-                <h5>Judul Pekerjaan</h5>
-                <input class="search-field" name="judul-pekerjaan" type="text" placeholder="contoh 'crew store'" value="" />
+                <h5>Judul Pekerjaan <span style="color: red">*</span></h5>
+                <input class="search-field" name="judul_jobs" type="text" placeholder="contoh 'crew store'" value="" />
             </div>
 
             <!-- Location -->
             <div class="form">
-                <h5>Lokasi <span>(opsional)</span></h5>
-                <input class="search-field" name="lokasi" type="text" placeholder="contoh. Surabaya" value="" />
+                <h5>Lokasi <span style="color: red">*</span></h5>
+                <input class="search-field" name="lokasi_jobs" type="text" placeholder="contoh. Surabaya" value="" />
                 <p class="note">Biarkan kosong jika lokasinya tidak penting</p>
             </div>
 
             <!-- Job Type -->
             <div class="form">
-                <h5>Tipe Pekerjaan</h5>
+                <h5>Tipe Pekerjaan <span style="color: red">*</span></h5>
                 <select data-placeholder="Full-Time" class="chosen-select-no-single" name="tipe-pekerjaan">
                     <option value="1">Full-Time</option>
                     <option value="2">Part-Time</option>
@@ -71,7 +68,7 @@
             <!-- Choose Category -->
             <div class="form">
                 <div class="select">
-                    <h5>Kategori</h5>
+                    <h5>Kategori <span style="color: red">*</span></h5>
                     <select data-placeholder="kategori pekerjaan" class="chosen-select" name="kategori" multiple>
                         <option value="1">Akuntansi</option>
                         <option value="2">Mekanik / Otomotive</option>
@@ -91,32 +88,45 @@
 
             <!-- Tags -->
             <div class="form">
-                <h5>Tag Pekerjaan <span>(optional)</span></h5>
-                <input class="search-field" type="text" name="tag-pekerjaan" placeholder="e.g. PHP, Social Media, Management, Content writer" value="" />
+                <h5>Tag Pekerjaan <span style="color: red">*</span></h5>
+                <input class="search-field" type="text" name="tag_jobs" placeholder="e.g. PHP, Social Media, Management, Content writer" value="" />
                 <p class="note">Tag keterampilan atau teknologi yang diperlukan, untuk pekerjaan ini.</p>
             </div>
 
 
             <!-- Description -->
             <div class="form">
-                <h5>Deskripsi pekerjaan</h5>
-                <textarea class="WYSIWYG" name="summary" cols="40" rows="3" id="summary" spellcheck="true"></textarea>
+                <h5>Deskripsi pekerjaan <span style="color: red">*</span></h5>
+                <textarea class="WYSIWYG" name="deskripsi_jobs" cols="40" rows="3" id="deskripsi_jobs" spellcheck="true"></textarea>
             </div>
 
             <!-- Application email/url -->
             <div class="form">
-                <h5>Email Perusahaan / URL</h5>
-                <input type="text" name="email-perusahaan" placeholder="Enter an email address or website URL">
+                <h5>Penanggung Jawab <span style="color: red">*</span></h5>
+                <input type="text" name="email_perusahaan" placeholder="Enter an email address or website URL">
+            </div>
+            
+            <!-- Application email/url -->
+            <div class="form">
+                <h5>NIB Perusahaan <span style="color: red">*</span></h5>
+                <input type="text" name="nib_perusahaan" placeholder="Enter an email address or website URL">
             </div>
 
             <!-- TClosing Date -->
             <div class="form">
-                <h5>Tanggal di tutup <span>(optional)</span></h5>
-                <input data-role="date" type="text" name="tanggal-tutup" placeholder="yyyy-mm-dd" value="contoh : 2021-07-21">
+                <input style="display: none" data-role="date" type="date"  id="date" class="date" name="jobs_dibuka" placeholder="yyyy-mm-dd" v >
+                <script>document.getElementById("date").value = new Date().toJSON().slice(0,10)</script>
+            </div>
+
+            <div class="form">
+                <h5>Tanggal di tutup <span style="color: red">*</span></h5>
+                <input data-role="date" type="date" name="jobs_ditutup" placeholder="yyyy-mm-dd">
                 <p class="note">Deadline for new applicants.</p>
             </div>
 
+        
 
+        
             <!-- Company Details -->
             <div class="divider">
                 <h3>Detail Perusahaan</h3>
@@ -124,19 +134,19 @@
 
             <!-- Company Name -->
             <div class="form">
-                <h5>Nama Perusahaan</h5>
+                <h5>Nama Perusahaan <span style="color: red">*</span></h5>
                 <input type="text" name="nama-perusahaan" placeholder="Enter the name of the company">
             </div>
 
             <!-- Website -->
             <div class="form">
-                <h5>Website <span>(optional)</span></h5>
+                <h5>Website <span style="color: red">*</span></h5>
                 <input type="text" name="website" placeholder="http://">
             </div>
 
             <!-- Teagline -->
             <div class="form">
-                <h5>Tagline <span>(optional)</span></h5>
+                <h5>Tagline <span style="color: red">*</span></h5>
                 <input type="text" name="tagline" placeholder="Jelaskan secara singkat perusahaan Anda">
             </div>
 
@@ -154,19 +164,19 @@
 
             <!-- Logo -->
             <div class="form">
-                <h5>Logo <span>(optional)</span></h5>
+                <h5>Logo <span style="color: red">*</span></h5>
                 <label class="upload-btn">
                     <input type="file" name="logo" multiple />
                     <i class="fa fa-upload"></i> Browse
                 </label>
                 <span class="fake-input">No file selected</span>
             </div>
-
+     
 
             <div class="divider margin-top-0"></div>
-            <a href="/kelola-jobs" class="button big margin-top-5">Preview <i class="fa fa-arrow-circle-right"></i></a>
-
-
+            <button class="button big margin-top-5" name="submit" value="submit">Preview<i class="fa fa-arrow-circle-right"></i></button>
+        </form>
+        
         </div>
     </div>
 

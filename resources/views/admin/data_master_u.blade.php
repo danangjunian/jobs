@@ -11,34 +11,34 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
+                        <th>No.</th>
                         <th>ID Perusahaan</th>
-                        <th>Nama Pendaftar</th>
                         <th>Nama Perusahaan</th>
+                        <th>Nama Pendaftar</th>
                         <th>Email Perusahaan</th>
                         <th>Alamat Perusahaan</th>
                         <th>Nomor telepon/hp Perusahaan</th>
-                        <th>Deskripsi Perusahaan</th>
                         <th>Website Perusahaan</th>
-                        <th>Tipe Perusahaan</th>
                         <th>NIB</th>
                         <th>Penanggung Jawab / HRD</th>
                         <th colspan="3" style="text-align: center"><strong>Options</strong></th>
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $no=1 ?>
+                    @foreach($MasterJobs as $master)
+                    
                     <tr>
-                        <td>32313</td>
-                        <td>Setiawan JOdi .SPD. IR</td>
-                        <td>lawang corp</td>
-                        <td>jhon@js.com </td>
-                        <td>Jakarta, kebayoran baru jakarta pusat nomor 15 jln simpang lima</td>
-                        {{-- <td>{{str_limit($biodata ->description, $limit = 20, $end = '...')}}</td> --}}
-                        <td>0824442535663</td>
-                        <td>Membangun negri tanpa kemajuan</td>
-                        <td>John.com</td>
-                        <td>74632764327</td>
-                        <td>Teknologi</td>
-                        <td>jodi src</td>
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $master->id }}</td>
+                        <td>{{ $truncated = Str::limit($master->nama_perusahaan) }}</td>
+                        <td>{{ $truncated = Str::limit($master->nama_pendafatar) }}</td>
+                        <td>{{ $truncated = Str::limit($master->email_perusahaan) }}</td>
+                        <td>{{ $truncated = Str::limit($master->alamat_perusahaan, 10) }}</td>
+                        <td>{{ $truncated = Str::limit($master->nomor_hp_perusahaan) }}</td>
+                        <td>{{ $truncated = Str::limit($master->webste_perusahaan) }}</td>
+                        <td>{{ $truncated = Str::limit($master->nib_perusahaan)	 }}</td>
+                        <td>{{ $truncated = Str::limit($master->penaggung_jawab) }}</td>
                         <td>
                             <a href="#" class="btn btn-primary btn-icon-split btn-sm" >
                                 <span class="icon text-white-50">
@@ -56,6 +56,7 @@
                             </a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
