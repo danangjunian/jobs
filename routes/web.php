@@ -78,7 +78,10 @@ Route::get('/login-awal', function () {
 //----------------------------------  TAMPILAN Pelamar setelah login---------------------------------------------------/
 
 Route::get('/index',[PelamarController::class, 'index']);
-Route::get('/halaman-pekerjaan',[PelamarController::class, 'halaman']);
+Route::get('/post/jobs/{id}',[PelamarController::class, 'halaman']);
+
+
+
 Route::get('/browse-jobs',[PelamarController::class, 'jobs']);
 Route::get('/cari-kategori',[PelamarController::class, 'kategori_pelamar']);
 Route::get('/add-resume', [PelamarController::class, 'add_resume_user']);
@@ -96,16 +99,18 @@ Route::get('/blog-post', [PelamarController::class, 'berita_single']);
 
 
 //-------------------------------------------------------- PERUSAHAAN --------------------------------------------------//
-
-
-Route::get('/tambah/pekerjaan', [AddJobsController::class, 'view_jobs']);
-Route::post('/add/jobs', [AddJobsController::class, 'add_jobs']);
-// Route::post('/add/jobs', [AddJobsController::class, 'add_jobs']);
-
-
-
 Route::get('/homepage_user',[PerusahaanController::class, 'index_perushaan']);
+
+
+
+
 Route::get('/kelola-jobs',[PerusahaanController::class, 'kelola_kerja']);
+
+Route::get('/tambah/pekerjaan', [PerusahaanController::class, 'view_jobs']);
+Route::post('/tambah/pekerjaan', [PerusahaanController::class, 'add_jobs']);
+
+
+
 Route::get('/atur-aplikasi',[PerusahaanController::class, 'cv']);
 Route::get('/cari-resume',[PerusahaanController::class, 'cari_cv']);
 
@@ -123,19 +128,36 @@ Route::get('/admin/lawang', [AdminController::class, 'admin']);
 Route::get('/admin-data-perusahaan', [AdminController::class, 'admin_data_perusahaan']);
 Route::get('/admin-data-user', [AdminController::class, 'admin_data_user']);
 Route::get('/admin-resume-pelamar', [AdminController::class, 'admin_resume_pelamar']);
-Route::get('/admin-resume-perusahaan', [AdminController::class, 'admin_resume_perusahaan']);
 Route::get('/admin-blacklist-resume', [AdminController::class, 'admin_blacklist_resume']);
 Route::get('/admin-blacklist-pengguna', [AdminController::class, 'admin_blacklist_pengguna']);
 Route::get('/admin-edit', [AdminController::class, 'admin_profile_edit']);
 Route::get('/profile/admin', [AdminController::class, 'profile_admin']);
 
+
+
+
+
+
+
 //MASTER DATA
 Route::get('/data/pelamar', [AdminController::class, 'data_master_p']);
 Route::get('/data/perusahaan', [AdminController::class, 'data_master_u']);
+Route::get('/resume/perusahaan', [AdminController::class, 'admin_resume_perusahaan']);
+
+//SOFT DELETE
+Route::get('/hapus/data/master/perusahaan/{id}', [AdminController::class, 'delete_data_master']);
+Route::get('/blacklist/resume/perusahaan/{id}', [AdminController::class, 'blacklist_resume_p']);
+Route::get('/resume/restore/{id}', [AdminController::class, 'resume_restore']);
+Route::get('/resume/delete/{id}', [AdminController::class, 'resume_delete']);
+
+
+Route::get('/master/restore/{id}', [AdminController::class, 'master_data_restore']);
+Route::get('/master/delete/{id}', [AdminController::class, 'master_data_deleted']);
+
 
 //LOGIN'
 Route::get('/admin/login', [AdminController::class, 'admin_login']);
-Route::post('/login', [AdminController::class, 'login'])->name('admin.login');
+Route::post('/login/anngota/lawang', [AdminController::class, 'login'])->name('admin.login');
 
 //LOGOUT
 Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');

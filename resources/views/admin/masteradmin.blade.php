@@ -99,8 +99,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Resume :</h6>
-                        <a class="collapse-item" href="/admin-resume-pelamar">Resume Pelamar</a>
-                        <a class="collapse-item" href="/admin-resume-perusahaan">Resume Perusahaan</a>
+                        <a class="collapse-item" href="/resume/pelamar">Resume Pelamar</a>
+                        <a class="collapse-item" href="/resume/perusahaan">Resume Perusahaan</a>
                     </div>
                 </div>
             </li>

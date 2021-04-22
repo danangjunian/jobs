@@ -48,36 +48,25 @@
 				<th><i class="fa fa-user"></i> Applikasi Masuk</th>
 				<th></th>
 			</tr>
-					
-			<!-- Item #1 -->
+			<tbody>
+				@foreach ($kelolajobs as $jobs)
 			<tr>
-				<td class="title">Marketing Coordinator - SEO / SEM Experience <span class="pending">(Close job)</span></td>
+				<td class="title">{{ $jobs->judul_jobs }} | <div style="color: #335CFF"> {{ $jobs->kategori }} </div> <span class="pending">(Postingan)</span></td>
 				<td class="centered">-</td>
-				<td>September 30, 2020</td>
-				<td>October 10, 2020</td>
-				<td class="centered">-</td>
-				<td class="action">
-					<a href="/kelola-jobs" class="delete"><i class="fa fa-remove"></i> Delete</a>
-				</td>
-			</tr>
-					
-			<!-- Item #2 -->
-			<tr>
-				<td class="title">Pelayanan - Service - Crew Store <span class="pending">(Postingan)</span></td>
-				<td class="centered">-</td>
-				<td>September 30, 2020</td>
-				<td>October 10, 2020</td>
+				<td>{{ $jobs->jobs_dibuka }}</td>
+				<td>{{ $jobs->jobs_ditutup }}</td>
 				<td class="centered"><a href="/atur-aplikasi" class="button">Show (1)</a></td>
 				<td class="action">
-					<a href="/tambah-pekerjaan"><i class="fas fa-pencil-alt"></i> Edit</a>
+					<a href="/tambah/pekerjaan"><i class="fas fa-pencil-alt"></i> Edit</a>
 					<a href="#" class="delete"><i class="fa fa-remove"></i> Delete</a>
 				</td>
 			</tr>	
-
+			@endforeach
+		</tbody>
 		</table>
 
 		<br>
-		<a href="/tambah-pekerjaan" class="button">Add Job</a>
+		<a href="/tambah/pekerjaan" class="button">Add Job</a>
 
 	</div>
 

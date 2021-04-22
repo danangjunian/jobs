@@ -73,45 +73,16 @@
 		<div class="padding-right">
 			<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
 			<ul class="job-list">
-
-				{{--  <li class="highlighted"><a href="job-page.html">
-						<img src="images/job-list-logo-01.png" alt="">
-						<div class="job-list-content">
-							<h4>Marketing Coordinator - SEO / SEM Experience <span class="full-time">Full-Time</span>
-							</h4>
-							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> PT Bintang Timur</span>
-								<span><i class="fa fa-map-marker"></i> Surabaya</span>
-								<span><i class="fa fa-money"></i> 4200.000 / bulan</span>
-							</div>
-						</div>
-					</a>
-					<div class="clearfix"></div>
-				</li>  --}}
-
-				{{--  <li>
-					<a href="job-page.html">
-						<img src="images/job-list-logo-02.png" alt="">
-						<div class="job-list-content">
-							<h4>PHP Developer for Site Maintenance <span class="part-time">Part-Time</span></h4>
-							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> PT. itech</span>
-								<span><i class="fa fa-map-marker"></i> Lamongan</span>
-								<span><i class="fa fa-money"></i> 5000.000 / bulan</span>
-							</div>
-						</div>
-					</a>
-					<div class="clearfix"></div>
-				</li>  --}}
-
+				@foreach ($lihatjobs as $x)
+					
 				<li>
-					<a href="/halaman-pekerjaan">
+					<a href="/post/jobs/{{ $x->jobs_id }}">
 						<img src="images/job-list-logo-03.png" alt="">
 						<div class="job-list-content">
-							<h4>Restaurant Team Member <span class="full-time">Full-Time</span></h4>
+							<h4>{{ $x->judul_jobs }}<span class="full-time">{{ $x->tipe_pekerjaan }}</span></h4>
 							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> Mcd Surabaya</span>
-								<span><i class="fa fa-map-marker"></i> Surabaya</span>
+								<span><i class="fa fa-briefcase"></i> {{ $x->nama_perusahaan }}</span>
+								<span><i class="fa fa-map-marker"></i> {{ $x->lokasi_jobs }}</span>
 								<span><i class="fa fa-money"></i> RP. 4200.000 / bulan</span>
 
 							</div>
@@ -119,40 +90,18 @@
 					</a>
 					<div class="clearfix"></div>
 				</li>
-
-				{{--  <li>
-					<a href="/halaman-pekerjaan">
-						<img src="images/job-list-logo-04.png" alt="">
-						<div class="job-list-content">
-							<h4>Designer <span class="internship">Internship</span></h4>
-							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> Lola Boutique</span>
-								<span><i class="fa fa-map-marker"></i> Surabaya</span>
-								<span><i class="fa fa-money"></i> 500.000 / content</span>
-							</div>
-						</div>
-					</a>
-					<div class="clearfix"></div>
-				</li>  --}}
-
-				{{--  <li>
-					<a href="/halaman-pekerjaan">
-						<img src="images/job-list-logo-05.png" alt="">
-						<div class="job-list-content">
-							<h4>Android Music App Development <span class="temporary">Temporary</span></h4>
-							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> PT Rans Entertaiment</span>
-								<span><i class="fa fa-map-marker"></i> Jakarta</span>
-								<span><i class="fa fa-money"></i> 6500.000 / bulan</span>
-							</div>
-						</div>
-					</a>
-					<div class="clearfix"></div>
-				</li>  --}}
+				@endforeach
 			</ul>
 
 
-			<a href="/browse-jobs" class="button centered"><i class="fa fa-plus-circle"></i> lihat pekerjaan lainnya</a>
+		<div class="pagination-container">
+			<nav class="pagination">
+				<ul>
+					<li><span class="current-page">{!! $lihatjobs->links() !!}</span></li>
+				</ul>
+			</nav>
+		</div>
+
 			<div class="margin-bottom-55"></div>
 		</div>
 	</div>
@@ -172,26 +121,24 @@
 		<div id="job-spotlight" class="showbiz-container">
 			<div class="showbiz" data-left="#showbiz_left_1" data-right="#showbiz_right_1" data-play="#showbiz_play_1">
 				<div class="overflowholder">
-
 					<ul>
-
+						@foreach ($lihatjobs as $x)
 						<li>
 							<div class="job-spotlight">
 								<a href="#">
-									<h4>Social Media <span class="part-time">Part-Time</span></h4>
+									<h4>{{ $x->judul_jobs }}<span class="part-time">{{ $x->tipe_pekerjaan }}</span></h4>
 								</a>
-								<span><i class="fa fa-briefcase"></i> PT epans onlineshop </span>
-								<span><i class="fa fa-map-marker"></i> Surabaya</span>
+								<span><i class="fa fa-briefcase"></i> {{ $x->nama_perusahaan }} </span>
+								<span><i class="fa fa-map-marker"></i> {{ $x->lokasi_jobs }}</span>
 								<span><i class="fa fa-money"></i>Rp. 4500.000 / bulan</span>
-								<p>As advertising & content,betugas untuk memposting, mengelola akun web dan melakukan
-									penjualan</p>
-								<a href="/halaman-pekerjaan" class="button">Detail Pekerjaan</a>
+								<p>{{ $truncated = Str::limit($x->deskripsi_jobs, 50) }} </p>
+								<a href="/post/jobs/{{ $x->jobs_id }}" class="button">Detail Pekerjaan</a>
 							</div>
 						</li>
-
+						@endforeach 
 					</ul>
 					<div class="clearfix"></div>
-
+					
 				</div>
 				<div class="clearfix"></div>
 			</div>

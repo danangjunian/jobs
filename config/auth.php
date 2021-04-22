@@ -16,7 +16,7 @@ return [
     'defaults' => [
         'guard' => 'web',
         'passwords' => 'account',
-        // 'passwords' => 'admins',
+        'passwords' => 'admins',
     ],
 
     /*
@@ -46,7 +46,7 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'account',
-            // 'provider' => 'admins',
+            'provider' => 'admins',
         ],
         
        
@@ -88,10 +88,10 @@ return [
         ],
         
         
-        // 'admins' => [
-        //     'driver' => 'eloquent',
-        //     'model' => App\Models\Admins::class,
-        // ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admins::class,
+        ],
         
         
 
@@ -134,12 +134,12 @@ return [
         ],
         
         
-        // 'admins' => [
-        //     'provider' => 'admins',
-        //     'table' => 'password_resets',
-        //     'expire' => 60,
-        //     'throttle' => 60,
-        // ],
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
         
         
 

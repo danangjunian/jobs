@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use DebugBar\DebugBar;
 use Illuminate\Http\Request;
 
+use App\Models\AddJobs;
+use App\Models\kategori;
+use App\Models\MasterJobs;
+use App\Models\TipeKerja;
+use Illuminate\Support\Facades\DB;
+
 class PelamarController extends Controller
 {
     /**
@@ -14,12 +20,50 @@ class PelamarController extends Controller
      */
     public function index()
     {
-        return view('layout.page.index');
+        $lihatjobs = AddJobs::leftjoin ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
+        ->leftjoin('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
+        ->leftjoin('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
+        ->leftjoin('tag', 'add_jobs.tag_id', '=', 'tag.id')
+        ->paginate(5);
+
+        return view('layout.page.index',compact('lihatjobs'));
     }
+   
+
+    public function __construct()
+        {
+            
+        $this->AddJobs = new AddJobs;
+    
+        }
+
     public function halaman()
-    {
-        return view('layout.page.halaman-pekerjaan');
-    }
+        {
+            
+            // $halamanjobs = AddJobs::find($id);
+            // $master = MasterJobs::find($id);
+            // $kategori = kategori::find($id);
+            // $tipe = TipeKerja::find($id);
+            // return view('layout.page.halaman-pekerjaan', 
+            // ['halamanjobs' => $halamanjobs],
+            // ['master' => $master],
+            // ['tipe' => $tipe],
+            // ['kategori' => $kategori]);
+    
+            // 
+            // $kategori = DB::table('kategori_kerja')->where('id', $id)->first();
+            // $master = DB::table('master_jobs')->where('id', $id)->first();
+            // $tipe = DB::table('tipe_kerja')->where('id', $id)->first();
+            // $tag = DB::table('tag')->where('id', $id)->first();
+            // $halamanjobs = DB::table('add_jobs')->where('jobs_id', $id)->first();
+            $data = ['addjobs' => $this->Addjobs->alldata()];
+            return view('layout.page.halaman-pekerjaan', $data);
+
+        }
+
+
+
+
     public function jobs()
     {
         return view('layout.page.browse-jobs');

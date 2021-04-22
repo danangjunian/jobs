@@ -11,10 +11,11 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th> no </th>
+                        <th> No. </th>
                         <th>ID Perusahaan</th>
                         <th>ID Jobs</th>
                         <th>Nama Perusahaan</th>
+                        <th>Tag</th>
                         <th>Email Perusahaan</th>
                         <th>Judul Lowongan</th>
                         <th>Lokasi Pekerjaan</th>
@@ -31,17 +32,17 @@
                     <?php $no=1 ?>
                     @foreach($resume as $Rp)
                     <tr>
-                        <td>{{ $no++ }}</td>
+                        <td>{{ $no++ }}<strong>.</strong></td>
                         <td>{{ $Rp->master_id }}</td>
-                        <td>{{ $Rp->tipekerja_id }}</td>
+                        <td>{{ $Rp->jobs_id }}</td>
                         <td>{{ $Rp->nama_perusahaan }}</td>
+                        <td>{{ $Rp->tag }}</td>
                         <td>{{ $Rp->email_perusahaan }}</td>
                         <td>{{ $Rp->judul_jobs }}</td>
                         <td>{{ $Rp->lokasi_jobs }}</td>
                         <td>{{ $truncated = Str::limit($Rp->deskripsi_jobs, 10) }}</td>
                         <td>{{ $Rp->tipe_pekerjaan }}</td>
                         <td>{{ $Rp->kategori }}</td>
-                        <td>rewrew</td>
                         <td>{{ $Rp->jobs_dibuka }}</td>
                         <td>{{ $Rp->jobs_ditutup }}</td>
                         <td>
@@ -63,7 +64,7 @@
                             </a>
                         </td>
                         <td>
-                            <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                            <a href="/blacklist/resume/perusahaan/{{ $Rp->jobs_id }}" class="btn btn-danger btn-icon-split btn-sm">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-trash"></i>
                                 </span>
@@ -74,6 +75,8 @@
                     @endforeach
                 </tbody>
             </table>
+            <div class="d-flex justify-content-center">
+                {!! $resume->links() !!}</div>
         </div>
     </div>
 </div>

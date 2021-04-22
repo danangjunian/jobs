@@ -2,14 +2,16 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use App\Models\AddJobs;
+use App\Models\Tag;
 
 class MasterJobs extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
     protected $table = 'master_jobs';
     protected $filleble = [
         'nama_perusahaan',
@@ -21,12 +23,14 @@ class MasterJobs extends Model
         'nib_perusahaan',
         'penaggung_jawab',
     ];
-
+    protected $dates = ['deleted_at'];
     protected $primaryKey = 'id';
 
     public function Jobs() {
         return $this->hasMany(AddJobs::class);
       }
+      
+      
 
       
 

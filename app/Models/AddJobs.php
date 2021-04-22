@@ -7,17 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Notifications\Notifiable;
 use phpDocumentor\Reflection\DocBlock\Tag;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class AddJobs extends Model
 {
    
-       use HasFactory,  Notifiable;
+       use HasFactory,  Notifiable, SoftDeletes;
          /**
          * The attributes that are mass assignable.
          *
          * @var array
          */
-        protected $table = "add_jobs";
+
+        protected $primaryKey = 'jobs_id';
+        protected $table = 'add_jobs';
         protected $fillable = [
             'judul_jobs',
             'lokasi_jobs',
@@ -28,11 +31,21 @@ class AddJobs extends Model
             'master_id',
             'tipekerja_id',
             'tag_id',
+            'kategori_id',
            
         ];
 
-        protected $primaryKey = 'id';
+        public function alldata()
+        {
+          return DB::table('add_jobs')
+          ->Join('master_jobs','master_jobs.id','=','add_jobs.master_id')
+          ->Join('tipe_kerja','tipe_kerja.id','=','add_jobs.tipekerja_id')
+          ->Join('kategori_kerja','kategori_kerja.id','=','add_jobs.kategori_id')
+          ->select('add_jobs.jobs_id','add_jobs.judul_jobs','add_jobs.lokasi_jobs','add_jobs.deskripsi_jobs','add_jobs.jobs_dibuka','add_jobs.jobs_ditutup','master_jobs.id','master_jobs.nama_perusahaan','master_jobs.email_perusahaan','master_jobs.webste_perusahaan','tipe_kerja.id','tipe_kerja.tipe_pekerjaan','kategori_kerja.id','kategori_kerja.kategori')
+          ->get();
+        }
 
+      
         public function MasterJobs() {
           return $this->belongsTo(MasterJobs::class);
         }
@@ -51,15 +64,7 @@ class AddJobs extends Model
             return $this->belongsTo(kategori::class);
         }
 
-        // public function joinresume() {
-        //   return DB::table('add_jobs')
-        //   ->leftjoin('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
-        //   ->leftjoin('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
-        //   ->leftjoin('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
-          
-        //   ->get();
-        // }
-
+        
         /**
      * The attributes that should be hidden for arrays.
      *

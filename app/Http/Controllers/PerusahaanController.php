@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\AddJobs;
+use App\Models\TipeKerja;
+use App\Models\kategori;
+use App\Models\Tag;
 
 class PerusahaanController extends Controller
 {
@@ -15,11 +19,70 @@ class PerusahaanController extends Controller
     {
         return view('layout.page_user.homepage_user');
     }
+
+
+
     
     public function kelola_kerja()
     {
-        return view('layout.page.kelola-jobs');
+        $kelolajobs = AddJobs::leftjoin ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
+        ->leftjoin('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
+        ->leftjoin('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
+        ->leftjoin('tag', 'add_jobs.tag_id', '=', 'tag.id')
+        ->get();
+    
+
+        return view ('layout.page.kelola-jobs',compact('kelolajobs'));
     }
+
+
+    public function view_jobs()
+    {
+
+		$kategori = kategori::all();
+		$tipekerja = TipeKerja::all();
+		$tags = Tag::all();
+        return view('/layout.page_user.tambah-pekerjaan', compact('tipekerja', 'kategori', 'tags'));
+    }
+    
+    
+    public function add_jobs(Request $request)
+    {
+        $request->validate([
+			
+    	// 	'master_id ' 		=> 'required',
+    	// 	'tipekerja_id' 		=> 'required',
+    	// 	'kategori_id' 		=> 'required',
+    	// 	'tag_id' 			=> 'required',
+    		'judul_jobs' 		=> 'required|min:3|max:70',
+    		'lokasi_jobs' 		=> 'required',
+    		'deskripsi_jobs' 	=> 'required',
+    		'jobs_dibuka' 		=> 'required',
+    		'jobs_ditutup' 		=> 'required',
+    		
+    	]);
+ 
+	
+			$data = new AddJobs;
+    		$data->master_id 			= $request->master_id;
+    		$data->tipekerja_id 		= $request->tipekerja_id;
+    		$data->kategori_id			= $request->kategori_id;
+    		$data->tag_id				= $request->tag_id;
+    		$data->judul_jobs 			= $request->judul_jobs;
+    		$data->lokasi_jobs			= $request->lokasi_jobs;
+    		$data->deskripsi_jobs 		= $request->deskripsi_jobs;
+    		$data->jobs_dibuka			= $request->jobs_dibuka;
+    		$data->jobs_ditutup 		= $request->jobs_ditutup;
+    		$data->save();
+    
+		// AddJobs::create($request->all());
+ 
+    	return redirect('/admin/lawang');
+    }
+
+
+
+
     public function cv()
     {
         return view('layout.page_user.atur-aplikasi');

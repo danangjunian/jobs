@@ -4,7 +4,7 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary"><a href="#">Resume Perusahaan</a></h6>
+        <h6 class="m-0 font-weight-bold text-primary"><a href="#">Data Perusahaan</a></h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -29,7 +29,7 @@
                     @foreach($MasterJobs as $master)
                     
                     <tr>
-                        <td>{{ $no++ }}</td>
+                        <td>{{ $no++ }}.</td>
                         <td>{{ $master->id }}</td>
                         <td>{{ $truncated = Str::limit($master->nama_perusahaan) }}</td>
                         <td>{{ $truncated = Str::limit($master->nama_pendafatar) }}</td>
@@ -48,11 +48,11 @@
                             </a>
                         </td>
                         <td>
-                            <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                            <a href="/hapus/data/master/perusahaan/{{ $master->id }}" class="btn btn-danger btn-icon-split btn-sm">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-trash"></i>
                                 </span>
-                                <span class="text">Trash</span>
+                                <span class="text">Blacklist</span>
                             </a>
                         </td>
                     </tr>

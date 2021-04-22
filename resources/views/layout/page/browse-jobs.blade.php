@@ -49,9 +49,11 @@
 						<span><i class="fa fa-map-marker"></i> Surabaya</span>
 						<span><i class="fa fa-money"></i>Rp. 4200.000 / bulan</span>
 					</div>
-					<p>PT Rekso Nasional Food (McDonalds Indonesia) sedang membuka peluang karir untuk mengisi posisi Crew Restoran Based Surabaya yang akan ditempatkan di Surabaya.
-					</p>
 				</div>
+					<p style="margin: 0 40px">PT Rekso Nasional Food (McDonalds Indonesia) sedang membuka peluang karir 
+					untuk mengisi posisi Crew Restoran Based Surabaya yang akan ditempatkan di 
+					Surabaya.
+				</p>
 				</a>
 				<div class="clearfix"></div>
 			</li>

@@ -157,7 +157,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>ID Perusahaan</th>
+                            <th>ID Jobs</th>
                             <th>Nama Perusahaan</th>
                             <th>Email Perusahaan</th>
                             <th>Kategori Pekerjaan</th>
@@ -177,7 +177,7 @@
                         @foreach ($data as $Rp)
                         <tr>
                             <td scope="row"> {{$loop->iteration}}.</td>
-                            <td>{{ $Rp->master_id }}</td>
+                            <td>{{ $Rp->jobs_id }}</td>
                             <td>{{ $Rp->nama_perusahaan }}</td>
                             <td>{{ $Rp->email_perusahaan }}</td>
                             <td>{{ $Rp->kategori }}</td>
@@ -206,7 +206,7 @@
                                     </a>
                             </td>
                             <td>
-                                <a href="#" class="btn btn-danger btn-icon-split btn-sm">
+                                <a href="/blacklist/resume/perusahaan/{{ $Rp->jobs_id }}" class="btn btn-danger btn-icon-split btn-sm">
                                     <span class="icon text-white-50">
                                         <i class="fas fa-trash"></i>
                                     </span>

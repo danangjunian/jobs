@@ -14,8 +14,8 @@
 	<div id="titlebar" class="photo-bg" style="background: url(images/job-page-photo.jpg)">
 		<div class="container">
 			<div class="ten columns">
-				<span><a href="browse-jobs.html">Restaurant / Food Service</a></span>
-				<h2>Restaurant Team Member - Crew <span class="full-time">Full-Time</span></h2>
+				<span><a href="browse-jobs.html">{{ $data->judul_jobs }} </a></span>
+				<h2>{{ $data->judul_jobs }} <span class="full-time">{{ $data->judul_jobs }}</span></h2>
 			</div>
 	
 			{{-- <div class="six columns">
@@ -36,19 +36,17 @@
 		
 		<!-- Company Info -->
 		<div class="company-info">
-			<img src="images/mcd.jpg" alt="">
+			<img src="/images/mcd.jpg" alt="">
 			<div class="content">
-				<h4>McDonald</h4>
-				<span><a href="https://www.mcdelivery.co.id/
-                    "><i class="fa fa-link"></i> www.mcdelivery.co.id</a></span>
+				<h4>{{ $data->judul_jobs }}</h4>
+				<span><a href="https://www.mcdelivery.co.id/"><i class="fa fa-link"></i> {{ $data->judul_jobs }}</a></span>
 				<span><a href="#"><i class="fa fa-twitter"></i> @McDonald</a></span>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 
 		<p class="margin-reset">
-			PT Rekso Nasional Food (McDonalds Indonesia) sedang membuka peluang karir untuk mengisi posisi Crew Restoran Based Surabaya yang akan ditempatkan di Surabaya. Di bawah ini informasi detailnya
-Persyaratan
+			{{ $data->deskripsi_jobs }}
 		</p>
 
 		<br>
@@ -101,14 +99,14 @@ Persyaratan
 						<i class="fa fa-map-marker"></i>
 						<div>
 							<strong>Lokasi:</strong>
-							<span>Surabaya,kota SBY, Jawa Timur</span>
+							<span>{{ $data->judul_jobs }}</span>
 						</div>
 					</li>
 					<li>
 						<i class="fa fa-user"></i>
 						<div>
 							<strong>Job Title:</strong>
-							<span>Crew store</span>
+							<span>{{ $data->judul_jobs }}</span>
 						</div>
 					</li>
 					<li>

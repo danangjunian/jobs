@@ -37,30 +37,32 @@
 
     <!-- Notice -->
 
-    
-    <!-- Title -->
-    <form method="post" action="/add/jobs">
-        @csrf
-            <div class="form">
+    <form action="/tambah/pekerjaan" method="post">
+        {{ csrf_field() }}       
+        <div class="form">
                 <h5>Judul Pekerjaan <span style="color: red">*</span></h5>
-                <input class="search-field" name="judul_jobs" type="text" placeholder="contoh 'crew store'" value="" />
+                <input class="search-field" name="judul_jobs" type="text" placeholder="contoh 'crew store'" value="{{old('judul_jobs')}}" />
+            </div>
+            
+            
+            <div class="form">
+                <h5>ID<span style="color: red">*</span></h5>
+                <input class="search-field" name="master_id" type="text" placeholder="343" value="{{old ('master_id')}}" />
             </div>
 
             <!-- Location -->
             <div class="form">
                 <h5>Lokasi <span style="color: red">*</span></h5>
-                <input class="search-field" name="lokasi_jobs" type="text" placeholder="contoh. Surabaya" value="" />
-                <p class="note">Biarkan kosong jika lokasinya tidak penting</p>
+                <input class="search-field" name="lokasi_jobs" type="text" placeholder="Contoh : Surabaya, Jawa Timur" value="{{old ('lokasi_jobs')}}" />
             </div>
 
             <!-- Job Type -->
             <div class="form">
                 <h5>Tipe Pekerjaan <span style="color: red">*</span></h5>
-                <select data-placeholder="Full-Time" class="chosen-select-no-single" name="tipe-pekerjaan">
-                    <option value="1">Full-Time</option>
-                    <option value="2">Part-Time</option>
-                    <option value="2">Internship</option>
-                    <option value="2">Freelance</option>
+                <select data-placeholder="Tipe Pekerjaan" name="tipekerja_id" class="chosen-select-no-single" multiple>
+                    @foreach ($tipekerja as $item)
+                        <option value="{{$item->id}}" {{ old('tipekerja_id') == $item->id ? 'selected' : null}}>{{$item->tipe_pekerjaan}}</option>
+                    @endforeach
                 </select>
             </div>
 
@@ -69,48 +71,45 @@
             <div class="form">
                 <div class="select">
                     <h5>Kategori <span style="color: red">*</span></h5>
-                    <select data-placeholder="kategori pekerjaan" class="chosen-select" name="kategori" multiple>
-                        <option value="1">Akuntansi</option>
-                        <option value="2">Mekanik / Otomotive</option>
-                        <option value="3">HSE / Kontruksi </option>
-                        <option value="4">Pendidikan</option>
-                        <option value="5">Kesehatan</option>
-                        <option value="6">Pelayanan </option>
-                        <option value="7">Transportasi & Logistik</option>
-                        <option value="8">Telekomunikasi & Ilmu Teknologi</option>
-                        <option value="9">Programmer</option>
-                        <option value="10">Freelance</option>
-                        <option value="11">Seni / Desain / Fashion</option>
-                        <option value="12">Start up & Fintech </option>
+                    <select data-placeholder="kategori pekerjaan" class="chosen-select" name="kategori_id" multiple>
+                        @foreach ($kategori as $item)
+                        <option value="{{$item->id}}" {{ old('kategori_id') == $item->id ? 'selected' : null}}>{{$item->kategori}}</option>
+                        @endforeach
                     </select>
                 </div>
             </div>
 
             <!-- Tags -->
             <div class="form">
-                <h5>Tag Pekerjaan <span style="color: red">*</span></h5>
-                <input class="search-field" type="text" name="tag_jobs" placeholder="e.g. PHP, Social Media, Management, Content writer" value="" />
-                <p class="note">Tag keterampilan atau teknologi yang diperlukan, untuk pekerjaan ini.</p>
+                <div class="select">
+                    <h5>Tag Pekerjaan <span style="color: red">*</span></h5>
+                    <select data-placeholder="Coding, Program " class="chosen-select" name="tag_id" multiple>
+                        @foreach ($tags as $item)
+                        <option value="{{$item->id}}" {{ old('tag_id') == $item->id ? 'selected' : null}}>{{$item->tag}}</option>
+                        @endforeach
+                    </select>
+                    <p class="note">Tag keterampilan atau teknologi yang diperlukan, untuk pekerjaan ini.</p>
+                </div>
             </div>
 
 
             <!-- Description -->
             <div class="form">
                 <h5>Deskripsi pekerjaan <span style="color: red">*</span></h5>
-                <textarea class="WYSIWYG" name="deskripsi_jobs" cols="40" rows="3" id="deskripsi_jobs" spellcheck="true"></textarea>
+                <input class="search-field" name="deskripsi_jobs" type="text" placeholder="" value="{{ old('deskripsi_jobs') }}" />
             </div>
 
-            <!-- Application email/url -->
+            {{-- <!-- Application email/url -->
             <div class="form">
                 <h5>Penanggung Jawab <span style="color: red">*</span></h5>
-                <input type="text" name="email_perusahaan" placeholder="Enter an email address or website URL">
+                <input type="text" name="email_perusahaan" placeholder="Enter an your name">
             </div>
             
             <!-- Application email/url -->
             <div class="form">
                 <h5>NIB Perusahaan <span style="color: red">*</span></h5>
-                <input type="text" name="nib_perusahaan" placeholder="Enter an email address or website URL">
-            </div>
+                <input type="text" name="nib_perusahaan" placeholder="873267723">
+            </div> --}}
 
             <!-- TClosing Date -->
             <div class="form">
@@ -120,61 +119,12 @@
 
             <div class="form">
                 <h5>Tanggal di tutup <span style="color: red">*</span></h5>
-                <input data-role="date" type="date" name="jobs_ditutup" placeholder="yyyy-mm-dd">
+                <input data-role="date" type="date" name="jobs_ditutup" placeholder="yyyy-mm-dd" value="{{old('jobs_ditutup')}}">
                 <p class="note">Deadline for new applicants.</p>
             </div>
 
-        
-
-        
-            <!-- Company Details -->
-            <div class="divider">
-                <h3>Detail Perusahaan</h3>
-            </div>
-
-            <!-- Company Name -->
-            <div class="form">
-                <h5>Nama Perusahaan <span style="color: red">*</span></h5>
-                <input type="text" name="nama-perusahaan" placeholder="Enter the name of the company">
-            </div>
-
-            <!-- Website -->
-            <div class="form">
-                <h5>Website <span style="color: red">*</span></h5>
-                <input type="text" name="website" placeholder="http://">
-            </div>
-
-            <!-- Teagline -->
-            <div class="form">
-                <h5>Tagline <span style="color: red">*</span></h5>
-                <input type="text" name="tagline" placeholder="Jelaskan secara singkat perusahaan Anda">
-            </div>
-
-            <!-- Video -->
-            <div class="form">
-                <h5>Video <span>(optional)</span></h5>
-                <input type="text" name="video" placeholder="Tautan ke video tentang perusahaan anda">
-            </div>
-
-            <!-- Twitter -->
-            <div class="form">
-                <h5>Akun Twitter <span>(optional)</span></h5>
-                <input type="text" name="twitter" placeholder="@yourcompany">
-            </div>
-
-            <!-- Logo -->
-            <div class="form">
-                <h5>Logo <span style="color: red">*</span></h5>
-                <label class="upload-btn">
-                    <input type="file" name="logo" multiple />
-                    <i class="fa fa-upload"></i> Browse
-                </label>
-                <span class="fake-input">No file selected</span>
-            </div>
-     
-
             <div class="divider margin-top-0"></div>
-            <button class="button big margin-top-5" name="submit" value="submit">Preview<i class="fa fa-arrow-circle-right"></i></button>
+            <button class="button big margin-top-5" name="submit" value="submit">Kirim<i class="fa fa-arrow-circle-right"></i></button>
         </form>
         
         </div>

@@ -7315,7 +7315,7 @@ label.upload-btn input[type="file"] {
 
     .resumes-list img,
     .job-list img {
-        margin-left: 30px;
+        margin: 0 10px;
         width: 50px;
         height: 50px;
     }
@@ -7323,7 +7323,7 @@ label.upload-btn input[type="file"] {
     .resume-titlebar .resumes-list-content,
     .resumes-list .resumes-list-content,
     .job-list .job-list-content {
-        margin-left: 105px;
+        margin: 0 10px;
     }
 
     .testimonials-slider li p {

@@ -42,7 +42,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
                                     @csrf
-					{{-- <div class="card-body">
+					<div class="card-body">
 						@if(session('errors'))
 							<div class="alert alert-danger alert-dismissible fade show" role="alert">
 								Something it's wrong:
@@ -61,7 +61,7 @@
 						@endif
 						@if (Session::has('error'))
 							<div class="alert alert-danger">{{ Session::get('error') }}</div>
-						@endif --}}
+						@endif
                                     <form class="user" method="post" action="{{ route('admin.login') }}">
                                         @csrf
                                         <div class="form-group">

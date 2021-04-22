@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@yield('title')  |  lawang - Lowongan Pekerjaan</title>
-	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<link rel="icon" type="image/png" href="/images/logo.png"/>
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('css/colors/orange.css')}}" id="colors">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -23,27 +23,21 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="/index"><img src="images/awang.png" alt="lawang" /></a></h1>
+						<h1><a href="/index"><img src="/images/awang.png" alt="lawang" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
 							<li><a href="/index" id="current">Home</a></li>
-							<li><a href="#">Lowongan Kerja</a>
-								<ul>
-									<li><a href="/halaman-pekerjaan">Halaman Pekerjaan</a></li>
-									{{--  <li><a href="/resume-page">Resume Page</a></li>  --}}
-									{{--  <li><a href="/contact">Contact</a></li>  --}}
-								</ul>
+							<li><a href="/add-resume">Lowongan Kerja</a>
+							<li><a href="/browse-jobs">Tambah Resume</a>
+							<li><a href="/job-alerts">Pemberitahuan</a>
 							</li>
 							<li><a href="#">Pelamar</a>
 								<ul>
-									<li><a href="/browse-jobs">Pencarian kerja</a></li>  
 									<li><a href="/cari-kategori">Pencarian menurut kategori</a></li>
-									<li><a href="/add-resume">Tambah Resume</a></li>
 									<li><a href="/preview-resume">Preview Resume</a></li>
 									<li><a href="/atur-resume">Atur Resume</a></li>
-									<li><a href="/job-alerts">Pemberitahuan Pekerjaan</a></li>
 								</ul>
 							</li>
 							{{--  <li><a href="#">Perusahaan</a>
