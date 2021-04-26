@@ -8,7 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PelamarController;
 use App\Http\Controllers\PerusahaanController;
 use App\Http\Controllers\AddJobsController;
-
+use Illuminate\Routing\RouteGroup;
 
 // HOMEPAGE DAN PAGE
 Route::get('/', [AccountController::class, 'homepage_non_user']);
@@ -120,11 +120,23 @@ Route::get('/profile-account', [AccountController::class, 'user_account']);
 
 
 
-//ADMIN EDIT
 
-
+Route::get('/tambah/data', [AdminController::class, 'tambahdata']);
+Route::post('/tambah/kategori', [AdminController::class, 'tambah_kategori'])->name('tambah.kategori');
+Route::post('/tambah/tags', [AdminController::class, 'tambah_tags'])->name('tambah.tags');
+Route::post('/tambah/tipe/pekerjaan', [AdminController::class, 'tambah_tipe_kerja'])->name('tambah.kerja');
+ 
 //ADMIN
-Route::get('/admin/lawang', [AdminController::class, 'admin']);
+Route::get('/admin/lawang', [AdminController::class, 'admin'])->name('admin')->middleware('auth:adminlogin');
+
+Route::get('/tambah/admin', [AdminController::class, 'tambahadmin']);
+Route::post('/tambah/admin', [AdminController::class, 'add_admin'])->name('tambah.admin');
+Route::get('/tanggal', [AdminController::class, 'lihattanggal']);
+Route::get('/cetak/pertanggalan/{tglawal}/{tglakhir}', [AdminController::class, 'cetakpertanggal']);
+Route::get('/page/admin/masteradmin', [AdminController::class, 'pages']);
+
+
+
 Route::get('/admin-data-perusahaan', [AdminController::class, 'admin_data_perusahaan']);
 Route::get('/admin-data-user', [AdminController::class, 'admin_data_user']);
 Route::get('/admin-resume-pelamar', [AdminController::class, 'admin_resume_pelamar']);
@@ -132,7 +144,6 @@ Route::get('/admin-blacklist-resume', [AdminController::class, 'admin_blacklist_
 Route::get('/admin-blacklist-pengguna', [AdminController::class, 'admin_blacklist_pengguna']);
 Route::get('/admin-edit', [AdminController::class, 'admin_profile_edit']);
 Route::get('/profile/admin', [AdminController::class, 'profile_admin']);
-
 
 
 
@@ -153,11 +164,11 @@ Route::get('/resume/delete/{id}', [AdminController::class, 'resume_delete']);
 
 Route::get('/master/restore/{id}', [AdminController::class, 'master_data_restore']);
 Route::get('/master/delete/{id}', [AdminController::class, 'master_data_deleted']);
-
-
+Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
 //LOGIN'
-Route::get('/admin/login', [AdminController::class, 'admin_login']);
-Route::post('/login/anngota/lawang', [AdminController::class, 'login'])->name('admin.login');
+
+
+Route::get('/admin/login', [AdminController::class, 'admin_login'])->name('login');
+Route::post('/login/angota/lawang', [AdminController::class, 'login'])->name('admin.login');
 
 //LOGOUT
-Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');

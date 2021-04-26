@@ -23,11 +23,13 @@ class MasterJobs extends Model
         'nib_perusahaan',
         'penaggung_jawab',
     ];
-    protected $dates = ['deleted_at'];
+    
     protected $primaryKey = 'id';
 
-    public function Jobs() {
-        return $this->hasMany(AddJobs::class);
+    public function AddJobs() {
+        return $this->hasMany(AddJobs::class, );
+        return $this->belongsTo(AddJobs::class, '');
+
       }
       
       

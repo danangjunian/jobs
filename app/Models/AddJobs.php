@@ -47,8 +47,10 @@ class AddJobs extends Model
 
       
         public function MasterJobs() {
-          return $this->belongsTo(MasterJobs::class);
-        }
+          return $this->belongsTo(MasterJobs::class, 'jobs_id');
+          return $this->hasMany(MasterJobs::class, 'jobs_id');
+
+        } 
 
         public function tipekerja() {
           return $this->belongsTo(TipeKerja::class);

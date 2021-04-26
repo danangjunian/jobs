@@ -20,7 +20,7 @@
                 <div class="col-md-6">
                     <div class="profile-head">
                                 <h5>
-                                    Kshiti Ghelani
+                                    {{ $datas->nama_admin }}
                                 </h5>
                                 <h6>
                                     Web Developer and Designer
@@ -30,9 +30,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -46,33 +46,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-
-                    <div class="card mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Skill</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-1 small">PHP</div>
-                            <div class="progress progress-sm mb-2">
-                                <div class="progress-bar" role="progressbar" style="width: 85%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mb-1 small">LARAVEL</div>
-                            <div class="progress progress-sm mb-2">
-                                <div class="progress-bar" role="progressbar" style="width: 65%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mb-1 small">JavaScript</div>
-                            <div class="progress progress-sm mb-2">
-                                <div class="progress-bar" role="progressbar" style="width: 47%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-
                             <div class="col-md-8">
                                 <div class="tab-content profile-tab" id="myTabContent">
                                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -81,7 +54,7 @@
                                                 <label>User Id</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti123</p>
+                                                <p>{{ $datas->id_admin }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -89,7 +62,7 @@
                                                 <label>Name</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti Ghelani</p>
+                                                <p>{{$datas->nama_admin}}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -97,7 +70,7 @@
                                                 <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>kshitighelani@gmail.com</p>
+                                        <p>{{$datas->email_admin}}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -105,7 +78,7 @@
                                                 <label>Phone</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>123 456 7890</p>
+                                                <p>{{ $datas->no_hp_admin}}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -117,7 +90,7 @@
                                             </div>
                                         </div>
                                     </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        {{-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Experience</label>
@@ -164,7 +137,7 @@
                                             <p>Your detail description</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

@@ -12,8 +12,8 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            SEEKERS</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">23</div>
+                            Perusahaan</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $jumlahperusahaan }}</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-child fa-2x text-gray-300"></i>
@@ -30,8 +30,8 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            JOBS Approve</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                            JOBS </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $jumlahjobs }}</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-building fa-2x text-gray-300"></i>
@@ -48,8 +48,8 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                            JOBS</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                            Pelamar</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-dumpster fa-2x text-gray-300"></i>
@@ -66,8 +66,8 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                            JOBS Requests</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                            Jobs Requests</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -108,7 +108,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>34234</td>
+                            {{-- <td>34234</td>
                             <td>Danang Junian Widodo</td>
                             <td><a href="https://mail.google.com/mail/u/0/?tab=wm&pli=1#inbox?compose=new">Danangjunianwidodo99@gmail.com</a></td>
                             <td>lamongan, indonesia, sendangaagung</td>
@@ -136,7 +136,7 @@
                                     </span>
                                     <span class="text">Blacklist</span>
                                 </a>
-                            </td>
+                            </td> --}}
                         </tr>
                     </tbody>
                 </table>
@@ -204,8 +204,8 @@
                                         </span>
                                         <span class="text">Approve</span>
                                     </a>
-                            </td>
-                            <td>
+                                </td>
+                             <td>
                                 <a href="/blacklist/resume/perusahaan/{{ $Rp->jobs_id }}" class="btn btn-danger btn-icon-split btn-sm">
                                     <span class="icon text-white-50">
                                         <i class="fas fa-trash"></i>
@@ -223,7 +223,7 @@
             </div>
         </div>
     </div>
- 
-    <hr>
+    <hr> 
+    @include('sweetalert::alert')
 
 @endsection

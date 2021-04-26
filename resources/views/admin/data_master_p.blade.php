@@ -24,12 +24,12 @@
                         <th>Refrensi</th>
                         <th>CV</th>
                         
-                        <th colspan="3" style="text-align: center"><strong>Options</strong></th>
+                        <th colspan="3" style="text-align: center"><strong>Options</strong></th>    
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>34234</td>
+                        {{-- <td>34234</td>
                         <td>image</td>
                         <td>Danang Junian Widodo</td>
                         <td><a href="https://mail.google.com/mail/u/0/?tab=wm&pli=1#inbox?compose=new">Danangjunianwidodo99@gmail.com</a></td>
@@ -57,7 +57,7 @@
                                 </span>
                                 <span class="text">Trash</span>
                             </a>
-                        </td>
+                        </td> --}}
                     </tr>
                 </tbody>
             </table>

@@ -78,56 +78,56 @@ class AccountController extends Controller
 //==========================================    PAGE DAFTAR
 
 
-   public function signup_user () {
-       return view('/layout.page.myaccount_signup');
-   }
+//    public function signup_user () {
+//        return view('/layout.page.myaccount_signup');
+//    }
  
-   public function register(Request $request)
-   {
-        $peraturan = ([
-            'nama_account'               => 'required|min:3|max:40',
-            'email_account'              => 'required|email|unique:account_pelamar,email_pelamar',
-            'no_account'                 => 'required|digits:12|unique:account_pelamar,no_hp_pelamar',  
-            'password'                   => 'required|min:5|max:30'
-        ]);
+//    public function register(Request $request)
+//    {
+//         $peraturan = ([
+//             'nama_account'               => 'required|min:3|max:40',
+//             'email_account'              => 'required|email|unique:account_pelamar,email_pelamar',
+//             'no_account'                 => 'required|digits:12|unique:account_pelamar,no_hp_pelamar',  
+//             'password'                   => 'required|min:5|max:30'
+//         ]);
 
-        $pesan = ([
-            'nama_account.required'         => 'Nama Lengkap wajib diisi',
-            'nama_account.min'              => 'Nama lengkap minimal 3 karakter',
-            'nama_account.max'              => 'Nama lengkap maksimal 35 karakter',
-            'email_account.required'        => 'Email wajib diisi',
-            'email_account.email'           => 'Email tidak valid',
-            'email_account.unique'          => 'Email sudah terdaftar', 
-            'no_account.required'           => 'nomor hp wajib diisi',
-            'no_account.digits'             => 'Nomor 11 digits',
-            'no_account.unique'             => 'Nomor sudah terdaftar',
-            'password.required'             => 'Password wajib diisi',
-            'password.confirmed'            => 'Password tidak sama dengan konfirmasi password'
-        ]);
+//         $pesan = ([
+//             'nama_account.required'         => 'Nama Lengkap wajib diisi',
+//             'nama_account.min'              => 'Nama lengkap minimal 3 karakter',
+//             'nama_account.max'              => 'Nama lengkap maksimal 35 karakter',
+//             'email_account.required'        => 'Email wajib diisi',
+//             'email_account.email'           => 'Email tidak valid',
+//             'email_account.unique'          => 'Email sudah terdaftar', 
+//             'no_account.required'           => 'nomor hp wajib diisi',
+//             'no_account.digits'             => 'Nomor 11 digits',
+//             'no_account.unique'             => 'Nomor sudah terdaftar',
+//             'password.required'             => 'Password wajib diisi',
+//             'password.confirmed'            => 'Password tidak sama dengan konfirmasi password'
+//         ]);
 
-            $validator = Validator::make($request->all(), $peraturan, $pesan);
+//             $validator = Validator::make($request->all(), $peraturan, $pesan);
 
-            if($validator->fails()){
-                return redirect()->back()->withErrors($validator)->withInput($request->all);
-            }
+//             if($validator->fails()){
+//                 return redirect()->back()->withErrors($validator)->withInput($request->all);
+//             }
         
-            $Admins = new Account();
-            $Admins->nama_account = ucwords(strtolower($request->nama_pnama_accountelamar));
-            $Admins->email_account = strtolower($request->email_account);
-            $Admins->no_account = strtolower($request->no_account);
-            $Admins->password = Hash::make($request->password);
-            $Admins->email_verified_at = \Carbon\Carbon::now();
-            $simpan = $Admins->save();
+//             $Admins = new Account();
+//             $Admins->nama_account = ucwords(strtolower($request->nama_pnama_accountelamar));
+//             $Admins->email_account = strtolower($request->email_account);
+//             $Admins->no_account = strtolower($request->no_account);
+//             $Admins->password = Hash::make($request->password);
+//             $Admins->email_verified_at = \Carbon\Carbon::now();
+//             $simpan = $Admins->save();
 
-            if($simpan){
-            Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
-            return redirect('/masuk');
-        } else {
-            Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
-            return redirect()->route('register');
-        }
+//             if($simpan){
+//             Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
+//             return redirect('/masuk');
+//         } else {
+//             Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
+//             return redirect()->route('register');
+//         }
                 
-    }
+//     }
  
   
 

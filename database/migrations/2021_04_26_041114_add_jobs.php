@@ -19,6 +19,7 @@ class AddJobs extends Migration
             $table->bigInteger('tipekerja_id')->unsigned();;
             $table->bigInteger('kategori_id')->unsigned();;
             $table->bigInteger('tag_id')->unsigned();;
+            $table->bigInteger('gaji_id')->unsigned();;
             $table->string('judul_jobs');
             $table->string('lokasi_jobs');
             $table->text('deskripsi_jobs');
@@ -30,7 +31,8 @@ class AddJobs extends Migration
             $table->foreign('tipekerja_id')->references('id')->on('tipe_kerja')->onDelete('cascade');
             $table->foreign('kategori_id')->references('id')->on('kategori_kerja')->onDelete('cascade');
             $table->foreign('tag_id')->references('id')->on('tag')->onDelete('cascade');            
-        });
+            $table->foreign('gaji_id')->references('id')->on('gaji')->onDelete('cascade');            
+                });
 
     }
 

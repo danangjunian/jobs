@@ -20,10 +20,10 @@ class PelamarController extends Controller
      */
     public function index()
     {
-        $lihatjobs = AddJobs::leftjoin ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
-        ->leftjoin('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
-        ->leftjoin('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
-        ->leftjoin('tag', 'add_jobs.tag_id', '=', 'tag.id')
+        $lihatjobs = AddJobs::join ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
+        ->join('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
+        ->join('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
+        ->join('tag', 'add_jobs.tag_id', '=', 'tag.id')
         ->paginate(5);
 
         return view('layout.page.index',compact('lihatjobs'));
@@ -37,18 +37,18 @@ class PelamarController extends Controller
     
         }
 
-    public function halaman()
+    public function halaman($id)
         {
             
-            // $halamanjobs = AddJobs::find($id);
-            // $master = MasterJobs::find($id);
-            // $kategori = kategori::find($id);
-            // $tipe = TipeKerja::find($id);
-            // return view('layout.page.halaman-pekerjaan', 
-            // ['halamanjobs' => $halamanjobs],
-            // ['master' => $master],
-            // ['tipe' => $tipe],
-            // ['kategori' => $kategori]);
+            $halamanjobs = AddJobs::find($id);
+            $master = MasterJobs::find($id);
+            $kategori = kategori::find($id);
+            $tipe = TipeKerja::find($id);
+            return view('layout.page.halaman-pekerjaan', 
+            ['halamanjobs' => $halamanjobs],
+            ['master' => $master],
+            ['tipe' => $tipe],
+            ['kategori' => $kategori]);
     
             // 
             // $kategori = DB::table('kategori_kerja')->where('id', $id)->first();
@@ -56,8 +56,8 @@ class PelamarController extends Controller
             // $tipe = DB::table('tipe_kerja')->where('id', $id)->first();
             // $tag = DB::table('tag')->where('id', $id)->first();
             // $halamanjobs = DB::table('add_jobs')->where('jobs_id', $id)->first();
-            $data = ['addjobs' => $this->Addjobs->alldata()];
-            return view('layout.page.halaman-pekerjaan', $data);
+            // $data = ['addjobs' => $this->Addjobs->alldata()];
+            // return view('layout.page.halaman-pekerjaan', $data);
 
         }
 

@@ -14,8 +14,8 @@
 	<div id="titlebar" class="photo-bg" style="background: url(images/job-page-photo.jpg)">
 		<div class="container">
 			<div class="ten columns">
-				<span><a href="browse-jobs.html">{{ $data->judul_jobs }} </a></span>
-				<h2>{{ $data->judul_jobs }} <span class="full-time">{{ $data->judul_jobs }}</span></h2>
+				<span><a href="browse-jobs.html">{{ $halamanjobs->judul_jobs }} </a></span>
+				<h2>{{ $halamanjobs->judul_jobs }} <span class="full-time">{{ $halamanjobs->judul_jobs }}</span></h2>
 			</div>
 	
 			{{-- <div class="six columns">
@@ -38,15 +38,15 @@
 		<div class="company-info">
 			<img src="/images/mcd.jpg" alt="">
 			<div class="content">
-				<h4>{{ $data->judul_jobs }}</h4>
-				<span><a href="https://www.mcdelivery.co.id/"><i class="fa fa-link"></i> {{ $data->judul_jobs }}</a></span>
+				<h4>{{ $halamanjobs->judul_jobs }}</h4>
+				<span><a href="https://www.mcdelivery.co.id/"><i class="fa fa-link"></i> {{ $halamanjobs->judul_jobs }}</a></span>
 				<span><a href="#"><i class="fa fa-twitter"></i> @McDonald</a></span>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 
 		<p class="margin-reset">
-			{{ $data->deskripsi_jobs }}
+			{{ $halamanjobs->deskripsi_jobs }}
 		</p>
 
 		<br>
@@ -99,14 +99,14 @@
 						<i class="fa fa-map-marker"></i>
 						<div>
 							<strong>Lokasi:</strong>
-							<span>{{ $data->judul_jobs }}</span>
+							<span>{{ $halamanjobs->judul_jobs }}</span>
 						</div>
 					</li>
 					<li>
 						<i class="fa fa-user"></i>
 						<div>
 							<strong>Job Title:</strong>
-							<span>{{ $data->judul_jobs }}</span>
+							<span>{{ $halamanjobs->judul_jobs }}</span>
 						</div>
 					</li>
 					<li>

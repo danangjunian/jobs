@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 
 class Admins extends Authenticatable
@@ -21,8 +22,10 @@ class Admins extends Authenticatable
         'nama_admin',
         'email_admin',
         'no_hp_admin',
-        'password',
+       
     ];
+    protected $primaryKey = "id_admin";
+    protected $guard = 'adminlogin';
 
     /**
      * The attributes that should be hidden for arrays.
@@ -30,7 +33,7 @@ class Admins extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
+        'password', 'remember_token'
         
     ];
 
