@@ -20,13 +20,13 @@ class CreateAccountsTable extends Migration
                 $table->string('nama_account');
                 $table->string('email_account');
                 $table->string('no_account');
-                $table->string('level_account');
+                $table->bigInteger('level_account')->unsigned();;
                 $table->timestamp('email_verified_at')->nullable();
                 $table->string('password');
                 $table->rememberToken();
                 $table->timestamps();
 
-                // $table->foreign('nib_perusahaan')->references('nib_perusahaan')->on('master_jobs')->onDelete('cascade');
+                $table->foreign('level_account')->references('id_level')->on('level')->onDelete('cascade');
             });
 
            

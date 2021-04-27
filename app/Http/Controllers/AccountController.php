@@ -77,6 +77,7 @@ class AccountController extends Controller
     //==========================================    PAGE DAFTAR
 
 
+
     public function signup_user()
     {
         return view('/layout.page.myaccount_signup');
@@ -127,10 +128,6 @@ class AccountController extends Controller
             return redirect()->route('register');
         }
     }
-
-
-
-
 
 
 

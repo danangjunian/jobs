@@ -17,18 +17,15 @@
                 <div class="col-md-6">
                     <div class="profile-head">
                                 <h5>
-                                    Kshiti Ghelani
+                                    
                                 </h5>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="exampleFormControlInput1"> 
                                  </div>
                                 <p class="proile-rating">RANKINGS : <span>8/10</span></p>
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
                             </li>
                         </ul>
                     </div>
@@ -44,33 +41,9 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-
-                    <div class="card mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Skill</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="mb-1 small">PHP</div>
-                            <div class="progress progress-sm mb-2">
-                                <div class="progress-bar" role="progressbar" style="width: 85%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mb-1 small">LARAVEL</div>
-                            <div class="progress progress-sm mb-2">
-                                <div class="progress-bar" role="progressbar" style="width: 65%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mb-1 small">JavaScript</div>
-                            <div class="progress progress-sm mb-2">
-                                <div class="progress-bar" role="progressbar" style="width: 47%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            
-                        </div>
-                    </div>
                 </div>
-
                 <div class="col-md-8">
+                    
                     <div class="tab-content profile-tab" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="row">
@@ -113,84 +86,8 @@
                                             <input type="text" class="form-control" id="exampleFormControlInput1"> 
                                          </div>
                                     </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                   
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Experience</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                        <option selected>Choose...</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Hourly Rate</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                            <option selected>Choose...</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Total Projects</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                            <option selected>Choose...</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">English Level</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                            <option selected>Choose...</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Availability</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                                            <option selected>Choose...</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <label>Your Bio</label><br/>
-                                            <p>Your detail description</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>           
                     </div>
-                </form>           
-            </div>
  @endsection
