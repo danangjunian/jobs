@@ -33,9 +33,10 @@
 							<li><a href="/kelola-jobs">Kelola pekerjaan</a></li>
 							<li><a href="/atur-aplikasi">Kelola Applikasi</a></li>
 							<li><a href="/cari-resume">Cari Resume</a></li>
+							{{--  <li><a href="/halaman_kerja/{id}">Postingan Kerja</a></li>  --}}
 				</ul>
 				<ul class="float-right">
-					<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> Stiawan jodi</a>
+					<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> Admin</a>
 					<ul>
 						<li>
 							<li><a href="/"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>

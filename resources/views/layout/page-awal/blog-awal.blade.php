@@ -45,7 +45,6 @@
 					</a>
 					<div class="meta-tags">
 						<span>October 10, 2019</span>
-						<span><a href="#">0 Comments</a></span>
 					</div>
 					<p>Untuk mendapatkan sebuah pekerjaan, langkah pertama yang harus kamu lakukan adalah mencari lowongan pekerjaan yang sesuai dengan kriteria dirimu.
 						Namun, saat ini banyak terdapat informasi lowongan kerja yang tidak benar atau palsu. Nah,
@@ -93,22 +92,13 @@
 						value="" /></div>
 			</div>
 		</div>
-{{-- 
-		<div class="widget">
-			<h4>Ada Pertanyaan?</h4>
-			<div class="widget-box">
-				<p>Jika kamu mempunyai pertanyaan, saran & kritik, silahkan email kami.</p>
-				<a href="contact.html" class="button widget-btn" name"kritik" ><i class="fa fa-envelope"></i> Drop pertanyaan</a>
-			</div>
-		</div> --}}
+
 
 		<!-- Tabs -->
 		<div class="widget">
 
 			<ul class="tabs-nav blog">
-				<li class="active"><a href="#tab1">Populer</a></li>
-				<li><a href="#tab2">Featured</a></li>
-				<li><a href="#tab3">Recent</a></li>
+				<li class="active"><a href="/blog-post-awal">Populer</a></li>
 			</ul>
 
 			<!-- Tabs Content -->
@@ -138,33 +128,13 @@
 
 				</div>
 
-				<div class="tab-content" id="tab2">
 
-					<!-- Featured Posts -->
-					<ul class="widget-tabs">
-
-						<!-- Post #1 -->
-						<li>
-							<div class="widget-thumb">
-								<a href="/blog-post-awal"><img src="images/7-Tanda-Lowongan-Palsu-di-Situs-Pencari-Kerja.png" alt="" /></a>
-							</div>
-
-							<div class="widget-text">
-								<h5><a href="/blog-post-awal">7 tanda lowongan hoax, Pelamar wajib mengetahui.</a></h5>
-								<span>October 10, 2015</span>
-							</div>
-							<div class="clearfix"></div>
-
-						</li>
-					</ul>
-				</div>
 
 				<div class="tab-content" id="tab3">
 
 					<!-- Recent Posts -->
 					<ul class="widget-tabs">
 
-						<!-- Post #1 -->
 
 						<!-- Post #3 -->
 						<li>

@@ -124,7 +124,7 @@
             </div>
 
             <div class="divider margin-top-0"></div>
-            <button class="button big margin-top-5" name="submit" value="submit">Kirim<i class="fa fa-arrow-circle-right"></i></button>
+           <button class="button big margin-top-5" name="submit" value="submit">Kirim<i class="fa fa-arrow-circle-right"></i></button>
         </form>
         
         </div>

@@ -11,9 +11,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class AddJobs extends Model
 {
-   
-       use HasFactory,  Notifiable, SoftDeletes;
-         /**
+  
+      use HasFactory,  Notifiable, SoftDeletes;
+        /**
          * The attributes that are mass assignable.
          *
          * @var array
@@ -32,7 +32,7 @@ class AddJobs extends Model
             'tipekerja_id',
             'tag_id',
             'kategori_id',
-           
+          
         ];
 
         public function alldata()
@@ -48,6 +48,9 @@ class AddJobs extends Model
       
         public function MasterJobs() {
           return $this->belongsTo(MasterJobs::class);
+        }
+        public function gambars() {
+          return $this->belongsTo(gambars::class);
         }
 
         public function tipekerja() {

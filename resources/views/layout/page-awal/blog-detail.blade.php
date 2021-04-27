@@ -1,6 +1,6 @@
 @extends('layout.master.master_awal')
 
-@section('title', 'Single Post')
+@section('title',' Post')
 
 
 
@@ -33,18 +33,15 @@
 	<div class="eleven columns">
 		<div class="padding-right">
 
-			@foreach ($post as $p)
-			<h2 class="judul"><a href="/blog-detail/{{ $p->id }}">{{ $p->judul }}</a></h2>
+			<h2 class="judul">{{ $post->judul }}</h2>
 			<div class="gambar">
-				<img src="{{'data_file/'.$p->images}}" alt="">
+				<img src="{{asset('data_file/'.$post->images)}}" alt="">
 			</div>
 			<div class="content">
-				{{$p->sinopsis}}
+				{{$post->content}}
 
 			</div>
-			<a href="/blog-detail/{{ $p->id }}"><button> baca </button></a>
-				
-			@endforeach
+
 
 
 
@@ -74,7 +71,7 @@
 				<div class="tab-content" id="tab1">
 
 					<!-- Recent Posts -->
-					<ul class="widget-tabs">
+					{{-- <ul class="widget-tabs">
 
 						<!-- Post #1 -->
 						<li>
@@ -87,11 +84,10 @@
 							<div class="widget-text">
 								<h2 class="judul">{{ $p->judul }}</h2>
 							</div>
-
 							<div class="clearfix"></div>
 							@endforeach
 						</li>
-					</ul>
+					</ul> --}}
 
 				</div>
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTipeKerjasTable extends Migration
+class CreateBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateTipeKerjasTable extends Migration
      */
     public function up()
     {
-        Schema::create('tipe_kerja', function (Blueprint $table) {
-            $table->id();
-            $table->string('tipe_pekerjaan');
+        Schema::create('blogs', function (Blueprint $table) {
+            $table->integerIncrements('id');
+            $table->string('judul');
+            $table->string('images');
+            $table->string('content');
         });
     }
 
@@ -26,6 +28,6 @@ class CreateTipeKerjasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tipe_kerja');
+        Schema::dropIfExists('blogs');
     }
 }
