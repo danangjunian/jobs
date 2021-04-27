@@ -119,7 +119,8 @@ Route::get('/cari-resume',[PerusahaanController::class, 'cari_cv']);
 Route::get('/profile-account', [AccountController::class, 'user_account']);
 
 
-
+//middleware
+Route::group(['middleware' => 'auth:adminlogin'], function (){
 
 Route::get('/tambah/data', [AdminController::class, 'tambahdata']);
 Route::post('/tambah/kategori', [AdminController::class, 'tambah_kategori'])->name('tambah.kategori');
@@ -135,8 +136,6 @@ Route::get('/tanggal', [AdminController::class, 'lihattanggal']);
 Route::get('/cetak/pertanggalan/{tglawal}/{tglakhir}', [AdminController::class, 'cetakpertanggal']);
 Route::get('/page/admin/masteradmin', [AdminController::class, 'pages']);
 
-
-
 Route::get('/admin-data-perusahaan', [AdminController::class, 'admin_data_perusahaan']);
 Route::get('/admin-data-user', [AdminController::class, 'admin_data_user']);
 Route::get('/admin-resume-pelamar', [AdminController::class, 'admin_resume_pelamar']);
@@ -144,11 +143,6 @@ Route::get('/admin-blacklist-resume', [AdminController::class, 'admin_blacklist_
 Route::get('/admin-blacklist-pengguna', [AdminController::class, 'admin_blacklist_pengguna']);
 Route::get('/admin-edit', [AdminController::class, 'admin_profile_edit']);
 Route::get('/profile/admin', [AdminController::class, 'profile_admin']);
-
-
-
-
-
 
 //MASTER DATA
 Route::get('/data/pelamar', [AdminController::class, 'data_master_p']);
@@ -166,7 +160,7 @@ Route::get('/master/restore/{id}', [AdminController::class, 'master_data_restore
 Route::get('/master/delete/{id}', [AdminController::class, 'master_data_deleted']);
 Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
 //LOGIN'
-
+});
 
 Route::get('/admin/login', [AdminController::class, 'admin_login'])->name('login');
 Route::post('/login/angota/lawang', [AdminController::class, 'login'])->name('admin.login');

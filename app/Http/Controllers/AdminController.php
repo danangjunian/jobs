@@ -348,23 +348,23 @@ function pages($id) {
 
     public function login (Request $request) 
     {
-        // $peraturan = ([
-        //     'email_admin'                => 'required|email',
-        //     'password'                   => 'required|string'
-        // ]);
+        $peraturan = ([
+            'email_admin'                => 'required|email',
+            'password'                   => 'required|string'
+        ]);
     
-        // $pesan = ([
-        //     'email_admin.required'          => 'Email wajib diisi',
-        //     'email_admin.email'             => 'Email tidak valid',
-        //     'password.required'             => 'Password wajib diisi',
-        //     'password.string'               => 'Password harus berupa string'
-        //            ]);
+        $pesan = ([
+            'email_admin.required'          => 'Email wajib diisi',
+            'email_admin.email'             => 'Email tidak valid',
+            'password.required'             => 'Password wajib diisi',
+            'password.string'               => 'Password harus berupa string'
+                   ]);
     
-        // $validator = Validator::make($request->all(), $peraturan, $pesan);
+        $validator = Validator::make($request->all(), $peraturan, $pesan);
     
-        // if($validator->fails()){
-        //     return redirect()->back()->withErrors($validator)->withInput($request->all);
-        // }
+        if($validator->fails()){
+            return redirect()->back()->withErrors($validator)->withInput($request->all);
+        }
     
         // $data = [
         //     'email_admin'     => $request->input('email_admin'),
@@ -386,7 +386,9 @@ function pages($id) {
        
        public function logout()
     {
-        Auth::logout(); // menghapus session yang aktif
+       if (Auth::guard('adminlogin')->check()){
+        Auth::guard('adminlogin')->logout();
+       } 
         return redirect('admin/login');
     }
 
@@ -408,3 +410,5 @@ function pages($id) {
     //========    
 
 }
+
+

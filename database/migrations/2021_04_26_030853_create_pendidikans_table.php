@@ -16,10 +16,11 @@ class CreatePendidikansTable extends Migration
         Schema::create('pendidikan', function (Blueprint $table) {
             $table->id();
             $table->string('nama_sekeolah');
-            $table->string('kualifikasi');
-            $table->string('tahun_mulai');
-            $table->string('tahun_lulus');
-            $table->string('keterangan');
+            $table->bigInteger('kualifikasi_id')->unsigned();
+            $table->date('tahun_mulai');
+            $table->date('tahun_lulus');
+
+            $table->foreign('kualifikasi_id')->references('id_kualifikasi')->on('kualifikasi')->onDelete('cascade');
         });
     }
 

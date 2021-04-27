@@ -14,12 +14,12 @@ class AddJobs extends Migration
     public function up()
     {
         Schema::create('add_jobs', function (Blueprint $table) {
-            $table->id();
-            $table->bigInteger('master_id')->unsigned();;
-            $table->bigInteger('tipekerja_id')->unsigned();;
-            $table->bigInteger('kategori_id')->unsigned();;
-            $table->bigInteger('tag_id')->unsigned();;
-            $table->bigInteger('gaji_id')->unsigned();;
+            $table->id('jobs_id');
+            $table->bigInteger('master_id')->unsigned();
+            $table->bigInteger('tipekerja_id')->unsigned();
+            $table->bigInteger('kategori_id')->unsigned();
+            $table->bigInteger('tag_id')->unsigned();
+            $table->bigInteger('gaji_id')->unsigned();
             $table->string('judul_jobs');
             $table->string('lokasi_jobs');
             $table->text('deskripsi_jobs');
