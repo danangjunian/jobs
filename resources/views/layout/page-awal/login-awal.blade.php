@@ -34,8 +34,8 @@
 	<div class="my-account">
 
 		<ul class="tabs-nav">
-			<li class=""><a href="#tab1">Cari <u>lowongan</u></a></li>
-			<li><a href="#tab2">Cari <u>talenta</u></a></li>
+			<li class=""><a href="#tab1">Masuk <u>Pelamar</u></a></li>
+			<li><a href="#tab2">Masuk <u>Perusahaan</u></a></li>
 		</ul>
 
 		<div class="tabs-container">
@@ -46,14 +46,11 @@
 
                 <hr>
 
-				<form method="get" action="/index" class="login">
-
+				<form method="post" action="{{ route('masuk_u') }}" class="login">
+					{{ csrf_field() }}
 
 					<p class="form-row form-row-wide">
-						<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"required/>
-					</p>
-					<p class="form-row form-row-wide">
-						<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62" required/>
+						<input class="input-text" type="Email" name="email_pelamar" id="Email" placeholder="E-mail"required/>
 					</p>
 					<p class="form-row form-row-wide">
 						<input class="input-text" type="password" name="password" id="password" placeholder="Password" required/>
@@ -61,7 +58,7 @@
 
 					{{--  <p class="form-row">
 						<input type="submit" class="button" name="login" value="Login" />  --}}
-						<input type="submit" class="button" name="signup" value="Login" />
+						<input type="submit" class="button" name="signin" value="Login" />
 						<label for="SyaratKetentuan" class="SyaratKetentuane">
 						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
 					</p> 
@@ -108,7 +105,7 @@
 							<a href="#" >Lupa Password?</a>
 						</p>
 						<p style="text-align:center;" class="lost_password">
-							<span>Belum mempunyai akun? <a href="/daftar-awal"> Daftar Sekarang</a></span>
+							<span>Belum mempunyai akun? <a href="/daftar"> Daftar Sekarang</a></span>
 						</p>
 	
 						
@@ -118,6 +115,6 @@
 		</div>
 	</div>
 </div>
-
+@include('sweetalert::alert')
 
 @endsection

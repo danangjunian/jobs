@@ -15,26 +15,8 @@ Route::get('/', [AccountController::class, 'homepage_non_user']);
 Route::get('/category', [AccountController::class, 'categori_non_user']);
 
 
-// MASUK DAN DAFTAR
-Route::get('/masuk', [AccountController::class, 'signin_user']);
-Route::post('/signin', [AccountController::class, 'signin'])->name('auth.signin');
 
-
-Route::get('/daftar', [AccountController::class, 'signup_user']);
-Route::post('register', [AccountController::class, 'register'])->name('auth.register');
-
-
-Route::get('/jobs', [AccountController::class, 'jobs_non_user']);
-
-//profile account
-Route::get('/profile-account', [AccountController::class, 'user_account']);
-
-//user page
-Route::get('/lawang', [AccountController::class, 'homepage_user']);
-Route::get('/profile-user', [AccountController::class, 'profile_user']);
-Route::get('/add-jobs', [AccountController::class, 'add_jobs_user']);
-Route::get('/add-resume', [AccountController::class, 'add_resume_user']);
-
+// });
 //blog
 Route::get('/blog', function () {
     return view('layout.blog.blogs');
@@ -66,12 +48,7 @@ Route::get('/blog-post-awal',[BlogController::class, 'blog_post']);
 Route::get('/cari-kerja', function () {
     return view('layout.page-awal.browse-jobs');
 });
-Route::get('/daftar-awal', function () {
-    return view('layout.page-awal.daftar-awal');
-});
-Route::get('/login-awal', function () {
-    return view('layout.page-awal.login-awal');
-});
+
 //---------------------------------- FINISH ROUTE TAMPILAN sebelum login ---------------------------------------------/
 
 
@@ -119,6 +96,11 @@ Route::get('/cari-resume',[PerusahaanController::class, 'cari_cv']);
 Route::get('/profile-account', [AccountController::class, 'user_account']);
 
 
+
+
+
+
+
 //middleware
 Route::group(['middleware' => 'auth:adminlogin'], function (){
 
@@ -159,10 +141,32 @@ Route::get('/resume/delete/{id}', [AdminController::class, 'resume_delete']);
 Route::get('/master/restore/{id}', [AdminController::class, 'master_data_restore']);
 Route::get('/master/delete/{id}', [AdminController::class, 'master_data_deleted']);
 Route::get('logout', [AdminController::class, 'logout'])->name('admin.logout');
-//LOGIN'
 });
 
-Route::get('/admin/login', [AdminController::class, 'admin_login'])->name('login');
+Route::get('/admin/login', [AdminController::class, 'admin_login'])->name('login')->middleware('guest');
 Route::post('/login/angota/lawang', [AdminController::class, 'login'])->name('admin.login');
 
-//LOGOUT
+
+
+// MASUK DAN DAFTAR
+Route::get('/masuk', [AccountController::class, 'signin_user'])->name('login')->middleware('guest');
+Route::post('/masuk/pelamar', [AccountController::class, 'masuk_u'])->name('masuk_u');
+Route::post('/masuk/perusahaan', [AccountController::class, 'masuk_p'])->name('auth.signin');
+
+
+Route::get('/daftar', [AccountController::class, 'signup_user']);
+Route::post('/register/pelamar', [AccountController::class, 'register_U'])->name('auth.pelamar');
+Route::post('/register/perusahaan', [AccountController::class, 'register_P'])->name('auth.perusahaan');
+Route::get('logout', [AccountController::class, 'logoutP'])->name('logoutP');
+
+Route::get('/jobs', [AccountController::class, 'jobs_non_user']);
+
+//profile account
+Route::get('/profile-account', [AccountController::class, 'user_account']);
+
+//user page
+// Route::group(['middleware' => 'auth:pelamar'], function (){
+Route::get('/lawang', [AccountController::class, 'homepage_user'])->middleware('auth:pelamar');
+Route::get('/profile-user', [AccountController::class, 'profile_user']);
+Route::get('/add-jobs', [AccountController::class, 'add_jobs_user']);
+Route::get('/add-resume', [AccountController::class, 'add_resume_user']);

@@ -48,6 +48,8 @@ return [
             'driver' => 'session',
             'provider' => 'account',
             'provider' => 'admins',
+            'provider' => 'login_p',
+            'provider' => 'login_u',
         ],
 
         'api' => [
@@ -56,10 +58,24 @@ return [
             'hash' => false,
         ],
 
+        'pelamar' => [
+            'driver' => 'session',
+            'provider' => 'login_u',
+        ],
+
         'adminlogin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
+        
+        'perusahaan' => [
+            'driver' => 'session',
+            'provider' => 'login_p',
+        ],
+
+        
+
+        
     ],
 
     /*
@@ -95,6 +111,18 @@ return [
         'admins' => [
             'driver' => 'eloquent',
             'model' => App\Models\Admins::class,
+        ],
+
+
+         'login_p' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\akun_p::class,
+        ],
+
+
+         'login_u' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\akun_u::class,
         ],
 
         

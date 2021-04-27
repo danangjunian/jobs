@@ -43,38 +43,28 @@
 
                 <hr>
 
-				<form method="get" action="/index" class="singup">
-
+				<form method="post" action="{{ route('auth.pelamar') }}" class="singup">
+					{{ csrf_field() }}
 					
 					<p class="form-row form-row-wide">
-						<input type="text" class="input-text" name="username" id="username" value="" placeholder="Nama Depan"/>
+						<input type="text" class="input-text" name="nama_pelamar" id="username" value="" placeholder="Nama Depan"/>
 					</p>
 
 					<p class="form-row form-row-wide">
-						<input class="input-text" type="text" name="NamaBelakang" id="NamaBelakang" placeholder="Nama Belakang" />
-					</p>
-
-					<p class="form-row form-row-wide">
-						<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail" required/>
-					</p>
-					<p class="form-row form-row-wide">
-						<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62" required/>
+						<input class="input-text" type="Email" name="email_pelamar" id="Email" placeholder="E-mail" required/>
 					</p>
 					<p class="form-row form-row-wide">
 						<input class="input-text" type="password" name="password" id="password" placeholder="Password" required/>
 					</p>
-
-
-					
 					<p class="form-row">
-						<a href="/index"><button>Daftar</button></a>	
+						<input type="submit" class="button" name="signup" value="Daftar" />
 						<label for="SyaratKetentuan" class="SyaratKetentuan">
 						<input style="margin: 14px 0 0 0" name="SyaratKetentuan" type="checkbox" id="SyaratKetentuan" value="forever" /> Baca <a href="#">Syarat dan Ketentuan</a></label>
 					</p>
 
 				
 					<p style="text-align:center;" class="lost_password">
-						<span>Sudah Mempunyai Akun? <a href="/login-awal"> Masuk</a></span> 
+						<span>Sudah Mempunyai Akun? <a href="/masuk"> Masuk</a></span> 
 					</p>
 
 					
@@ -89,18 +79,16 @@
     
                     <hr>
     
-					<form method="get" action="/homepage_user" class="login">
-                        
+					<form method="post" action="{{ route('auth.perusahaan') }}" class="login">
+                        {{ csrf_field() }}
                         <p class="form-row form-row-wide">
-                            <input type="text" class="input-text" name="NamaPerusahaan" id="NamaPerusahaan" placeholder="Nama Perusahaan" required/>
+                            <input type="text" class="input-text" name="nama_pendaftar" id="NamaPerusahaan" placeholder="Nama Perusahaan" required/>
                         </p>
     
                         <p class="form-row form-row-wide">
-                            <input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail" required/>
+                            <input class="input-text" type="Email" name="email_perusahaan" id="Email" placeholder="E-mail" required/>
                         </p>
-                        <p class="form-row form-row-wide">
-                            <input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62" required/>
-                        </p>
+
                         <p class="form-row form-row-wide">
                             <input class="input-text" type="password" name="password" id="password" placeholder="Password" required/>
                             
@@ -115,7 +103,7 @@
     
                     
                         <p style="text-align:center;" class="lost_password">
-                            <span>Sudah Mempunyai Akun? <a href="/login-awal"> Masuk</a></span> 
+                            <span>Sudah Mempunyai Akun? <a href="/masuk"> Masuk</a></span> 
                         </p>
     
                         

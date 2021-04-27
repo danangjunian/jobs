@@ -336,10 +336,6 @@ function pages($id) {
 }
 
 
-
-
-
-
 //ADMIN LOGIN
 
     public function admin_login () {

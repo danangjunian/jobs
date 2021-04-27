@@ -23,7 +23,16 @@ class RedirectIfAuthenticated
         if (Auth::guard('adminlogin')->check()) {
 
             return redirect('/admin/lawang');
-        }
+
+        } else if (Auth::guard('perusahaan')->check()) {
+
+            return redirect('/lawang');
+            
+          } else if (Auth::guard('pelamar')->check()) {
+
+            return redirect('/lawang');
+            
+          }
 
         return $next($request);
     }
