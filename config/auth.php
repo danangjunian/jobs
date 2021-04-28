@@ -47,7 +47,6 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'account',
-            'provider' => 'admins',
             'provider' => 'login_p',
             'provider' => 'login_u',
         ],
@@ -63,10 +62,6 @@ return [
             'provider' => 'login_u',
         ],
 
-        'adminlogin' => [
-            'driver' => 'session',
-            'provider' => 'admins',
-        ],
         
         'perusahaan' => [
             'driver' => 'session',
@@ -105,12 +100,6 @@ return [
         'account' => [
             'driver' => 'eloquent',
             'model' => App\Models\Accpelamars::class,
-        ],
-        
-        
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Admins::class,
         ],
 
 

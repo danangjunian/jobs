@@ -11,7 +11,7 @@ use App\Models\Tag;
 
 class MasterJobs extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory;
     protected $table = 'master_jobs';
     protected $filleble = [
         'nama_perusahaan',
@@ -23,7 +23,7 @@ class MasterJobs extends Model
         'nib_perusahaan',
         'penaggung_jawab',
     ];
-    
+    protected $dates = ['deleted_at'];
     protected $primaryKey = 'id';
 
     public function AddJobs() {
@@ -31,9 +31,7 @@ class MasterJobs extends Model
         return $this->belongsTo(AddJobs::class, '');
 
       }
-      
-      
+    
 
-      
 
 }

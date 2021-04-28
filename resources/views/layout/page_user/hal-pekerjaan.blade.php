@@ -1,4 +1,4 @@
-@extends('layout.master.master_awal')
+@extends('layout.master.master_user')
 
 @section('title', 'Hal-Pekerjaan')
 

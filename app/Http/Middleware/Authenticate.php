@@ -28,17 +28,14 @@ class Authenticate extends Middleware
 
     
     
-      //   if (Auth::guard('adminlogin')->check()) {
+  
+         if  (Auth::guard('pelamar')->check()) {
 
-      //  return route('login');
-      //   }  else if  (Auth::guard('pelamar')->check()) {
+             return route('login');
+        } else if (Auth::guard('perusahaan')->check()) {
 
-      //        return route('masuk');
-      //   }
-
-        // if (Auth::guard('adminlogin')->check()) {
-
-        //   return route('masuk');
-        //     }
+          return route('login');
+        
       }
     }
+  }

@@ -29,8 +29,8 @@
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
 							<li><a href="/index" id="current">Home</a></li>
-							<li><a href="/add-resume">Lowongan Kerja</a>
-							<li><a href="/browse-jobs">Tambah Resume</a>
+							<li><a href="/browse-jobs">Lowongan Kerja</a>
+							<li><a href="/add-resume">Tambah Resume</a>
 							<li><a href="/job-alerts">Pemberitahuan</a>
 							</li>
 							<li><a href="#">Pelamar</a>
@@ -48,11 +48,11 @@
 									<li><a href="browse-resumes.html">Cari Resume</a></li>
 								</ul>
 							</li>  --}}
-
-							<li><a href="/blog">Blog</a></li>
+{{-- 
+							<li><a href="/blogs">Blog</a></li> --}}
 						</ul>
 						<ul class="float-right">
-							<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> Stiawan jodi</a>
+							<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i>User</a>
 							<ul>
 								<li>
 									<li><a href="/"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>

@@ -16,11 +16,11 @@
 	<div class="container">
 		<div class="ten columns">
 			<span>Weve found 1 resumes for:</span>
-			<h2>Restoran, Pelayan & Services</h2>
+			<h2>Crew store, Pelayan & Services</h2>
 		</div>
 
 		<div class="six columns">
-			<a href="/tambah-pekerjaan" class="button">Post lowongan kerja, gratis!</a>
+			<a href="/tambah/pekerjaan" class="button">Post lowongan kerja, gratis!</a>
 		</div>
 
 	</div>
@@ -73,10 +73,10 @@
 			<nav class="pagination">
 				<ul>
 					<li><a href="#" class="current-page">1</a></li>
-					<li><a href="#">2</a></li>
+					{{--  <li><a href="#">2</a></li>
 					<li><a href="#">3</a></li>
 					<li class="blank">...</li>
-					<li><a href="#">8</a></li>
+					<li><a href="#">8</a></li>  --}}
 				</ul>
 			</nav>
 

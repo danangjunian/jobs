@@ -39,27 +39,25 @@
 
 
 
+			@foreach ($lihatjobs->slice(0, 2) as $x)
+			<li>
+				<a href="/post/jobs/{{ $x->jobs_id }}">
+					<img src="images/job-list-logo-03.png" alt="">
+					<div class="job-list-content">
+						<h4>{{ $x->judul_jobs }}<span class="full-time">{{ $x->tipe_pekerjaan }}</span></h4>
+						<div class="job-icons">
+							<span><i class="fa fa-briefcase"></i> {{ $x->nama_perusahaan }}</span>
+							<span><i class="fa fa-map-marker"></i> {{ $x->lokasi_jobs }}</span>
+							<span><i class="fa fa-money"></i> RP. 4200.000 / bulan</span>
 
-			<li><a href="/halaman-pekerjaan">
-				<img src="images/job-list-logo-03.png" alt="">
-				<div class="job-list-content">
-					<h4>Restaurant Team Member - Crew<span class="full-time">Full-Time</span></h4>
-					<div class="job-icons">
-						<span><i class="fa fa-briefcase"></i> Mcd Surabaya</span>
-						<span><i class="fa fa-map-marker"></i> Surabaya</span>
-						<span><i class="fa fa-money"></i>Rp. 4200.000 / bulan</span>
+						</div>
 					</div>
-				</div>
-					<p style="margin: 0 40px">PT Rekso Nasional Food (McDonalds Indonesia) sedang membuka peluang karir 
-					untuk mengisi posisi Crew Restoran Based Surabaya yang akan ditempatkan di 
-					Surabaya.
-				</p>
 				</a>
 				<div class="clearfix"></div>
 			</li>
 
 
-
+			@endforeach
 
 		</ul>
 		<div class="clearfix"></div>
@@ -68,10 +66,10 @@
 			<nav class="pagination">
 				<ul>
 					<li><a href="#" class="current-page">1</a></li>
-					<li><a href="#">2</a></li>
+					{{--  <li><a href="#">2</a></li>
 					<li><a href="#">3</a></li>
 					<li class="blank">...</li>
-					<li><a href="#">22</a></li>
+					<li><a href="#">22</a></li>  --}}
 				</ul>
 			</nav>
 

@@ -73,7 +73,10 @@
 		<div class="padding-right">
 			<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
 			<ul class="job-list">
-				@foreach ($lihatjobs as $x)
+
+
+				
+				@foreach ($lihatjobs->slice(0, 2) as $x)
 					
 				<li>
 					<a href="/post/jobs/{{ $x->jobs_id }}">

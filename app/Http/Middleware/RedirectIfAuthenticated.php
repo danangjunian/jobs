@@ -20,15 +20,11 @@ class RedirectIfAuthenticated
     {
        
 
-        if (Auth::guard('adminlogin')->check()) {
+        if (Auth::guard('pelamar')->check()) {
 
-            return redirect('/admin/lawang');
+            return redirect('/index');
 
         } else if (Auth::guard('perusahaan')->check()) {
-
-            return redirect('/lawang');
-            
-          } else if (Auth::guard('pelamar')->check()) {
 
             return redirect('/lawang');
             

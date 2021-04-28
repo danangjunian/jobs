@@ -51,22 +51,24 @@
 			<h3 class="margin-bottom-25">Pekerjaan Terbaru</h3>
 			<ul class="job-list">
 
+				@foreach ($resume->slice(0, 3)	 as $x)
 
 				<li>
-					<a href="/halaman-pekerjaan-awal">
+					<a href="/halaman-pekerjaan-awal/{{ $x->jobs_id }}">
 						<img src="images/job-list-logo-03.png" alt="">
 						<div class="job-list-content">
-							<h4>Restaurant Team Member <span class="full-time">Full-Time</span></h4>
+							<h4>{{ $x->judul_jobs }}<span class="full-time">{{ $x->tipe_pekerjaan }}</span></h4>
 							<div class="job-icons">
-								<span><i class="fa fa-briefcase"></i> Mcd Surabaya</span>
-								<span><i class="fa fa-map-marker"></i> Surabaya</span>
-								<span><i class="fa fa-money"></i> 4200.000 / bulan</span>
+								<span><i class="fa fa-briefcase"></i> {{ $x->nama_perusahaan }}</span>
+								<span><i class="fa fa-map-marker"></i> {{ $x->lokasi_jobs }}</span>
+								<span><i class="fa fa-money"></i> RP. 4200.000 / bulan</span>
 
 							</div>
 						</div>
 					</a>
 					<div class="clearfix"></div>
 				</li>
+				@endforeach
 			</ul>
 
 
@@ -75,6 +77,9 @@
 		</div>
 	</div>
 
+
+
+	
 	<!-- Job Spotlight -->
 	<div class="five columns">
 		<h3 class="margin-bottom-5">Pekerjaan di butuhkan</h3>
@@ -92,49 +97,22 @@
 				<div class="overflowholder">
 
 					<ul>
-
+						@foreach ($resume as $s)
+							
 						<li>
 							<div class="job-spotlight">
-								<a href="#">
-									<h4>Social Media <span class="part-time">Part-Time</span></h4>
+								<a href="/halaman-pekerjaan-awal/{{ $s->jobs_id }}">
+									<h4>{{ $s->judul_jobs }}  <span class="freelance">{{ $s->tipe_pekerjaan }}</span></h4>
 								</a>
-								<span><i class="fa fa-briefcase"></i> PT epans onlineshop </span>
-								<span><i class="fa fa-map-marker"></i> Surabaya</span>
-								<span><i class="fa fa-money"></i> 4500.000 / bulan</span>
-								<p>As advertising & content,betugas untuk memposting, mengelola akun web dan melakukan
-									penjualan</p>
-								<a href="/daftar-awal" class="button">Daftar / login Terlebih dahulu</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="job-spotlight">
-								<a href="#">
-									<h4>Freelancer untuk wordpress <span class="freelance">Freelance</span></h4>
-								</a>
-								<span><i class="fa fa-briefcase"></i> PT ReadyTech </span>
-								<span><i class="fa fa-map-marker"></i> Jakarta Timur</span>
-								<span><i class="fa fa-money"></i> 5000.000 / bulan / </span>
-								<p>Melakukan tugas untuk menghandle wordpress seperti teamplate atau Maintenance
-								</p>
-								<a href="/halaman-pekerjaan" class="button">Apply Pekerjaan</a>
-							</div>
-						</li>
-
-						<li>
-							<div class="job-spotlight">
-								<a href="#">
-									<h4>Designer <span class="freelance">Freelance</span></h4>
-								</a>
-								<span><i class="fa fa-briefcase"></i> PT BungasunyiTech</span>
-								<span><i class="fa fa-map-marker"></i> Malang</span>
+								<span><i class="fa fa-briefcase"></i> {{ $s->nama_perusahaan }}</span>
+								<span><i class="fa fa-map-marker"></i> {{ $s->lokasi_jobs }}</span>
 								<span><i class="fa fa-money"></i> 3500.000 / bulan</span>
-								<p>Melakukan tugas designer untuk baju dll.</p>
-								<a href="/halaman-pekerjaan" class="button">Apply Pekerjaan</a>
+								<p>{{ $truncated = Str::limit($s->deskripsi_jobs,50) }}</p>
+								<a href="/login-awal" class="button">Apply Pekerjaan</a>
 							</div>
 						</li>
 
-
+						@endforeach
 					</ul>
 					<div class="clearfix"></div>
 
@@ -150,31 +128,24 @@
 <div id="counters">
 	<div class="container">
 
-		<div class="four columns">
+		<div class="five columns">
 			<div class="counter-box">
-				<span class="counter">15</span><i>k</i>
+				<span class="counter">{{ $count }}</span>
 				<p>Lowongan Kerja</p>
 			</div>
 		</div>
 
-		<div class="four columns">
+		<div class="five columns">
 			<div class="counter-box">
-				<span class="counter">4982</span>
-				<p>Anggota</p>
+				<span class="counter">{{ $anggota }}</span>
+				<p>Anggota Perusahaan</p>
 			</div>
 		</div>
 
-		<div class="four columns">
+		<div class="five columns">
 			<div class="counter-box">
-				<span class="counter">768</span>
-				<p>Resume yang di posting </p>
-			</div>
-		</div>
-
-		<div class="four columns">
-			<div class="counter-box">
-				<span class="counter">90</span><i>%</i>
-				<p>Clients Who Rehire</p>
+				<span class="counter">{{ $count }}</span>
+				<p>Resume yang di terima kerja </p>
 			</div>
 		</div>
 
@@ -182,6 +153,7 @@
 </div>
 
 <!-- =============== endbanyaknya pengguna -->
+
 
 <!-- =============== Infobox -->
 <div class="infobox">
@@ -192,11 +164,11 @@
 
 
 <!--  ===============================================Clients Carousel -->
-<h3 class="centered-headline"> Perusahaan yang telah mempercayai kami <span> Daftar perusahaan yang telah mempercayai kami
+{{-- <h3 class="centered-headline"> Perusahaan yang telah mempercayai kami <span> Daftar perusahaan yang telah mempercayai kami
 		:</span></h3>
-<div class="clearfix"></div>
+<div class="clearfix"></div> --}}
 
-<div class="container">
+{{-- <div class="container">
 
 	<div class="sixteen columns">
 
@@ -239,7 +211,7 @@
 
 	</div>
 
-</div>
+</div> --}}
 
 
 

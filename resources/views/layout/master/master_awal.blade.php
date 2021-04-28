@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>@yield('title')  |  lawang - Lowongan Pekerjaan</title>
-	<link rel="icon" type="image/png" href="images/logo.png"/>
+	<link rel="icon" type="image/png" href="/images/logo.png"/>
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('css/colors/orange.css')}}" id="colors">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
@@ -23,22 +23,17 @@
 				<div class="sixteen columns">
 					<!-- Logo -->
 					<div id="logo">
-						<h1><a href="/"><img src="images/awang.png" alt="lawang" /></a></h1>
+						<h1><a href="/"><img src="/images/awang.png" alt="lawang" /></a></h1>
 					</div>
 					<!-- Menu -->
 					<nav id="navigation" class="menu">
 						<ul id="responsive">
-							<li><a href="/">Lowongan Kerja</a>
-								<ul>
-									<li><a href="/halaman-pekerjaan-awal">Halaman pekerjaan</a></li>
-									<li><a href="/browse-jobs-awal">Pencarian kerja</a></li>  
-								</ul>
-							</li>
-							<li><a href="/blog-awal">Blog</a></li>
+							<li><a href="/browse-jobs-awal">Pencarian kerja</a></li>
+							<li><a href="/blog-post-awal">Blog</a></li>
 						</ul>
 						<ul class="float-right">
-							<li><a href="/daftar-awal"><i class="fa fa-user"></i> Sign Up</a></li>
-							<li><a href="/login-awal"><i class="fa fa-lock"></i> Log In</a></li>
+							<li><a href="/daftar"><i class="fa fa-user"></i> Sign Up</a></li>
+							<li><a href="/masuk"><i class="fa fa-lock"></i> Log In</a></li>
 						</ul>
 
 					</nav>
@@ -71,14 +66,14 @@
 			<h4>Tentang kami</h4>
 			<p>website Lawang menjadi salah satu solusi bagi perusahaan yang mencari tenaga kerja yang sesuai kemampuan, dan pencari kerja bisa memilih
 				sesuai dengan fashionnya, jadi mulailah dengan langkah kecil, daftar sekarang dengan tombol di bawah.</p>
-			<a href="/daftar-awal" class="button">Daftar Sekarang</a>
+			<a href="/tambah/pekerjaan" class="button">Cari Pekerja Terbaik</a>
 		</div>
 
 		<div class="three columns">
 			<h4>Company</h4>
 			<ul class="footer-links">
 				<li><a href="#">Tentang</a></li>
-				<li><a href="/daftar-awal">karir</a></li>
+				<li><a href="/daftar">karir</a></li>
 				<li><a href="/blog-awal">Blog</a></li>
 			</ul>
 		</div>

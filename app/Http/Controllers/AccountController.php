@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
@@ -14,27 +15,16 @@ class AccountController extends Controller
 {
 
 
-
-// HOME PAGE 
-   public function homepage_non_user () {
-       return view('/layout.page.index');
-   }
-
-
-// PAGE KATEGORI
-   public function categori_non_user () {
-       return view('/layout.page.kategori');
-   }
-
-
 //=========================================== PAGE MASUK
 
-   public function signin_user () {
-       return view('layout.page-awal.login-awal');
-   }
- 
-   public function masuk_u (Request $request) 
-   {
+public function signin_user()
+{
+    return view('layout.page-awal.login-awal');
+}
+
+
+public function masuk_u(Request $request)
+    {
     $peraturan = ([
         'email_pelamar'              => 'required|email',
         'password'                   => 'required|string'
@@ -45,48 +35,64 @@ class AccountController extends Controller
         'email_pelamar.email'           => 'Email tidak valid',
         'password.required'             => 'Password wajib diisi',
         'password.string'               => 'Password harus berupa string'
-               ]);
+    ]);
 
     $validator = Validator::make($request->all(), $peraturan, $pesan);
 
-    if($validator->fails()){
+    if ($validator->fails()) {
         return redirect()->back()->withErrors($validator)->withInput($request->all);
     }
 
-
     if (Auth::guard('pelamar')->attempt($request->only('email_pelamar','password'))) { 
-        return redirect()->intended('/lawang');
-
-    }  // false
-
+        return redirect()->intended('/index');
+    } 
         return redirect('/masuk');
+    }
     
-    }
-
-    public function logoutP()
+    
+    
+    public function masuk_p(Request $request)
     {
-       if (Auth::guard('pelamar')->check()){
-        Auth::guard('pelamar')->logout();
-       } 
-        return redirect('admin/login');
+    $peraturan = ([
+        'email_perusahaan'              => 'required|email',
+        'password'                   => 'required|string'
+    ]);
+
+    $pesan = ([
+        'email_perusahaan.required'        => 'Email wajib diisi',
+        'email_perusahaan.email'           => 'Email tidak valid',
+        'password.required'             => 'Password wajib diisi',
+        'password.string'               => 'Password harus berupa string'
+    ]);
+
+    $validator = Validator::make($request->all(), $peraturan, $pesan);
+
+    if ($validator->fails()) {
+        return redirect()->back()->withErrors($validator)->withInput($request->all);
     }
-   
+
+    if (Auth::guard('perusahaan')->attempt($request->only('email_perusahaan','password'))) { 
+        return redirect()->intended('/lawang');
+    } 
+        return redirect('/masuk');
+    }
 
 
+public function logoutP()
+    {
+        if (Auth::guard('pelamar')->check()){
+        Auth::guard('pelamar')->logout();
+        } 
+        return redirect('/masuk');
+    }
 
 
-
-
-
-
-//==========================================    PAGE DAFTAR
-
-
-   public function signup_user () {
+public function signup_user () {
        return view('/layout.page-awal.daftar-awal');
    }
  
-   public function register_P(Request $request)
+
+public function register_P(Request $request)
    {
         $peraturan = ([
             'nama_pendaftar'               => 'required|min:3|max:40',
@@ -125,7 +131,8 @@ class AccountController extends Controller
                 
     }
 
-    public function register_U(Request $request)
+
+public function register_U(Request $request)
    {
         $peraturan = ([
             'nama_pelamar'               => 'required|min:3|max:40',
@@ -165,17 +172,60 @@ class AccountController extends Controller
     }
  
   
+// public function register(Request $request)
+//     {
+//         $peraturan = ([
+//             'nama_account'               => 'required|min:3|max:40',
+//             'email_account'              => 'required|email|unique:account_pelamar,email_pelamar',
+//             'no_account'                 => 'required|digits:12|unique:account_pelamar,no_hp_pelamar',
+//             'password'                   => 'required|min:5|max:30'
+//         ]);
+
+//         $pesan = ([
+//             'nama_account.required'         => 'Nama Lengkap wajib diisi',
+//             'nama_account.min'              => 'Nama lengkap minimal 3 karakter',
+//             'nama_account.max'              => 'Nama lengkap maksimal 35 karakter',
+//             'email_account.required'        => 'Email wajib diisi',
+//             'email_account.email'           => 'Email tidak valid',
+//             'email_account.unique'          => 'Email sudah terdaftar',
+//             'no_account.required'           => 'nomor hp wajib diisi',
+//             'no_account.digits'             => 'Nomor 11 digits',
+//             'no_account.unique'             => 'Nomor sudah terdaftar',
+//             'password.required'             => 'Password wajib diisi',
+//             'password.confirmed'            => 'Password tidak sama dengan konfirmasi password'
+//         ]);
+
+//         $validator = Validator::make($request->all(), $peraturan, $pesan);
+
+//         if ($validator->fails()) {
+//             return redirect()->back()->withErrors($validator)->withInput($request->all);
+//         }
+
+//         $Admins = new Account();
+//         $Admins->nama_account = ucwords(strtolower($request->nama_pnama_accountelamar));
+//         $Admins->email_account = strtolower($request->email_account);
+//         $Admins->no_account = strtolower($request->no_account);
+//         $Admins->password = Hash::make($request->password);
+//         $Admins->email_verified_at = \Carbon\Carbon::now();
+//         $simpan = $Admins->save();
+
+//         if ($simpan) {
+//             Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
+//             return redirect('/masuk');
+//         } else {
+//             Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
+//             return redirect()->route('register');
+//         }
+//     }
 
 
 
 
 
-
-
-   
-   public function jobs_non_user () {
-       return view('/layout.page.pekerjaan');
-   }
+public function jobs_non_user()
+    {
+        return view('/layout.page.pekerjaan');
+    }
 
 
     // public function homepage_non_user()

@@ -17,7 +17,6 @@ class CreateKategorisTable extends Migration
                 $table->id();
                 $table->string('kategori', 50);
 
-               
             });
     }
 

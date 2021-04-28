@@ -33,12 +33,13 @@
 							<li><a href="/kelola-jobs">Kelola pekerjaan</a></li>
 							<li><a href="/atur-aplikasi">Kelola Applikasi</a></li>
 							<li><a href="/cari-resume">Cari Resume</a></li>
+							{{--  <li><a href="/halaman_kerja/{id}">Postingan Kerja</a></li>  --}}
 				</ul>
 				<ul class="float-right">
-					<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> Stiawan jodi</a>
+					<li style=" margin-right: 20px;"> <a href="{{ route('logout') }}"> <i class="fa fa-user"></i> {{ Auth::guard('pelamar')->user()->nama_pelamar }}</a>
 					<ul>
 						<li>
-							<li><a href="/"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+							<li><a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
 						</li>
 					</ul>
 					
@@ -76,14 +77,14 @@
 			<h4>Tentang kami</h4>
 			<p>website Lawang menjadi salah satu solusi bagi perusahaan yang mencari tenaga kerja yang sesuai kemampuan, dan pencari kerja bisa memilih
 				sesuai dengan fashionnya, jadi mulailah dengan langkah kecil, daftar sekarang dengan tombol di bawah.</p>
-			<a href="/daftar-awal" class="button">Daftar Sekarang</a>
+			<a href="/daftar" class="button">Cari Pekerja Terbaik</a>
 		</div>
 
 		<div class="three columns">
 			<h4>Company</h4>
 			<ul class="footer-links">
 				<li><a href="#">Tentang</a></li>
-				<li><a href="/daftar-awal">karir</a></li>
+				<li><a href="/daftar">karir</a></li>
 				<li><a href="/blog-awal">Blog</a></li>
 			</ul>
 		</div>
