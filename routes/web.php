@@ -59,7 +59,7 @@ Route::get('/post/jobs/{id}',[PelamarController::class, 'index']);
 
 Route::get('/browse-jobs',[PelamarController::class, 'jobs']);
 Route::get('/cari-kategori',[PelamarController::class, 'kategori_pelamar']);
-Route::get('/add-resume', [PelamarController::class, 'add_resume_user']);
+Route::get('/add/resume/pelamar', [PelamarController::class, 'add_resume_user']);
 Route::get('/preview-resume', [PelamarController::class, 'lihat_resume']);
 Route::get('/atur-resume', [PelamarController::class, 'edit_resume']);
 Route::get('/job-alerts', [PelamarController::class, 'pemberitahuan']);
@@ -90,7 +90,7 @@ Route::get('/profile-account', [AccountController::class, 'user_account']);
 //user page
 Route::get('/profile-user', [AccountController::class, 'profile_user']);
 Route::get('/add-jobs', [AccountController::class, 'add_jobs_user']);
-Route::get('/add-resume', [AccountController::class, 'add_resume_user']);
+// Route::get('/add-resume',/ [AccountController::class, 'add_resume_user']);
 
 });
 

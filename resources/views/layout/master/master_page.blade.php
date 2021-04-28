@@ -30,7 +30,7 @@
 						<ul id="responsive">
 							<li><a href="/index" id="current">Home</a></li>
 							<li><a href="/browse-jobs">Lowongan Kerja</a>
-							<li><a href="/add-resume">Tambah Resume</a>
+							<li><a href="add/resume/pelamar">Tambah Resume</a>
 							<li><a href="/job-alerts">Pemberitahuan</a>
 							</li>
 							<li><a href="#">Pelamar</a>
@@ -55,7 +55,7 @@
 							<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> {{ Auth::guard('pelamar')->user()->nama_pelamar }}</a>
 							<ul>
 								<li>
-									<li><a href="/"><i class="fas fa-sign-out-alt"></i>{{ route('logout_u') }}</a></li>
+									<li><a href="{{ route('logout_u') }}"><i class="fas fa-sign-out-alt"> KELUAR</i></a></li>
 								</li>
 							</ul>
 							
