@@ -83,11 +83,11 @@
 	
 					<hr>
 	
-					<form method="get" action="/homepage_user" class="login">
-	
+					<form method="post" action="{{ route('masuk_p') }}" class="login">
+						{{ csrf_field() }}
 	
 						<p class="form-row form-row-wide">
-							<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail" required/>
+							<input class="input-text" type="Email" name="email_perusahaan" id="Email" placeholder="E-mail" required/>
 						</p>
 
 						<p class="form-row form-row-wide">

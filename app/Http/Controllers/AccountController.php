@@ -80,6 +80,14 @@ public function masuk_u(Request $request)
 
 public function logoutP()
     {
+        if (Auth::guard('perusahaan')->check()){
+        Auth::guard('perusahaan')->logout();
+        } 
+        return redirect('/masuk');
+    }
+
+public function logoutU()
+    {
         if (Auth::guard('pelamar')->check()){
         Auth::guard('pelamar')->logout();
         } 

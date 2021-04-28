@@ -36,10 +36,10 @@
 							{{--  <li><a href="/halaman_kerja/{id}">Postingan Kerja</a></li>  --}}
 				</ul>
 				<ul class="float-right">
-					<li style=" margin-right: 20px;"> <a href="{{ route('logout') }}"> <i class="fa fa-user"></i> {{ Auth::guard('pelamar')->user()->nama_pelamar }}</a>
+					<li style=" margin-right: 20px;"> <i class="fa fa-user"></i> {{ Auth::guard('perusahaan')->user()->nama_pendaftar }}</a>
 					<ul>
 						<li>
-							<li><a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+							<li><a href="{{ route('logout_p') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
 						</li>
 					</ul>
 					

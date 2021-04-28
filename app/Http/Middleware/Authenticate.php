@@ -18,9 +18,9 @@ class Authenticate extends Middleware
    
 
     
-    // if (! $request->expectsJson()) {
+    if (! $request->expectsJson()) {
 
-    //   return route('login');
+      return route('login');
     //     } else if (! $request->expectsJson()) {
 
     //   return route('masuk');
@@ -29,12 +29,12 @@ class Authenticate extends Middleware
     
     
   
-         if  (Auth::guard('pelamar')->check()) {
+        //  if  (Auth::guard('pelamar')->check()) {
 
-             return route('login');
-        } else if (Auth::guard('perusahaan')->check()) {
+        //      return route('login');
+        // } else if (Auth::guard('perusahaan')->check()) {
 
-          return route('login');
+        //   return route('login');
         
       }
     }

@@ -52,10 +52,10 @@
 							<li><a href="/blogs">Blog</a></li> --}}
 						</ul>
 						<ul class="float-right">
-							<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i>User</a>
+							<li style=" margin-right: 20px;"> <a href="#"> <i class="fa fa-user"></i> {{ Auth::guard('pelamar')->user()->nama_pelamar }}</a>
 							<ul>
 								<li>
-									<li><a href="/"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+									<li><a href="/"><i class="fas fa-sign-out-alt"></i>{{ route('logout_u') }}</a></li>
 								</li>
 							</ul>
 							

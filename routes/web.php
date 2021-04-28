@@ -53,8 +53,8 @@ Route::get('/cari-kerja', function () {
 
 
 //----------------------------------  TAMPILAN Pelamar setelah login---------------------------------------------------/
-// Route::group(['middleware' => 'auth:perusahaan'], function (){
-Route::get('/index',[PelamarController::class, 'index'])->middleware('auth:perusahaan');
+Route::group(['middleware' => 'auth:pelamar'], function (){
+Route::get('/index',[PelamarController::class, 'index']);
 Route::get('/post/jobs/{id}',[PelamarController::class, 'index']);
 
 Route::get('/browse-jobs',[PelamarController::class, 'jobs']);
@@ -66,11 +66,11 @@ Route::get('/job-alerts', [PelamarController::class, 'pemberitahuan']);
 
 Route::post('/blog-post-awal',[PelamarController::class, 'view']);
 Route::get('/blog-post', [PelamarController::class, 'berita_single']);
-// });
+});
 
 
 
-// Route::group(['middleware' => 'auth:pelamar'], function (){
+Route::group(['middleware' => 'auth:perusahaan'], function (){
 //-------------------------------------------------------- PERUSAHAAN --------------------------------------------------//
 Route::get('/lawang',[PerusahaanController::class, 'index_perushaan']);
 Route::get('/kelola-jobs',[PerusahaanController::class, 'kelola_kerja']);
@@ -81,26 +81,7 @@ Route::get('/resume-page', [PerusahaanController::class, 'resume']);
 Route::get('/atur-aplikasi',[PerusahaanController::class, 'cv']);
 Route::get('/cari-resume',[PerusahaanController::class, 'cari_cv']);
 Route::get('/halaman_kerja/{id}', [PerusahaanController::class, 'hal_kerja']);
-// });
 
-
-//profile account
-Route::get('/profile-account', [AccountController::class, 'user_account']);
-
-
-// MASUK DAN DAFTAR
-Route::get('/masuk', [AccountController::class, 'signin_user'])->name('login');
-Route::post('/masuk/pelamar', [AccountController::class, 'masuk_u'])->name('masuk_u');
-Route::post('/masuk/perusahaan', [AccountController::class, 'masuk_p'])->name('auth.signin');
-Route::get('/daftar', [AccountController::class, 'signup_user']);
-Route::post('/register/pelamar', [AccountController::class, 'register_U'])->name('auth.pelamar');
-Route::post('/register/perusahaan', [AccountController::class, 'register_P'])->name('auth.perusahaan');
-
-
-
-//middleware
-// Route::group(['middleware' => 'auth:pelamar'], function (){
-Route::get('logout', [AccountController::class, 'logoutP'])->name('logout');
 Route::get('/jobs', [AccountController::class, 'jobs_non_user']);
 
 //profile account
@@ -111,5 +92,26 @@ Route::get('/profile-user', [AccountController::class, 'profile_user']);
 Route::get('/add-jobs', [AccountController::class, 'add_jobs_user']);
 Route::get('/add-resume', [AccountController::class, 'add_resume_user']);
 
+});
+
+
+//profile account
+Route::get('/profile-account', [AccountController::class, 'user_account']);
+
+
+// MASUK DAN DAFTAR
+Route::get('/masuk', [AccountController::class, 'signin_user'])->name('login');
+Route::post('/masuk/pelamar', [AccountController::class, 'masuk_u'])->name('masuk_u');
+Route::post('/masuk/perusahaan', [AccountController::class, 'masuk_p'])->name('masuk_p');
+Route::get('/daftar', [AccountController::class, 'signup_user']);
+Route::post('/register/pelamar', [AccountController::class, 'register_U'])->name('auth.pelamar');
+Route::post('/register/perusahaan', [AccountController::class, 'register_P'])->name('auth.perusahaan');
+
+
+
+//middleware
+// Route::group(['middleware' => 'auth:pelamar'], function (){
+Route::get('logout/perusahaan', [AccountController::class, 'logoutP'])->name('logout_p');
+Route::get('logout/pelamar', [AccountController::class, 'logoutU'])->name('logout_u');
 // });
 
