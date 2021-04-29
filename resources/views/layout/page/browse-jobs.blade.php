@@ -41,7 +41,7 @@
 
 			@foreach ($lihatjobs->slice(0, 2) as $x)
 			<li>
-				<a href="/post/jobs/{{ $x->jobs_id }}">
+				<a href="/halaman-pekerjaan/{{ $x->jobs_id }}">
 					<img src="images/job-list-logo-03.png" alt="">
 					<div class="job-list-content">
 						<h4>{{ $x->judul_jobs }}<span class="full-time">{{ $x->tipe_pekerjaan }}</span></h4>

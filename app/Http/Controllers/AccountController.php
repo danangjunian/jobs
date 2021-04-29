@@ -50,7 +50,7 @@ public function masuk_u(Request $request)
     }
     
     
-    
+                
     public function masuk_p(Request $request)
     {
     $peraturan = ([

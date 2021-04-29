@@ -2,8 +2,6 @@
 
 @section('title', 'Hal-Pekerjaan')
 
-
-
 <!-- Header === -->
 
 <!-- Content=== -->
@@ -14,13 +12,13 @@
 	<div id="titlebar" class="photo-bg" style="background: url(images/job-page-photo.jpg)">
 		<div class="container">
 			<div class="ten columns">
-				<span><a href="browse-jobs.html">{{ $halamanjobs->judul_jobs }} </a></span>
-				<h2>{{ $halamanjobs->judul_jobs }} <span class="full-time">{{ $halamanjobs->judul_jobs }}</span></h2>
+				<span style="color: white">{{ $awal->nama_perusahaan}}</span>
+				<h2>{{ $awal->judul_jobs}}</h2>
 			</div>
 	
-			{{-- <div class="six columns">
+			{{--  <div class="six columns">
 				<a href="#" class="button white"><i class="fa fa-star"></i> Bookmark This Job</a>
-			</div> --}}
+			</div>  --}}
 	
 		</div>
 	</div>
@@ -36,33 +34,32 @@
 		
 		<!-- Company Info -->
 		<div class="company-info">
-			<img src="/images/mcd.jpg" alt="">
+			<img src="/images/job-list-logo-03.png" alt="">
 			<div class="content">
-				<h4>{{ $halamanjobs->judul_jobs }}</h4>
-				<span><a href="https://www.mcdelivery.co.id/"><i class="fa fa-link"></i> {{ $halamanjobs->judul_jobs }}</a></span>
-				<span><a href="#"><i class="fa fa-twitter"></i> @McDonald</a></span>
+				
+				
+			
+				<h4><p>{{$awal->judul_jobs}}</p></h4>
+				<span><a href="https://www.mcdelivery.co.id/
+                    "><i class="fa fa-link"></i> {{ $awal->email_perusahaan	}}</a></span>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 
 		<p class="margin-reset">
-			{{ $halamanjobs->deskripsi_jobs }}
+			{{ $awal->jobs_dibuka}}
 		</p>
-
-		<br>
-		<p>Cara Melamar:</p>
-
+		<p>{{$awal->judul_jobs}}</p>
+		<p>{{$awal->lokasi_jobs}}</p>
+		<br>		
 		<ul class="list-1">
-			<li>Ikuti panduan dengan mengisi data pribadi akurat, seperti: nama lengkap, alamat lengkap dan provinsi sesuai domisili saat ini, serta nomor handphone aktif.
-			</li>
-			<li>Pastikan email kamu terhubung dengan ponsel.</li>
-			<li>Kamu akan diarahkan untuk mengikuti tes seleksi online sebanyak 20 soal, kurang lebih 10-15 menit waktu penyelesaian. Kerjakan dengan baik dan sejujur-jujurnya dengan memilih hal yang TIDAK akan anda lakukan.</li>
-			<li>Penempatan lokasi restoran akan disesuaikan dengan domisili anda saat ini.</li>
+			<h4 class="margin-bottom-10">Tugas dan Tanggung Jawab :</h4>
+			<li>{{$awal->deskripsi_jobs}}</li>
 		</ul>
 		
 		<br>
 
-		<h4 class="margin-bottom-10">Kualifikasi:</h4>
+		{{--  <h4 class="margin-bottom-10">Kualifikasi:</h4>
 
 		<ul class="list-1">
 			<li>Lulusan SMA/Sederajat</li>
@@ -79,7 +76,7 @@
             <li>Menyajikan menu yang disukai dengan kualitas terbaik kepada pelanggan</li>
             <li>Memastikan kebersihan di setiap workstation sesuai tanggung jawab masing-masing</li>
 
-		</ul>
+		</ul>  --}}
 
 	</div>
 	</div>
@@ -99,21 +96,21 @@
 						<i class="fa fa-map-marker"></i>
 						<div>
 							<strong>Lokasi:</strong>
-							<span>{{ $halamanjobs->judul_jobs }}</span>
+							<span>{{$awal->lokasi_jobs}}</span>
 						</div>
 					</li>
 					<li>
 						<i class="fa fa-user"></i>
 						<div>
 							<strong>Job Title:</strong>
-							<span>{{ $halamanjobs->judul_jobs }}</span>
+							<span>{{$awal->judul_jobs}}</span>
 						</div>
 					</li>
 					<li>
 						<i class="fa fa-money"></i>
 						<div>
-							<strong>Bulan:</strong>
-							<span>Rp.4200.000</span>
+							<strong>Gaji Bulan:</strong>
+							<span>Rp : {{$awal->gaji}}</span>
 						</div>
 					</li>
 				</ul>
@@ -123,29 +120,55 @@
 
 				<div id="small-dialog" class="zoom-anim-dialog mfp-hide apply-popup">
 					<div class="small-dialog-headline">
-						<h2>Apply pekerjaan</h2>
-					</div>
 
-					<div class="small-dialog-content">
-						<form action="#" method="get" >
-							<input type="text" name="nama-lengkap" placeholder="Nama Lengkap" value=""/>
-							<input type="text" name="email" placeholder="Email" value=""/>
-							<textarea name="pesan-promosi" placeholder="pesan untuk mempromosikan diri kamu kepada perusahaan"></textarea>
+						
 
-							<!-- Upload CV -->
-							<div class="upload-info"><strong>Upload CV kamu</strong> <span>Max. file size: 5MB</span></div>
-							<div class="clearfix"></div>
+							<div class="my-account">
+						
+								<div class="tabs-container">
+									<!-- Login -->
+									<div class="tab-content" id="tab1" style="display: none;">
+												
+										<hr>
+						
+										<form method="get" action="/index" class="signup">
+						
+											
+											<p class="form-row form-row-wide">
+												<input type="text" class="input-text" name="username" id="username" value="" placeholder="Nama Depan"/>
+											</p>
+											
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="text" name="NamaBelakang" id="NamaBelakang" placeholder="Nama Belakang" />
+											</p>
+						
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="Email" name="Email" id="Email" placeholder="E-mail"/>
+											</p>
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="text" name="Phone" id="Phone" placeholder="+62"/>
+											</p>
+											<p class="form-row form-row-wide">
+												<input class="input-text" type="password" name="password" id="password" placeholder="Password"/>
+											</p>
+						
+											<p class="form-row">
+												<input type="submit" class="button" name="signup" value="apply pekerjaan" />
+										
+											</p>
+						
+										
+						
+											
+										</form>
+										<hr>
+									</div>
+								</div>
+							</div>
+						</div>
 
-							<label class="upload-btn">
-								<input type="file" name="file" multiple />
-								<i class="fa fa-upload"></i> Browse
-							</label>
-							<span class="fake-input">No file selected</span>
 
-							<div class="divider"></div>
 
-							<button class="send">Send Applikasi</button>
-						</form>
 					</div>
 					
 				</div>
@@ -159,5 +182,4 @@
 
 
 </div>
-
 @endsection

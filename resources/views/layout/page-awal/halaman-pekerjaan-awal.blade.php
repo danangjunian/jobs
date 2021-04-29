@@ -36,12 +36,12 @@
 		
 		<!-- Company Info -->
 		<div class="company-info">
-			<img src="/images/mcd.jpg" alt="">
+			<img src="/images/job-list-logo-03.png" alt="">
 			<div class="content">
 				
 				
 			
-				<h4>McDonald</h4>
+				<h4><p>{{$awal->judul_jobs}}</p></h4>
 				<span><a href="https://www.mcdelivery.co.id/
                     "><i class="fa fa-link"></i> {{ $awal->email_perusahaan	}}</a></span>
 			</div>
@@ -61,7 +61,7 @@
 		
 		<br>
 
-		<h4 class="margin-bottom-10">Kualifikasi:</h4>
+		{{--  <h4 class="margin-bottom-10">Kualifikasi:</h4>
 
 		<ul class="list-1">
 			<li>Lulusan SMA/Sederajat</li>
@@ -78,7 +78,7 @@
             <li>Menyajikan menu yang disukai dengan kualitas terbaik kepada pelanggan</li>
             <li>Memastikan kebersihan di setiap workstation sesuai tanggung jawab masing-masing</li>
 
-		</ul>
+		</ul>  --}}
 
 	</div>
 	</div>

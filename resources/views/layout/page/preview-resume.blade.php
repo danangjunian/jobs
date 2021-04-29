@@ -189,7 +189,7 @@
 
 </div>
 
-<a href="/index"><button style="margin-left: 15%" name="kembali" class="margin-bottom-20">kembali</button></a>
+<a href="/atur-resume"><button style="margin-left: 15%" name="kembali" class="margin-bottom-20">kembali</button></a>
 <div>
 
 </div>

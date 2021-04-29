@@ -20,13 +20,15 @@ class PelamarController extends Controller
      */
     public function index()
     {
+        $count = AddJobs::count();
+        $anggota = MasterJobs::count();
         $lihatjobs = AddJobs::join ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
         ->join('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
         ->join('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
         ->join('tag', 'add_jobs.tag_id', '=', 'tag.id')
         ->paginate(5);
 
-        return view('layout.page.index',compact('lihatjobs'));
+        return view('layout.page.index',compact('lihatjobs','count','anggota'));
     }
 
 
@@ -77,6 +79,14 @@ class PelamarController extends Controller
 
         return view('layout.page.browse-jobs',compact('lihatjobs'));
     }
+    public function halaman_pekerjaan($id)
+    {
+        $awal = AddJobs::find($id);
+        $a = kategori::all();
+        return view('layout.page.halaman-pekerjaan', compact('awal','a'));
+        
+        // return view('layout.page-awal.halaman-pekerjaan-awal', ['awal','a' => $awal]);
+    }
 
 
     public function kategori_pelamar()
@@ -84,10 +94,54 @@ class PelamarController extends Controller
         return view('layout.page.cari-kategori');
     }
 
-    public function add_resume_user()
-    {
+    public function add_resume_user(Request $request){
+    // {
+
+    //         // $this->validate($request,[
+    //         //     'judul'=> 'required',
+    //         //     'images'=> 'required|file|mimes:jpg,docx,doc,pdf,png,jpeg',
+    //         //     'content'=> 'required'
+    //         // ]);
+    //         $post= new blogs();
+    //         $file=$request->images;
+    //         $filename=time().'.'.$file->getClientOriginalExtension();
+    //             $request->images->move('data_file',$filename);
+    
+    //             $post->images=$filename;
+    //             $post->judul=$request->judul;
+    //             $post->sinopsis=$request->sinopsis;
+    //             $post->content=$request->content;
+    
+    //             $post->save();
+    //             return redirect('/blog-post-awal');
+    //     }
+
+
         return view('/layout.page_user.tambah-resume');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function lihat_resume()
     {
         return view('layout.page.preview-resume');

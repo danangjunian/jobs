@@ -8,6 +8,7 @@ use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\PelamarController;
 use App\Http\Controllers\PerusahaanController;
 use App\Http\Controllers\AddJobsController;
+use App\http\Controllers\CvController;
 use Illuminate\Routing\RouteGroup;
 
 // HOMEPAGE DAN PAGE
@@ -48,15 +49,26 @@ Route::get('/cari-kerja', function () {
 
 //----------------------------------  TAMPILAN Pelamar setelah login---------------------------------------------------/
 Route::group(['middleware' => 'auth:pelamar'], function (){
-Route::get('/index',[PelamarController::class, 'index']);
-Route::get('/post/jobs/{id}',[PelamarController::class, 'index']);
+        Route::get('/index',[PelamarController::class, 'index']);
+        Route::get('/post/jobs/{id}',[PelamarController::class, 'index']);
 
-Route::get('/browse-jobs',[PelamarController::class, 'jobs']);
-Route::get('/cari-kategori',[PelamarController::class, 'kategori_pelamar']);
-Route::get('/add-resume', [PelamarController::class, 'add_resume_user']);
-Route::get('/preview-resume', [PelamarController::class, 'lihat_resume']);
-Route::get('/atur-resume', [PelamarController::class, 'edit_resume']);
-Route::get('/job-alerts', [PelamarController::class, 'pemberitahuan']);
+
+        Route::get('/halaman-pekerjaan/{id}',[PelamarController::class, 'halaman_pekerjaan']);
+
+        Route::get('/browse-jobs',[PelamarController::class, 'jobs']);
+        Route::get('/cari-kategori',[PelamarController::class, 'kategori_pelamar']);
+
+
+        Route::get('/add-cv', [PelamarController::class, 'add_resume_user']);
+        Route::post('/preview-resume', [CvController::class, 'inicv']);
+        Route::get('/preview-resume', [CvController::class, 'view_cv']);
+        
+        
+        
+        
+        Route::get('/preview-resume', [PelamarController::class, 'lihat_resume']);
+        Route::get('/atur-resume', [PelamarController::class, 'edit_resume']);
+        Route::get('/job-alerts', [PelamarController::class, 'pemberitahuan']);
 
 
 });
