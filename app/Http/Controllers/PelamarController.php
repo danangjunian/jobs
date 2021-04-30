@@ -8,8 +8,10 @@ use Illuminate\Http\Request;
 use App\Models\AddJobs;
 use App\Models\kategori;
 use App\Models\MasterJobs;
+use App\Models\Pelamars;
 use App\Models\TipeKerja;
 use Illuminate\Support\Facades\DB;
+
 
 class PelamarController extends Controller
 {
@@ -20,22 +22,25 @@ class PelamarController extends Controller
      */
     public function index()
     {
+        $datamaster = MasterJobs::count();
+        $datapelamar = Pelamars::count();
+        $datapekerjaan = AddJobs::count();
         $lihatjobs = AddJobs::join ('master_jobs', 'add_jobs.master_id', '=', 'master_jobs.id')
         ->join('tipe_kerja', 'add_jobs.tipekerja_id', '=', 'tipe_kerja.id')
         ->join('kategori_kerja', 'add_jobs.kategori_id', '=', 'kategori_kerja.id')
         ->join('tag', 'add_jobs.tag_id', '=', 'tag.id')
         ->paginate(5);
 
-        return view('layout.page.index',compact('lihatjobs'));
+        return view('layout.page.index',compact('lihatjobs', 'datamaster', 'datapelamar', 'datapekerjaan'));
     }
 
 
-    public function __construct()
-        {
+    // public function __construct()
+    //     {
             
-        $this->AddJobs = new AddJobs;
+    //     $this->AddJobs = new AddJobs;
     
-        }
+        // }
 
 // <<<<<<< HEAD
 // =======

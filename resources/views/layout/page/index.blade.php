@@ -154,33 +154,27 @@
 <div id="counters">
 	<div class="container">
 
-		<div class="four columns">
+		<div class="five columns">
 			<div class="counter-box">
-				<span class="counter">15</span><i>k</i>
-				<p>Lowongan Kerja</p>
+				<span class="counter">{{ $datamaster }}</span><i></i>
+				<p>Perusahaan</p>
 			</div>
 		</div>
 
-		<div class="four columns">
+		<div class="five columns">
 			<div class="counter-box">
-				<span class="counter">4982</span>
+				<span class="counter">{{ $datapelamar }}</span>
 				<p>Anggota</p>
 			</div>
 		</div>
 
-		<div class="four columns">
+		<div class="five columns">
 			<div class="counter-box">
-				<span class="counter">768</span>
-				<p>Resume yang di posting </p>
+				<span class="counter"> {{ $datapekerjaan }} </span>
+				<p>Jumlah Pekerjaan</p>
 			</div>
 		</div>
 
-		<div class="four columns">
-			<div class="counter-box">
-				<span class="counter">90</span><i>%</i>
-				<p>Clients Who Rehire</p>
-			</div>
-		</div>
 
 	</div>
 </div>

@@ -65,11 +65,11 @@ class PerusahaanController extends Controller
             // 	'tipekerja_id' 		=> 'required',
             // 	'kategori_id' 		=> 'required',
             // 	'tag_id' 			=> 'required',
-            'judul_jobs'         => 'required|min:3|max:70',
-            'lokasi_jobs'         => 'required',
-            'deskripsi_jobs'     => 'required',
-            'jobs_dibuka'         => 'required',
-            'jobs_ditutup'         => 'required',
+            'judul_jobs'            => 'required|min:3|max:70',
+            'lokasi_jobs'           => 'required',
+            'deskripsi_jobs'        => 'required',
+            'jobs_dibuka'           => 'required',
+            'jobs_ditutup'          => 'required',
 
         ]);
 

@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class akun_u extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable; 
     protected $table = "akun_u";
 
     protected $primaryKey = "id";
